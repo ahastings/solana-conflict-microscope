@@ -1,0 +1,1699 @@
+{
+  "schemaVersion": "2.2",
+  "generatedAt": "2026-08-30T00:00:00.000Z",
+  "cluster": "devnet",
+  "outputDirectory": "output/research/velocity-anchor-bundle",
+  "documentationPath": "docs/research/VELOCITY-ANCHOR-BUNDLE.md",
+  "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+  "candidateId": "candidate-043c938568ad5e15",
+  "expectedPriorDecision": "identity-found-semantics-incomplete",
+  "expectedBinaryOutcome": "variant-level-strong-correspondence",
+  "expectedContinuity": "sample-binary-continuity-established",
+  "expectedExecutableSha256": "89d757b837724ab552d1ebf719245e33f9f93b722cb4331b5eec55202d94ca5c",
+  "priorPlans": {
+    "sourceability": "research-plans/sourceability-milestone-2.0.json",
+    "candidate": "research-plans/candidate-043c938568ad5e15.json",
+    "binary": "research-plans/velocity-binary-milestone-2.1.json"
+  },
+  "repositories": {
+    "velocity": "cache/research/velocity-binary/repositories/protocol-v2",
+    "pyth": "cache/research/velocity-anchor-bundle/repositories/pyth-lazer-public"
+  },
+  "pinnedCommits": {
+    "velocity": "f7df335599c194bc759cebf682a11bcad6bd5ed2",
+    "pyth": "651247025d547b6b832ee0ebdafd0207878d720d"
+  },
+  "expectedBundles": [
+    {
+      "slot": 489572998,
+      "componentId": 1,
+      "transactions": [
+        {
+          "role": "anchor-A",
+          "transactionIndex": 1,
+          "signature": "4rK8SP59vrAd4v7KpcYh4S8HD9iuSWKQJyroV9VRWTHvSmEmXvXqscwMur5jxjRFnrf1ZBhK7xJnvRpdDUbxNNs2",
+          "feePayer": "GhMUe97fqJEb9QFNfM6N3BbEy4SD2VmeyjUVFBcXuV6V",
+          "ed25519InstructionIndexes": [
+            2
+          ],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            3,
+            4
+          ],
+          "postPythInstructionIndexes": [
+            3
+          ],
+          "updateTwapInstructionIndexes": [
+            4
+          ],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "9bd1ac5b1b26ab8ca5f9def111cf4188b3da45e621b83ae858ed018aef8f96f1",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "Ed25519SigVerify111111111111111111111111111",
+              "byteLength": 16,
+              "dataSha256": "623595ae5ea62a552293f24c6c93a0eba6d63ae2309786ad1597511f106846e4",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 3,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 263,
+              "dataSha256": "563a73a52513d1023cc324dbf7b14f828b07d4f0ea354cb00d42ff9827501c7b",
+              "accountListSha256": "8db6e356bfc2b5982d36d61e20d67d3aed10499d953d08f59607fa1d983de77d"
+            },
+            {
+              "instructionIndex": 4,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 8,
+              "dataSha256": "c90864a15bf48d5725dc2a37666a5ad6bbf4eef4cfd93a3619ad6c89068aec2a",
+              "accountListSha256": "216683f50fb50f240c64f5e6232f602b7c0a00919db86ab5e1102f5759bf782c"
+            }
+          ],
+          "logSha256": "5c97b7ae39c764f736721771e87f457a5e8ce1e5208dffc8d1c1dead279c23b1",
+          "signedMessageSha256": "f700a1c0432eb9c1cede50de39f08a20565da681203fa268407fe97f90df3264"
+        },
+        {
+          "role": "anchor-B",
+          "transactionIndex": 2,
+          "signature": "5zayDMLz4wu8pKQXYbiucUsRWY3cSsmvVzKGTTZnBqnLSNXG694GoA6mkzHG4Y4LKmXH3MVb5fTYMEhJ4w8cDzxd",
+          "feePayer": "GhMUe97fqJEb9QFNfM6N3BbEy4SD2VmeyjUVFBcXuV6V",
+          "ed25519InstructionIndexes": [
+            2
+          ],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            3,
+            4
+          ],
+          "postPythInstructionIndexes": [
+            3
+          ],
+          "updateTwapInstructionIndexes": [
+            4
+          ],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "9bd1ac5b1b26ab8ca5f9def111cf4188b3da45e621b83ae858ed018aef8f96f1",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "Ed25519SigVerify111111111111111111111111111",
+              "byteLength": 16,
+              "dataSha256": "623595ae5ea62a552293f24c6c93a0eba6d63ae2309786ad1597511f106846e4",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 3,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 263,
+              "dataSha256": "563a73a52513d1023cc324dbf7b14f828b07d4f0ea354cb00d42ff9827501c7b",
+              "accountListSha256": "8db6e356bfc2b5982d36d61e20d67d3aed10499d953d08f59607fa1d983de77d"
+            },
+            {
+              "instructionIndex": 4,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 8,
+              "dataSha256": "c90864a15bf48d5725dc2a37666a5ad6bbf4eef4cfd93a3619ad6c89068aec2a",
+              "accountListSha256": "86c55acf13070041fec90a366610549c453f949be8805f6808813041cea594cc"
+            }
+          ],
+          "logSha256": "6efc0b1b8785bea87f040e88d89888db08575a8ee1cdab67c7a3a277c5ad7b58",
+          "signedMessageSha256": "f700a1c0432eb9c1cede50de39f08a20565da681203fa268407fe97f90df3264"
+        },
+        {
+          "role": "anchor-C",
+          "transactionIndex": 3,
+          "signature": "3pktjLUnpv77XJfFB51PSdDjeC1KRc8LLQ3Lo5wafz2Fb3CkdMsFUppjTQwGeC4AwnhSb3nGqUnV9hTWdaCgA6wU",
+          "feePayer": "GhMUe97fqJEb9QFNfM6N3BbEy4SD2VmeyjUVFBcXuV6V",
+          "ed25519InstructionIndexes": [
+            2
+          ],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            3,
+            4
+          ],
+          "postPythInstructionIndexes": [
+            3
+          ],
+          "updateTwapInstructionIndexes": [
+            4
+          ],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "9bd1ac5b1b26ab8ca5f9def111cf4188b3da45e621b83ae858ed018aef8f96f1",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "Ed25519SigVerify111111111111111111111111111",
+              "byteLength": 16,
+              "dataSha256": "623595ae5ea62a552293f24c6c93a0eba6d63ae2309786ad1597511f106846e4",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 3,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 263,
+              "dataSha256": "563a73a52513d1023cc324dbf7b14f828b07d4f0ea354cb00d42ff9827501c7b",
+              "accountListSha256": "8db6e356bfc2b5982d36d61e20d67d3aed10499d953d08f59607fa1d983de77d"
+            },
+            {
+              "instructionIndex": 4,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 8,
+              "dataSha256": "c90864a15bf48d5725dc2a37666a5ad6bbf4eef4cfd93a3619ad6c89068aec2a",
+              "accountListSha256": "7ddb5722111617550d869560805f238db48c400ebd9e7a3bab3f4a66eb67d844"
+            }
+          ],
+          "logSha256": "dff47506006172ba640a78cf715fea0659b3aa2daef72117a8a768bb4cf2dd84",
+          "signedMessageSha256": "f700a1c0432eb9c1cede50de39f08a20565da681203fa268407fe97f90df3264"
+        },
+        {
+          "role": "native-unresolved",
+          "transactionIndex": 24,
+          "signature": "3oJTQ4As2hS2YS9kWdfstedFEQxGNwmoECYj8VhXAs6KgqYWy11BT13D19nHux9q9bTYHskqanT7e7Dkxs7nkBwT",
+          "feePayer": "Cg32xAQbEoUEWkud61wxo8598CTtxbj7533gpEKb8DCq",
+          "ed25519InstructionIndexes": [],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            2
+          ],
+          "postPythInstructionIndexes": [],
+          "updateTwapInstructionIndexes": [],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "33fc17d678d14ccb154d42762a6a9860fd92c14fea1f65e89c9fb70b7169c77a",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 84,
+              "dataSha256": "71c500f9b56dfbb09e500a0c443d02ea257d771c10f64068f23d9f6129f4f7c0",
+              "accountListSha256": "221fb0166330d14de48651a6f791200117a4e0d6983010a4efb3a42e411c7bd3"
+            }
+          ],
+          "logSha256": "09f9ff28556e3ccb97eb0e25fa7d333c91fa1c457c2ae485078e91a7eba539b0",
+          "signedMessageSha256": null
+        }
+      ],
+      "conflictEvidenceReference": "output/research/candidate-043c938568ad5e15/candidate-evidence.ndjson#slot-489572998#component-1",
+      "sourceCachePath": "cache/discovery-devnet/slot-489572998.json",
+      "sourceCacheSha256": "c64b519554b772cd5384916bd6cb058e1eebe3aae502a01df02c4845adf38e18"
+    },
+    {
+      "slot": 489593012,
+      "componentId": 17,
+      "transactions": [
+        {
+          "role": "native-unresolved",
+          "transactionIndex": 17,
+          "signature": "4LAmnysfjpy9uKtiarPUnGtRJoNSdx6tn1LqjBvPV11FHEg8YFc4DPQP3uZ79qYoJPcCgLekS8ubpxy7hYbyuCkU",
+          "feePayer": "Cg32xAQbEoUEWkud61wxo8598CTtxbj7533gpEKb8DCq",
+          "ed25519InstructionIndexes": [],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            2
+          ],
+          "postPythInstructionIndexes": [],
+          "updateTwapInstructionIndexes": [],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "33fc17d678d14ccb154d42762a6a9860fd92c14fea1f65e89c9fb70b7169c77a",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 84,
+              "dataSha256": "9fc769b2d32da5c0735a4898165d4a594059deb6669ea0d4bba70a9ad71dcb23",
+              "accountListSha256": "221fb0166330d14de48651a6f791200117a4e0d6983010a4efb3a42e411c7bd3"
+            }
+          ],
+          "logSha256": "132fee9bc3813d01b3297bff71499abb479ff03268a5737179b6f23d819bd366",
+          "signedMessageSha256": null
+        },
+        {
+          "role": "anchor-A",
+          "transactionIndex": 21,
+          "signature": "3FrqdmfYUnekA7vrgKwFTppGuJLaL5TXcJVFWnpF8qLRTSjvw3EaWf1LgXpRmaX6SUexPU6eus36WyCkS4Jvrfg9",
+          "feePayer": "GhMUe97fqJEb9QFNfM6N3BbEy4SD2VmeyjUVFBcXuV6V",
+          "ed25519InstructionIndexes": [
+            2
+          ],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            3,
+            4
+          ],
+          "postPythInstructionIndexes": [
+            3
+          ],
+          "updateTwapInstructionIndexes": [
+            4
+          ],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "9bd1ac5b1b26ab8ca5f9def111cf4188b3da45e621b83ae858ed018aef8f96f1",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "Ed25519SigVerify111111111111111111111111111",
+              "byteLength": 16,
+              "dataSha256": "623595ae5ea62a552293f24c6c93a0eba6d63ae2309786ad1597511f106846e4",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 3,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 263,
+              "dataSha256": "f1da13b34887fec1272e0003b5bfa7c6e740f78dc2decfc33c9d68e937d00290",
+              "accountListSha256": "8db6e356bfc2b5982d36d61e20d67d3aed10499d953d08f59607fa1d983de77d"
+            },
+            {
+              "instructionIndex": 4,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 8,
+              "dataSha256": "c90864a15bf48d5725dc2a37666a5ad6bbf4eef4cfd93a3619ad6c89068aec2a",
+              "accountListSha256": "216683f50fb50f240c64f5e6232f602b7c0a00919db86ab5e1102f5759bf782c"
+            }
+          ],
+          "logSha256": "e8d21b9c1085544f7b6bb6eae2dd09ab07e147dc7955d293a1baae49ad54de32",
+          "signedMessageSha256": "39019ff5e1a851604de9ad3c94a321b574abecf58667eae18da4871bd6fae1fc"
+        },
+        {
+          "role": "anchor-C",
+          "transactionIndex": 22,
+          "signature": "5NZ8kKZy7QkLs281dpSgrnGE2gdzHFd2TKNAQwHi9h3CK1L9LY2nzhUecxqBt8aqNS2GwyaEMtCUdUDSTCkwJnPM",
+          "feePayer": "GhMUe97fqJEb9QFNfM6N3BbEy4SD2VmeyjUVFBcXuV6V",
+          "ed25519InstructionIndexes": [
+            2
+          ],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            3,
+            4
+          ],
+          "postPythInstructionIndexes": [
+            3
+          ],
+          "updateTwapInstructionIndexes": [
+            4
+          ],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "9bd1ac5b1b26ab8ca5f9def111cf4188b3da45e621b83ae858ed018aef8f96f1",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "Ed25519SigVerify111111111111111111111111111",
+              "byteLength": 16,
+              "dataSha256": "623595ae5ea62a552293f24c6c93a0eba6d63ae2309786ad1597511f106846e4",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 3,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 263,
+              "dataSha256": "f1da13b34887fec1272e0003b5bfa7c6e740f78dc2decfc33c9d68e937d00290",
+              "accountListSha256": "8db6e356bfc2b5982d36d61e20d67d3aed10499d953d08f59607fa1d983de77d"
+            },
+            {
+              "instructionIndex": 4,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 8,
+              "dataSha256": "c90864a15bf48d5725dc2a37666a5ad6bbf4eef4cfd93a3619ad6c89068aec2a",
+              "accountListSha256": "7ddb5722111617550d869560805f238db48c400ebd9e7a3bab3f4a66eb67d844"
+            }
+          ],
+          "logSha256": "fcd7a160e0db7c54e767798e54e7f5d59dc3766883bc69d0afd165d06344974f",
+          "signedMessageSha256": "39019ff5e1a851604de9ad3c94a321b574abecf58667eae18da4871bd6fae1fc"
+        },
+        {
+          "role": "anchor-B",
+          "transactionIndex": 23,
+          "signature": "3MQ9yDu2SRhoUroS7muGVQSzQ7NnWZeszJhsi2uNZFgj3Ytu93kYQGKNNYms5jY1nxdhMKsMzJra3pQa65BY5wmg",
+          "feePayer": "GhMUe97fqJEb9QFNfM6N3BbEy4SD2VmeyjUVFBcXuV6V",
+          "ed25519InstructionIndexes": [
+            2
+          ],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            3,
+            4
+          ],
+          "postPythInstructionIndexes": [
+            3
+          ],
+          "updateTwapInstructionIndexes": [
+            4
+          ],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "9bd1ac5b1b26ab8ca5f9def111cf4188b3da45e621b83ae858ed018aef8f96f1",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "Ed25519SigVerify111111111111111111111111111",
+              "byteLength": 16,
+              "dataSha256": "623595ae5ea62a552293f24c6c93a0eba6d63ae2309786ad1597511f106846e4",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 3,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 263,
+              "dataSha256": "f1da13b34887fec1272e0003b5bfa7c6e740f78dc2decfc33c9d68e937d00290",
+              "accountListSha256": "8db6e356bfc2b5982d36d61e20d67d3aed10499d953d08f59607fa1d983de77d"
+            },
+            {
+              "instructionIndex": 4,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 8,
+              "dataSha256": "c90864a15bf48d5725dc2a37666a5ad6bbf4eef4cfd93a3619ad6c89068aec2a",
+              "accountListSha256": "86c55acf13070041fec90a366610549c453f949be8805f6808813041cea594cc"
+            }
+          ],
+          "logSha256": "2b003b5dae139213b505f37c636a9028e08adbe87d46a825acc8703127e63d55",
+          "signedMessageSha256": "39019ff5e1a851604de9ad3c94a321b574abecf58667eae18da4871bd6fae1fc"
+        }
+      ],
+      "conflictEvidenceReference": "output/research/candidate-043c938568ad5e15/candidate-evidence.ndjson#slot-489593012#component-17",
+      "sourceCachePath": "cache/discovery-devnet/slot-489593012.json",
+      "sourceCacheSha256": "37360ec1bf9be854bbfe901bc0045c4a849f21e2af91ba9de0e2c1486430cc18"
+    },
+    {
+      "slot": 489602971,
+      "componentId": 14,
+      "transactions": [
+        {
+          "role": "native-unresolved",
+          "transactionIndex": 14,
+          "signature": "22sertE6q47hCMTHXLADWT1hFfXHXQ3Feu3MNPuYL6AJnt2YfAr9QLtbdTcFKve976iRJDMyy2mNXZF7b8pwziyt",
+          "feePayer": "Cg32xAQbEoUEWkud61wxo8598CTtxbj7533gpEKb8DCq",
+          "ed25519InstructionIndexes": [],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            2
+          ],
+          "postPythInstructionIndexes": [],
+          "updateTwapInstructionIndexes": [],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "33fc17d678d14ccb154d42762a6a9860fd92c14fea1f65e89c9fb70b7169c77a",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 84,
+              "dataSha256": "7e35b7cc2ddf96e7981ea72af28e79471a96d8c4455c629167699611a5f7e169",
+              "accountListSha256": "221fb0166330d14de48651a6f791200117a4e0d6983010a4efb3a42e411c7bd3"
+            }
+          ],
+          "logSha256": "c4c4a9f81f4e501e62eb16597b3a1cc122a19b9fab4d2219569da792deaf0ffd",
+          "signedMessageSha256": null
+        },
+        {
+          "role": "anchor-C",
+          "transactionIndex": 17,
+          "signature": "4FU7evuVLx7C2tsTfYu68YpGmdmH1efZvtYj2S1EGNeGGfSrDyt2dEoDr1aGZQy558KB1AJpFBk7jP765CMdQiAV",
+          "feePayer": "GhMUe97fqJEb9QFNfM6N3BbEy4SD2VmeyjUVFBcXuV6V",
+          "ed25519InstructionIndexes": [
+            2
+          ],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            3,
+            4
+          ],
+          "postPythInstructionIndexes": [
+            3
+          ],
+          "updateTwapInstructionIndexes": [
+            4
+          ],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "9bd1ac5b1b26ab8ca5f9def111cf4188b3da45e621b83ae858ed018aef8f96f1",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "Ed25519SigVerify111111111111111111111111111",
+              "byteLength": 16,
+              "dataSha256": "623595ae5ea62a552293f24c6c93a0eba6d63ae2309786ad1597511f106846e4",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 3,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 263,
+              "dataSha256": "5e346eb4a139565f142ee0a3cc1a24edefae6528a38bfabcd5e8a686623662ca",
+              "accountListSha256": "8db6e356bfc2b5982d36d61e20d67d3aed10499d953d08f59607fa1d983de77d"
+            },
+            {
+              "instructionIndex": 4,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 8,
+              "dataSha256": "c90864a15bf48d5725dc2a37666a5ad6bbf4eef4cfd93a3619ad6c89068aec2a",
+              "accountListSha256": "7ddb5722111617550d869560805f238db48c400ebd9e7a3bab3f4a66eb67d844"
+            }
+          ],
+          "logSha256": "e8734d4ad48670a15eab6ef159b666537975f70cce770058275511860b7ce274",
+          "signedMessageSha256": "0d2ab55edcc42a21605c82eef39f23fc9ebd16c629f6f094ef06f394f4d9e5fe"
+        },
+        {
+          "role": "anchor-A",
+          "transactionIndex": 18,
+          "signature": "28p1bL7Wc8q262ZVLEdQ82qsTyHsD69UFSDyyuKZjDx7cNtzNG9Yy8NeMcDUatazxRBCPUzpmGBzGWYd8VdbiJKG",
+          "feePayer": "GhMUe97fqJEb9QFNfM6N3BbEy4SD2VmeyjUVFBcXuV6V",
+          "ed25519InstructionIndexes": [
+            2
+          ],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            3,
+            4
+          ],
+          "postPythInstructionIndexes": [
+            3
+          ],
+          "updateTwapInstructionIndexes": [
+            4
+          ],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "9bd1ac5b1b26ab8ca5f9def111cf4188b3da45e621b83ae858ed018aef8f96f1",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "Ed25519SigVerify111111111111111111111111111",
+              "byteLength": 16,
+              "dataSha256": "623595ae5ea62a552293f24c6c93a0eba6d63ae2309786ad1597511f106846e4",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 3,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 263,
+              "dataSha256": "5e346eb4a139565f142ee0a3cc1a24edefae6528a38bfabcd5e8a686623662ca",
+              "accountListSha256": "8db6e356bfc2b5982d36d61e20d67d3aed10499d953d08f59607fa1d983de77d"
+            },
+            {
+              "instructionIndex": 4,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 8,
+              "dataSha256": "c90864a15bf48d5725dc2a37666a5ad6bbf4eef4cfd93a3619ad6c89068aec2a",
+              "accountListSha256": "216683f50fb50f240c64f5e6232f602b7c0a00919db86ab5e1102f5759bf782c"
+            }
+          ],
+          "logSha256": "0c2c3038d736f7004daf746e2a93994343884a1ecbdc4b07433185876b56c3f2",
+          "signedMessageSha256": "0d2ab55edcc42a21605c82eef39f23fc9ebd16c629f6f094ef06f394f4d9e5fe"
+        },
+        {
+          "role": "anchor-B",
+          "transactionIndex": 19,
+          "signature": "wEBnbNvsWw6vN8ap7jE2vE3cHyF18UkJYUtmtTY4CUjM2gxCpoVUgPZTVkKFmeuDm5QEEXZq2pkbRZouSRmthim",
+          "feePayer": "GhMUe97fqJEb9QFNfM6N3BbEy4SD2VmeyjUVFBcXuV6V",
+          "ed25519InstructionIndexes": [
+            2
+          ],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            3,
+            4
+          ],
+          "postPythInstructionIndexes": [
+            3
+          ],
+          "updateTwapInstructionIndexes": [
+            4
+          ],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "9bd1ac5b1b26ab8ca5f9def111cf4188b3da45e621b83ae858ed018aef8f96f1",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "Ed25519SigVerify111111111111111111111111111",
+              "byteLength": 16,
+              "dataSha256": "623595ae5ea62a552293f24c6c93a0eba6d63ae2309786ad1597511f106846e4",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 3,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 263,
+              "dataSha256": "5e346eb4a139565f142ee0a3cc1a24edefae6528a38bfabcd5e8a686623662ca",
+              "accountListSha256": "8db6e356bfc2b5982d36d61e20d67d3aed10499d953d08f59607fa1d983de77d"
+            },
+            {
+              "instructionIndex": 4,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 8,
+              "dataSha256": "c90864a15bf48d5725dc2a37666a5ad6bbf4eef4cfd93a3619ad6c89068aec2a",
+              "accountListSha256": "86c55acf13070041fec90a366610549c453f949be8805f6808813041cea594cc"
+            }
+          ],
+          "logSha256": "ea8c7baba2f8f96b575bf883c688cab73c8d1e49300aee81ee008b3cf49e5340",
+          "signedMessageSha256": "0d2ab55edcc42a21605c82eef39f23fc9ebd16c629f6f094ef06f394f4d9e5fe"
+        }
+      ],
+      "conflictEvidenceReference": "output/research/candidate-043c938568ad5e15/candidate-evidence.ndjson#slot-489602971#component-14",
+      "sourceCachePath": "cache/discovery-devnet/slot-489602971.json",
+      "sourceCacheSha256": "d20af433b18b23930fd944341e976dfff5dae58a6cfb561ab25aea0f0a5b4673"
+    },
+    {
+      "slot": 489603031,
+      "componentId": 16,
+      "transactions": [
+        {
+          "role": "native-unresolved",
+          "transactionIndex": 16,
+          "signature": "4TU76EPSrUHfGUtNmCgCPbWGvxUJ2Bb8paENphRygDJyV9XjhW2NkaE8cVVUeVNqCESQkhJQNQn4BWm27Dfqt2d4",
+          "feePayer": "Cg32xAQbEoUEWkud61wxo8598CTtxbj7533gpEKb8DCq",
+          "ed25519InstructionIndexes": [],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            2
+          ],
+          "postPythInstructionIndexes": [],
+          "updateTwapInstructionIndexes": [],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "33fc17d678d14ccb154d42762a6a9860fd92c14fea1f65e89c9fb70b7169c77a",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 84,
+              "dataSha256": "8d944de8dbbbca9275c330660d23454b845c276fb7c008fa6d379a9afbcf436e",
+              "accountListSha256": "221fb0166330d14de48651a6f791200117a4e0d6983010a4efb3a42e411c7bd3"
+            }
+          ],
+          "logSha256": "c79eda13ea3ad23b410e1680b26a4d2e01450de7b8f710fa5402b21a17f35892",
+          "signedMessageSha256": null
+        },
+        {
+          "role": "anchor-C",
+          "transactionIndex": 21,
+          "signature": "2DvXcjZB3b2MkyPS8EtZfkdfSR64aBY4NJyQnEKtxUEM7XbaJ1UkxPfcFfSHe1wNVc4MLgxUYN3EbJRJWN69WqBU",
+          "feePayer": "GhMUe97fqJEb9QFNfM6N3BbEy4SD2VmeyjUVFBcXuV6V",
+          "ed25519InstructionIndexes": [
+            2
+          ],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            3,
+            4
+          ],
+          "postPythInstructionIndexes": [
+            3
+          ],
+          "updateTwapInstructionIndexes": [
+            4
+          ],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "9bd1ac5b1b26ab8ca5f9def111cf4188b3da45e621b83ae858ed018aef8f96f1",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "Ed25519SigVerify111111111111111111111111111",
+              "byteLength": 16,
+              "dataSha256": "623595ae5ea62a552293f24c6c93a0eba6d63ae2309786ad1597511f106846e4",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 3,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 263,
+              "dataSha256": "72610ef80cd63cf22ae3fbefc2ab1b3e8ee9014ff89b3912ce5f7dce561eb4d0",
+              "accountListSha256": "8db6e356bfc2b5982d36d61e20d67d3aed10499d953d08f59607fa1d983de77d"
+            },
+            {
+              "instructionIndex": 4,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 8,
+              "dataSha256": "c90864a15bf48d5725dc2a37666a5ad6bbf4eef4cfd93a3619ad6c89068aec2a",
+              "accountListSha256": "7ddb5722111617550d869560805f238db48c400ebd9e7a3bab3f4a66eb67d844"
+            }
+          ],
+          "logSha256": "e2d420c76c7321665bfc03ad004fdaba526ddab6d87f628ff687a4b9f9ae900b",
+          "signedMessageSha256": "1a89d9aa4c7aa65030a6b15fffaa712173302a49bdd8b291a37aae8288b31732"
+        },
+        {
+          "role": "anchor-B",
+          "transactionIndex": 22,
+          "signature": "nzzHdHZkC6r3zKEZBN7CakS7m23aieyQMPQF9spqRvd6xHPyrz4fbm43ivS1LS9RrnPWywLxYNffyzDxoK8L9Q3",
+          "feePayer": "GhMUe97fqJEb9QFNfM6N3BbEy4SD2VmeyjUVFBcXuV6V",
+          "ed25519InstructionIndexes": [
+            2
+          ],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            3,
+            4
+          ],
+          "postPythInstructionIndexes": [
+            3
+          ],
+          "updateTwapInstructionIndexes": [
+            4
+          ],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "9bd1ac5b1b26ab8ca5f9def111cf4188b3da45e621b83ae858ed018aef8f96f1",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "Ed25519SigVerify111111111111111111111111111",
+              "byteLength": 16,
+              "dataSha256": "623595ae5ea62a552293f24c6c93a0eba6d63ae2309786ad1597511f106846e4",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 3,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 263,
+              "dataSha256": "72610ef80cd63cf22ae3fbefc2ab1b3e8ee9014ff89b3912ce5f7dce561eb4d0",
+              "accountListSha256": "8db6e356bfc2b5982d36d61e20d67d3aed10499d953d08f59607fa1d983de77d"
+            },
+            {
+              "instructionIndex": 4,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 8,
+              "dataSha256": "c90864a15bf48d5725dc2a37666a5ad6bbf4eef4cfd93a3619ad6c89068aec2a",
+              "accountListSha256": "86c55acf13070041fec90a366610549c453f949be8805f6808813041cea594cc"
+            }
+          ],
+          "logSha256": "6f663650cf1ac077c2cf1271753283927a22d2a70ca9d14375497cde914c6108",
+          "signedMessageSha256": "1a89d9aa4c7aa65030a6b15fffaa712173302a49bdd8b291a37aae8288b31732"
+        },
+        {
+          "role": "anchor-A",
+          "transactionIndex": 23,
+          "signature": "5RKU74e1jyYnBU6RaYtssPER8g6rYei8FxgZyyRHgqcFkfGhtJWofvaTrxuPoqx5nm7MzP1vbUdnUmjKmqTvhrdo",
+          "feePayer": "GhMUe97fqJEb9QFNfM6N3BbEy4SD2VmeyjUVFBcXuV6V",
+          "ed25519InstructionIndexes": [
+            2
+          ],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            3,
+            4
+          ],
+          "postPythInstructionIndexes": [
+            3
+          ],
+          "updateTwapInstructionIndexes": [
+            4
+          ],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "9bd1ac5b1b26ab8ca5f9def111cf4188b3da45e621b83ae858ed018aef8f96f1",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "Ed25519SigVerify111111111111111111111111111",
+              "byteLength": 16,
+              "dataSha256": "623595ae5ea62a552293f24c6c93a0eba6d63ae2309786ad1597511f106846e4",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 3,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 263,
+              "dataSha256": "72610ef80cd63cf22ae3fbefc2ab1b3e8ee9014ff89b3912ce5f7dce561eb4d0",
+              "accountListSha256": "8db6e356bfc2b5982d36d61e20d67d3aed10499d953d08f59607fa1d983de77d"
+            },
+            {
+              "instructionIndex": 4,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 8,
+              "dataSha256": "c90864a15bf48d5725dc2a37666a5ad6bbf4eef4cfd93a3619ad6c89068aec2a",
+              "accountListSha256": "216683f50fb50f240c64f5e6232f602b7c0a00919db86ab5e1102f5759bf782c"
+            }
+          ],
+          "logSha256": "e32f30767ac804c4967d371f2de82876f4156023322e0b2ab0314d9274af4439",
+          "signedMessageSha256": "1a89d9aa4c7aa65030a6b15fffaa712173302a49bdd8b291a37aae8288b31732"
+        }
+      ],
+      "conflictEvidenceReference": "output/research/candidate-043c938568ad5e15/candidate-evidence.ndjson#slot-489603031#component-16",
+      "sourceCachePath": "cache/discovery-devnet/slot-489603031.json",
+      "sourceCacheSha256": "786507c49ad0d1b14a3612c3120731e3ac72506d20034c4dbac145f8ce52b21e"
+    },
+    {
+      "slot": 489612991,
+      "componentId": 11,
+      "transactions": [
+        {
+          "role": "native-unresolved",
+          "transactionIndex": 11,
+          "signature": "5hig3H81gyjQmPLZJ8kZ6Zwrs35sATqmXkf8qhHA1fHTjgKDosTnLk8e4ym2Bc1uqWXg8J7fwUcneQPHFFKZc5Kn",
+          "feePayer": "Cg32xAQbEoUEWkud61wxo8598CTtxbj7533gpEKb8DCq",
+          "ed25519InstructionIndexes": [],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            2
+          ],
+          "postPythInstructionIndexes": [],
+          "updateTwapInstructionIndexes": [],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "33fc17d678d14ccb154d42762a6a9860fd92c14fea1f65e89c9fb70b7169c77a",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 84,
+              "dataSha256": "c8b54b31c861cc0c2ad825d4a751a9756c81c4a8383338a37cd8ed751911b042",
+              "accountListSha256": "221fb0166330d14de48651a6f791200117a4e0d6983010a4efb3a42e411c7bd3"
+            }
+          ],
+          "logSha256": "c79eda13ea3ad23b410e1680b26a4d2e01450de7b8f710fa5402b21a17f35892",
+          "signedMessageSha256": null
+        },
+        {
+          "role": "anchor-C",
+          "transactionIndex": 17,
+          "signature": "4XJYXYLpBnSuEjWruNPhgBFLEYij8vBiL5g45x5gD93EY6mQwQEDxVH25Y3KqitLxx9hCY5mAz6q7BReadkidn1c",
+          "feePayer": "GhMUe97fqJEb9QFNfM6N3BbEy4SD2VmeyjUVFBcXuV6V",
+          "ed25519InstructionIndexes": [
+            2
+          ],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            3,
+            4
+          ],
+          "postPythInstructionIndexes": [
+            3
+          ],
+          "updateTwapInstructionIndexes": [
+            4
+          ],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "9bd1ac5b1b26ab8ca5f9def111cf4188b3da45e621b83ae858ed018aef8f96f1",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "Ed25519SigVerify111111111111111111111111111",
+              "byteLength": 16,
+              "dataSha256": "623595ae5ea62a552293f24c6c93a0eba6d63ae2309786ad1597511f106846e4",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 3,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 263,
+              "dataSha256": "7828508b2a3069255d1f8e914897b9fde452b2da65462edf0ea4c148709cb351",
+              "accountListSha256": "8db6e356bfc2b5982d36d61e20d67d3aed10499d953d08f59607fa1d983de77d"
+            },
+            {
+              "instructionIndex": 4,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 8,
+              "dataSha256": "c90864a15bf48d5725dc2a37666a5ad6bbf4eef4cfd93a3619ad6c89068aec2a",
+              "accountListSha256": "7ddb5722111617550d869560805f238db48c400ebd9e7a3bab3f4a66eb67d844"
+            }
+          ],
+          "logSha256": "40baf24447ea89e01f49616b85b44e3b415eea6b79db0949c224615de31e185f",
+          "signedMessageSha256": "f12687b670fddca2744fe63cfe92eccab1fc3245cdc7d1b29c6b2d848e8dc154"
+        },
+        {
+          "role": "anchor-A",
+          "transactionIndex": 18,
+          "signature": "21xQcLoLpYRZDSWk9xRRssae59qsSc5SUXCFwf77KoE5vshvsnpNCP8n6dZcs1HKQzTeHXEAcMKh1JNVFk45mViD",
+          "feePayer": "GhMUe97fqJEb9QFNfM6N3BbEy4SD2VmeyjUVFBcXuV6V",
+          "ed25519InstructionIndexes": [
+            2
+          ],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            3,
+            4
+          ],
+          "postPythInstructionIndexes": [
+            3
+          ],
+          "updateTwapInstructionIndexes": [
+            4
+          ],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "9bd1ac5b1b26ab8ca5f9def111cf4188b3da45e621b83ae858ed018aef8f96f1",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "Ed25519SigVerify111111111111111111111111111",
+              "byteLength": 16,
+              "dataSha256": "623595ae5ea62a552293f24c6c93a0eba6d63ae2309786ad1597511f106846e4",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 3,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 263,
+              "dataSha256": "7828508b2a3069255d1f8e914897b9fde452b2da65462edf0ea4c148709cb351",
+              "accountListSha256": "8db6e356bfc2b5982d36d61e20d67d3aed10499d953d08f59607fa1d983de77d"
+            },
+            {
+              "instructionIndex": 4,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 8,
+              "dataSha256": "c90864a15bf48d5725dc2a37666a5ad6bbf4eef4cfd93a3619ad6c89068aec2a",
+              "accountListSha256": "216683f50fb50f240c64f5e6232f602b7c0a00919db86ab5e1102f5759bf782c"
+            }
+          ],
+          "logSha256": "5ef0c944957e1d088fec2ca558cd5be2009996a0160a337640f7b30c3b93f0ba",
+          "signedMessageSha256": "f12687b670fddca2744fe63cfe92eccab1fc3245cdc7d1b29c6b2d848e8dc154"
+        },
+        {
+          "role": "anchor-B",
+          "transactionIndex": 19,
+          "signature": "35rG7ehvyLMfomoKTFHFTgVyzUs4tsk5VwxCRr6fhzFFqCN4ih2cVtYwRFyn7SvBXRBMiU24Hy6yp1ZU67QQMWqW",
+          "feePayer": "GhMUe97fqJEb9QFNfM6N3BbEy4SD2VmeyjUVFBcXuV6V",
+          "ed25519InstructionIndexes": [
+            2
+          ],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            3,
+            4
+          ],
+          "postPythInstructionIndexes": [
+            3
+          ],
+          "updateTwapInstructionIndexes": [
+            4
+          ],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "9bd1ac5b1b26ab8ca5f9def111cf4188b3da45e621b83ae858ed018aef8f96f1",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "Ed25519SigVerify111111111111111111111111111",
+              "byteLength": 16,
+              "dataSha256": "623595ae5ea62a552293f24c6c93a0eba6d63ae2309786ad1597511f106846e4",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 3,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 263,
+              "dataSha256": "7828508b2a3069255d1f8e914897b9fde452b2da65462edf0ea4c148709cb351",
+              "accountListSha256": "8db6e356bfc2b5982d36d61e20d67d3aed10499d953d08f59607fa1d983de77d"
+            },
+            {
+              "instructionIndex": 4,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 8,
+              "dataSha256": "c90864a15bf48d5725dc2a37666a5ad6bbf4eef4cfd93a3619ad6c89068aec2a",
+              "accountListSha256": "86c55acf13070041fec90a366610549c453f949be8805f6808813041cea594cc"
+            }
+          ],
+          "logSha256": "16a089e586dad3308e56d75360738cffa9de2ecb23c55d600a581ad796d0c5e5",
+          "signedMessageSha256": "f12687b670fddca2744fe63cfe92eccab1fc3245cdc7d1b29c6b2d848e8dc154"
+        }
+      ],
+      "conflictEvidenceReference": "output/research/candidate-043c938568ad5e15/candidate-evidence.ndjson#slot-489612991#component-11",
+      "sourceCachePath": "cache/discovery-devnet/slot-489612991.json",
+      "sourceCacheSha256": "2562121fb9d1ebe408c3e1623c62bf7e1460027c78cf0587be4ca03095a1353c"
+    },
+    {
+      "slot": 489613051,
+      "componentId": 17,
+      "transactions": [
+        {
+          "role": "native-unresolved",
+          "transactionIndex": 17,
+          "signature": "3hQAHAnDfKM4kKqhU2h1zxL2NTyn9w3e2qHZsXjPsx8p5FM7ZkR4HUXudv1YD1oBGSkkzbwM4SQKdZpBdL9J5NWB",
+          "feePayer": "Cg32xAQbEoUEWkud61wxo8598CTtxbj7533gpEKb8DCq",
+          "ed25519InstructionIndexes": [],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            2
+          ],
+          "postPythInstructionIndexes": [],
+          "updateTwapInstructionIndexes": [],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "33fc17d678d14ccb154d42762a6a9860fd92c14fea1f65e89c9fb70b7169c77a",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 84,
+              "dataSha256": "dc2655f988390115a76c92d0b5fc3f4ac636cb34a9b8d277e1ef802a0e1bcede",
+              "accountListSha256": "221fb0166330d14de48651a6f791200117a4e0d6983010a4efb3a42e411c7bd3"
+            }
+          ],
+          "logSha256": "c77cdca5d3ca71dd9c7678cd56bb864ff797755481083fb075ab1fde1602fe6d",
+          "signedMessageSha256": null
+        },
+        {
+          "role": "anchor-C",
+          "transactionIndex": 19,
+          "signature": "2FqT23iYrC88ZimERzi7dCuZaW5EJeEsMrP6UGoKgpV13ucaPLSNvWVkc1H7B7MUhgMQaGgA8WGGWLtLSPScCyjc",
+          "feePayer": "GhMUe97fqJEb9QFNfM6N3BbEy4SD2VmeyjUVFBcXuV6V",
+          "ed25519InstructionIndexes": [
+            2
+          ],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            3,
+            4
+          ],
+          "postPythInstructionIndexes": [
+            3
+          ],
+          "updateTwapInstructionIndexes": [
+            4
+          ],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "9bd1ac5b1b26ab8ca5f9def111cf4188b3da45e621b83ae858ed018aef8f96f1",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "Ed25519SigVerify111111111111111111111111111",
+              "byteLength": 16,
+              "dataSha256": "623595ae5ea62a552293f24c6c93a0eba6d63ae2309786ad1597511f106846e4",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 3,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 263,
+              "dataSha256": "3511cfd17b251a3dccf9adc4a0dc19dd4897d9722973000a66c8a4d09a29a212",
+              "accountListSha256": "8db6e356bfc2b5982d36d61e20d67d3aed10499d953d08f59607fa1d983de77d"
+            },
+            {
+              "instructionIndex": 4,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 8,
+              "dataSha256": "c90864a15bf48d5725dc2a37666a5ad6bbf4eef4cfd93a3619ad6c89068aec2a",
+              "accountListSha256": "7ddb5722111617550d869560805f238db48c400ebd9e7a3bab3f4a66eb67d844"
+            }
+          ],
+          "logSha256": "230cf3b5f97650cdd9944b69c6bee21b325f1ebda9c959590378c04df28cda07",
+          "signedMessageSha256": "a49e36d632d1d1e837546781b406a711572d35b26a9a1be80c83f577b8652a32"
+        },
+        {
+          "role": "anchor-B",
+          "transactionIndex": 20,
+          "signature": "5WxWhRE9xUNVqzEqt9HxQC5WW7qZPbQWbR2Hfgt1FYdFsKhVWgWhqFV1oebNBRxrvD51mKJXMC1kpD9z6bwjavcP",
+          "feePayer": "GhMUe97fqJEb9QFNfM6N3BbEy4SD2VmeyjUVFBcXuV6V",
+          "ed25519InstructionIndexes": [
+            2
+          ],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            3,
+            4
+          ],
+          "postPythInstructionIndexes": [
+            3
+          ],
+          "updateTwapInstructionIndexes": [
+            4
+          ],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "9bd1ac5b1b26ab8ca5f9def111cf4188b3da45e621b83ae858ed018aef8f96f1",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "Ed25519SigVerify111111111111111111111111111",
+              "byteLength": 16,
+              "dataSha256": "623595ae5ea62a552293f24c6c93a0eba6d63ae2309786ad1597511f106846e4",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 3,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 263,
+              "dataSha256": "3511cfd17b251a3dccf9adc4a0dc19dd4897d9722973000a66c8a4d09a29a212",
+              "accountListSha256": "8db6e356bfc2b5982d36d61e20d67d3aed10499d953d08f59607fa1d983de77d"
+            },
+            {
+              "instructionIndex": 4,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 8,
+              "dataSha256": "c90864a15bf48d5725dc2a37666a5ad6bbf4eef4cfd93a3619ad6c89068aec2a",
+              "accountListSha256": "86c55acf13070041fec90a366610549c453f949be8805f6808813041cea594cc"
+            }
+          ],
+          "logSha256": "7736867e3aba29a4fe1370a3e1cf9b83dee4b2ea7c809986d3cb1aec0e191878",
+          "signedMessageSha256": "a49e36d632d1d1e837546781b406a711572d35b26a9a1be80c83f577b8652a32"
+        },
+        {
+          "role": "anchor-A",
+          "transactionIndex": 21,
+          "signature": "4poB1rh3LFc3ibp6Rjg9MLPQn93pD6AYDQEScBCbXHbTWnyaqN5dpbJWj6ucBnohPn1u8MTVvkCMPkbcFg1NwmwX",
+          "feePayer": "GhMUe97fqJEb9QFNfM6N3BbEy4SD2VmeyjUVFBcXuV6V",
+          "ed25519InstructionIndexes": [
+            2
+          ],
+          "bqsInstructionIndexes": [],
+          "velocityInstructionIndexes": [
+            3,
+            4
+          ],
+          "postPythInstructionIndexes": [
+            3
+          ],
+          "updateTwapInstructionIndexes": [
+            4
+          ],
+          "instructionData": [
+            {
+              "instructionIndex": 0,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 5,
+              "dataSha256": "9bd1ac5b1b26ab8ca5f9def111cf4188b3da45e621b83ae858ed018aef8f96f1",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 1,
+              "programId": "ComputeBudget111111111111111111111111111111",
+              "byteLength": 9,
+              "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 2,
+              "programId": "Ed25519SigVerify111111111111111111111111111",
+              "byteLength": 16,
+              "dataSha256": "623595ae5ea62a552293f24c6c93a0eba6d63ae2309786ad1597511f106846e4",
+              "accountListSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "instructionIndex": 3,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 263,
+              "dataSha256": "3511cfd17b251a3dccf9adc4a0dc19dd4897d9722973000a66c8a4d09a29a212",
+              "accountListSha256": "8db6e356bfc2b5982d36d61e20d67d3aed10499d953d08f59607fa1d983de77d"
+            },
+            {
+              "instructionIndex": 4,
+              "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+              "byteLength": 8,
+              "dataSha256": "c90864a15bf48d5725dc2a37666a5ad6bbf4eef4cfd93a3619ad6c89068aec2a",
+              "accountListSha256": "216683f50fb50f240c64f5e6232f602b7c0a00919db86ab5e1102f5759bf782c"
+            }
+          ],
+          "logSha256": "01f4a79eb6624389d0bc980972db1d77cdd79f2456f08ab7d23cdce10da3e8b0",
+          "signedMessageSha256": "a49e36d632d1d1e837546781b406a711572d35b26a9a1be80c83f577b8652a32"
+        }
+      ],
+      "conflictEvidenceReference": "output/research/candidate-043c938568ad5e15/candidate-evidence.ndjson#slot-489613051#component-17",
+      "sourceCachePath": "cache/discovery-devnet/slot-489613051.json",
+      "sourceCacheSha256": "2c6d7fe3e7525a52d915b76cc0e57bb89ebef9b6b402e3fd72815ce43d0496d6"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "cache/discovery-devnet/slot-489572998.json",
+      "purpose": "Candidate dossier input: block-cache",
+      "sha256": "c64b519554b772cd5384916bd6cb058e1eebe3aae502a01df02c4845adf38e18"
+    },
+    {
+      "path": "cache/discovery-devnet/slot-489593012.json",
+      "purpose": "Candidate dossier input: block-cache",
+      "sha256": "37360ec1bf9be854bbfe901bc0045c4a849f21e2af91ba9de0e2c1486430cc18"
+    },
+    {
+      "path": "cache/discovery-devnet/slot-489602971.json",
+      "purpose": "Candidate dossier input: block-cache",
+      "sha256": "d20af433b18b23930fd944341e976dfff5dae58a6cfb561ab25aea0f0a5b4673"
+    },
+    {
+      "path": "cache/discovery-devnet/slot-489603031.json",
+      "purpose": "Candidate dossier input: block-cache",
+      "sha256": "786507c49ad0d1b14a3612c3120731e3ac72506d20034c4dbac145f8ce52b21e"
+    },
+    {
+      "path": "cache/discovery-devnet/slot-489612991.json",
+      "purpose": "Candidate dossier input: block-cache",
+      "sha256": "2562121fb9d1ebe408c3e1623c62bf7e1460027c78cf0587be4ca03095a1353c"
+    },
+    {
+      "path": "cache/discovery-devnet/slot-489613051.json",
+      "purpose": "Candidate dossier input: block-cache",
+      "sha256": "2c6d7fe3e7525a52d915b76cc0e57bb89ebef9b6b402e3fd72815ce43d0496d6"
+    },
+    {
+      "path": "cache/research/candidate-043c938568ad5e15/account-snapshots.raw.json",
+      "purpose": "Candidate dossier input: account-snapshot-cache",
+      "sha256": "49bf9f3880a931c3656e44e5b8c684b09978ec5743fc93eb7ce274978a673391"
+    },
+    {
+      "path": "cache/research/candidate-043c938568ad5e15/sources/admin.json",
+      "purpose": "Candidate dossier input: source-cache",
+      "sha256": "21a5aecbc66d5c91951e1485314132e50679a6067178d77827a44c1853903186"
+    },
+    {
+      "path": "cache/research/candidate-043c938568ad5e15/sources/keeper.json",
+      "purpose": "Candidate dossier input: source-cache",
+      "sha256": "3deda677e0d8547df8cffada5fbe987e3e8784a8b308fd5ce9c83b83ad9c8624"
+    },
+    {
+      "path": "cache/research/candidate-043c938568ad5e15/sources/ottersec-status.json",
+      "purpose": "Candidate dossier input: source-cache",
+      "sha256": "ea31e9c14657d3242aee36b87655b83d2e95fa118976a53a6cd3493b52e55586"
+    },
+    {
+      "path": "cache/research/candidate-043c938568ad5e15/sources/protocol-idl.json",
+      "purpose": "Candidate dossier input: source-cache",
+      "sha256": "45e28431d1441011a5296bd87596ef92678683d64cc6c12ced7b09ba6f5cced2"
+    },
+    {
+      "path": "cache/research/candidate-043c938568ad5e15/sources/protocol-lib.json",
+      "purpose": "Candidate dossier input: source-cache",
+      "sha256": "a01e25292315c024e5dbe076345bf64a7e3051a7a34ee4068428f2fee64f2b38"
+    },
+    {
+      "path": "cache/research/candidate-043c938568ad5e15/sources/protocol-releases.json",
+      "purpose": "Candidate dossier input: source-cache",
+      "sha256": "5ebc202e2dbba0f5b2bd9441dc9d7203a715ea04b391c196596f714cbd5bf201"
+    },
+    {
+      "path": "cache/research/candidate-043c938568ad5e15/sources/protocol-repository.json",
+      "purpose": "Candidate dossier input: source-cache",
+      "sha256": "9f806138e74293e093c5a4d6ed5acb6d74549e51d28b4d4df97459baba1f33b9"
+    },
+    {
+      "path": "cache/research/candidate-043c938568ad5e15/sources/pyth-lazer-oracle.json",
+      "purpose": "Candidate dossier input: source-cache",
+      "sha256": "1d641f81b7671a5aca9cd2a4b5a9129fd2245d9adcf118428e3c08dcf40517e4"
+    },
+    {
+      "path": "cache/research/candidate-043c938568ad5e15/sources/sdk-registry.json",
+      "purpose": "Candidate dossier input: source-cache",
+      "sha256": "b64555aa7af7d1e9a0a1b91cd15acfbf880dc4652e70edbf5c2e925ee9a30b22"
+    },
+    {
+      "path": "cache/research/candidate-043c938568ad5e15/sources/velocity-docs-program-id.json",
+      "purpose": "Candidate dossier input: source-cache",
+      "sha256": "c23de300106a78bb85d38f71e20ea9fc9f1c98c5d155c16c523a9cdf1804ca3a"
+    },
+    {
+      "path": "cache/research/candidate-043c938568ad5e15/sources/verified-build-record.json",
+      "purpose": "Candidate dossier input: source-cache",
+      "sha256": "402d7817a5b5e88d8e1c932bf71a77cbde9c65980881fc824a0add2314044b0d"
+    },
+    {
+      "path": "cache/research/velocity-binary/build/build-environment.raw.json",
+      "purpose": "Bounded local reproducible-build environment probe",
+      "sha256": "2c7853bd0b0c58f98130c62a520d2aebda61111082edc41a21d4a1000fe9db89"
+    },
+    {
+      "path": "cache/research/velocity-binary/npm/velocity-exchange-sdk-0.17.0.tgz",
+      "purpose": "Official maintained SDK tarball and velocity-v1 repository metadata fallback",
+      "sha256": "22b3c245670892a088ff100300925fff701d0ea136b840952285d760e2f59a88"
+    },
+    {
+      "path": "cache/research/velocity-binary/rpc/deployment-history.raw.json",
+      "purpose": "Read-only RPC Program/ProgramData signatures, deployment transactions, and node version",
+      "sha256": "0e465af53c244d7f057aa01d4b10fe54b7a78a9cd6f6433f974f163be3f321b2"
+    },
+    {
+      "path": "cache/research/velocity-binary/source/loader-source.raw.json",
+      "purpose": "Pinned authoritative Agave upgradeable-loader source",
+      "sha256": "04fed1ac8927914c1178a0a922867521256fa17835b483cddd4e7dedc8d4e307"
+    },
+    {
+      "path": "cache/research/velocity-binary/source/source-history.raw.json",
+      "purpose": "Deterministic full-ref official Git archaeology cache",
+      "sha256": "198a7aa0ff3e0d3d7ece31e5dbc45e9c92a66f5a9fcb2b4ff7d63484110e84c7"
+    },
+    {
+      "path": "output/discovery-devnet/candidates/003-candidate-043c938568ad5e15/analysis.json",
+      "purpose": "Candidate dossier input: materialized-analysis",
+      "sha256": "2dc73035e33e45a12ec0f6576a9496e966afdf3e9db78bcc34fe6f0354ab0542"
+    },
+    {
+      "path": "output/discovery-devnet/candidates/003-candidate-043c938568ad5e15/report.html",
+      "purpose": "Candidate dossier input: materialized-report",
+      "sha256": "1f7eea5e72557912a2657e51826c620a4f57a50217f6f52c771a5d4976239ffb"
+    },
+    {
+      "path": "output/discovery-devnet/discovery-index.json",
+      "purpose": "Candidate dossier input: discovery-index",
+      "sha256": "0ac57c17f08f79ef829818f5ca604fb81536dbf75117ac07c3f98dd15765b3e0"
+    },
+    {
+      "path": "output/discovery-devnet/discovery-plan.json",
+      "purpose": "Candidate dossier input: discovery-plan",
+      "sha256": "307708755bf54e6ff81a95808a83cfd8f95a4167ec71dac22e1b8338d86dd250"
+    },
+    {
+      "path": "output/research/candidate-043c938568ad5e15/candidate-dossier.json",
+      "purpose": "Prior Candidate #3 decision",
+      "sha256": "ca6d32743c639563d749420a0e73e8902399ef6e2d213c2474ea1aa1069658af"
+    },
+    {
+      "path": "output/research/candidate-043c938568ad5e15/candidate-evidence.ndjson",
+      "purpose": "Prior exact occurrence evidence",
+      "sha256": "0ef770f1c878630d3cfc105a51410ae8f8ae24667fbd82b883d13ec377372792"
+    },
+    {
+      "path": "output/research/candidate-043c938568ad5e15/instruction-layout.json",
+      "purpose": "Prior instruction/account layout",
+      "sha256": "ca59fc7c00a17fb401eb268c86eeb7fe793b9524ee4f2af94c228f99c74a9e1c"
+    },
+    {
+      "path": "output/research/candidate-043c938568ad5e15/signer-message-summary.json",
+      "purpose": "Prior signer/message totals",
+      "sha256": "da648ab9c8f3f0adf2754b3a2dbc45230077a6783299b684eb1bec003bc1c9db"
+    },
+    {
+      "path": "output/research/candidate-ff30780de8479976/candidate-dossier.json",
+      "purpose": "Candidate dossier input: candidate-one-dossier",
+      "sha256": "7690e63de201d0bd43d6420d69105f0564403fe6b53330327c6eee3fbd072398"
+    },
+    {
+      "path": "output/research/candidate-ff30780de8479976/candidate-evidence.ndjson",
+      "purpose": "Candidate dossier input: candidate-one-evidence",
+      "sha256": "2050ee1d53683ee3555acb4c687a4c3a0c3d021c55b22c21382c073670281907"
+    },
+    {
+      "path": "output/research/candidate-ff30780de8479976/source-manifest.json",
+      "purpose": "Candidate dossier input: candidate-one-source-manifest",
+      "sha256": "6cf6f1a571f061bb5e355300d7e9416d053bf85d0ba470ef546dd3dc9db4437e"
+    },
+    {
+      "path": "output/research/sourceability/sourceability-index.json",
+      "purpose": "Protected sourceability ordering",
+      "sha256": "f060b7cbd4e5abce40dc87c7c764e53b274590f5fb94e2186161f631a2279213"
+    },
+    {
+      "path": "output/research/velocity-binary/binary-fingerprint-matrix.json",
+      "purpose": "Prior binary fingerprints",
+      "sha256": "16b2a179e6b34f464e2a97289c0e0362170f7c0191dc6d78d1a5a13bc0663723"
+    },
+    {
+      "path": "output/research/velocity-binary/deployed-programdata-metadata.json",
+      "purpose": "Established executable extraction",
+      "sha256": "0ec911ff50381ae5ac6f3eab95c7d417af7a1a1dd08eb4fdd3ca9a9391afa180"
+    },
+    {
+      "path": "output/research/velocity-binary/deployed-section-manifest.json",
+      "purpose": "ELF section boundaries",
+      "sha256": "31310d83ee9750edac35a6c9a6440dec3f013a29953c7c4faabbf091abf768cc"
+    },
+    {
+      "path": "output/research/velocity-binary/deployed-strings.txt",
+      "purpose": "Deterministic deployed strings",
+      "sha256": "ce731b6c46490470a48e62c67cc086d0cf523ea4fb069bbaccfdcf2992c054ea"
+    },
+    {
+      "path": "output/research/velocity-binary/deployment-history.json",
+      "purpose": "Established sample binary continuity",
+      "sha256": "9a8997983bf9a5fe11e5a4eeeb062f11c70d9fde16d2f710465bd2a1ea60acd7"
+    },
+    {
+      "path": "output/research/velocity-binary/source-history.json",
+      "purpose": "Bounded public source history",
+      "sha256": "58090ad8a963296d49381c4e48cdca05a88c6147c5f10f9ba0cf03b5817c5702"
+    },
+    {
+      "path": "output/research/velocity-binary/variant-correspondence.json",
+      "purpose": "Prior per-variant correspondence",
+      "sha256": "68a657af5f0723898bf3a710291472731f9ba8db9dda0ca369c486e044ded16a"
+    },
+    {
+      "path": "research-plans/candidate-043c938568ad5e15.json",
+      "purpose": "Candidate #3 exact-occurrence manifest",
+      "sha256": "4b669440b96f9ca814a2a335a4fcb4e2d9d6b23d5b5f6fa22dc16900a86a07c9"
+    },
+    {
+      "path": "research-plans/sourceability-milestone-2.0.json",
+      "purpose": "Milestone 2.0 sourceability manifest",
+      "sha256": "664d15b7b9a01343121eff44e74a22118142aa7cda7d3f62c0520a38abf789d9"
+    },
+    {
+      "path": "research-plans/velocity-binary-milestone-2.1.json",
+      "purpose": "Milestone 2.1 executable/source manifest",
+      "sha256": "bccac149eb1fd9dec8f40ace6e82c452a10a48cde1da4495d9916916c167360c"
+    }
+  ],
+  "sourceBlobs": [
+    {
+      "repository": "cache/research/velocity-binary/repositories/protocol-v2",
+      "repositoryUrl": "https://github.com/velocity-exchange/protocol-v2",
+      "commit": "f7df335599c194bc759cebf682a11bcad6bd5ed2",
+      "path": "programs/velocity/src/instructions/pyth_lazer_oracle.rs",
+      "sha256": "1e740cf67dd6607ae4500719f855d2c394e0f1893f7008cbc6c2b1f01187a14a",
+      "purpose": "Velocity source-family PostPyth handler and comparison/write branch"
+    },
+    {
+      "repository": "cache/research/velocity-binary/repositories/protocol-v2",
+      "repositoryUrl": "https://github.com/velocity-exchange/protocol-v2",
+      "commit": "f7df335599c194bc759cebf682a11bcad6bd5ed2",
+      "path": "programs/velocity/src/instructions/keeper.rs",
+      "sha256": "583bd3f33f9e3276debbab31cfc5f0c9623107f1676d398c53419d36846612ee",
+      "purpose": "Velocity source-family UpdatePerpBidAskTwap handler"
+    },
+    {
+      "repository": "cache/research/velocity-binary/repositories/protocol-v2",
+      "repositoryUrl": "https://github.com/velocity-exchange/protocol-v2",
+      "commit": "f7df335599c194bc759cebf682a11bcad6bd5ed2",
+      "path": "programs/velocity/src/state/pyth_lazer_oracle.rs",
+      "sha256": "ab2f602f3d245b790c8a956ac4e0c78239b15fd669e9398f54cb8ad48478005e",
+      "purpose": "Velocity oracle account layout, PDA seed, and storage ID"
+    },
+    {
+      "repository": "cache/research/velocity-binary/repositories/protocol-v2",
+      "repositoryUrl": "https://github.com/velocity-exchange/protocol-v2",
+      "commit": "f7df335599c194bc759cebf682a11bcad6bd5ed2",
+      "path": "programs/pyth-lazer/src/lib.rs",
+      "sha256": "d5efe329ceb53afa93a66817e9133f15b449ff6e876f40e5104f6f456aa8e0f7",
+      "purpose": "Historical source-family property discriminants and channel IDs"
+    },
+    {
+      "repository": "cache/research/velocity-binary/repositories/protocol-v2",
+      "repositoryUrl": "https://github.com/velocity-exchange/protocol-v2",
+      "commit": "f7df335599c194bc759cebf682a11bcad6bd5ed2",
+      "path": "programs/pyth-lazer/src/payload.rs",
+      "sha256": "dcebb2ab2054d162384df1b8f99c3f6b92df97fb986dd46974071a42c17e3926",
+      "purpose": "Historical source-family payload serialization"
+    },
+    {
+      "repository": "cache/research/velocity-anchor-bundle/repositories/pyth-lazer-public",
+      "repositoryUrl": "https://github.com/pyth-network/pyth-lazer-public",
+      "commit": "651247025d547b6b832ee0ebdafd0207878d720d",
+      "path": "sdk/rust/protocol/src/lib.rs",
+      "sha256": "393929a68fdbbc4f7bde358ef670049add8ac83f8dc9210830068a979ba79e1a",
+      "purpose": "Pyth-maintained property discriminants and channel IDs"
+    },
+    {
+      "repository": "cache/research/velocity-anchor-bundle/repositories/pyth-lazer-public",
+      "repositoryUrl": "https://github.com/pyth-network/pyth-lazer-public",
+      "commit": "651247025d547b6b832ee0ebdafd0207878d720d",
+      "path": "sdk/rust/protocol/src/payload.rs",
+      "sha256": "807e51831ee61a0ece0fadb380dac1cf91266cfe9248014e722bd0009bab068c",
+      "purpose": "Pyth-maintained payload serialization including FeedUpdateTimestamp"
+    },
+    {
+      "repository": "cache/research/velocity-anchor-bundle/repositories/pyth-lazer-public",
+      "repositoryUrl": "https://github.com/pyth-network/pyth-lazer-public",
+      "commit": "651247025d547b6b832ee0ebdafd0207878d720d",
+      "path": "sdk/rust/protocol/src/message.rs",
+      "sha256": "00f04abd7f97d662834648e44422f7893aace457024fa131fca42826ec002bfb",
+      "purpose": "Pyth-maintained Solana signed-message envelope"
+    }
+  ],
+  "preservedArtifactHashes": {
+    "output/analysis.json": "690784c9aa1454e53e4375ff1c600cdcc3389175f205e4db29a9743bab92c1f9",
+    "output/report.html": "299a8e75061b1a81740e5aa3fa05786040a0010ff71d3f90149fe2d6d5ab0761",
+    "output/cross-payer-real/analysis.json": "3d2dedf405f0dfda7f411bb3f240e8a05c58b56d7502ece8d7e1dd61914ab6b5",
+    "output/cross-payer-real/report.html": "7854e16898bd6207681fdbfd2ce1724ae3165b365840b22683dfd105fdcc1041",
+    "output/cross-payer-teaching/analysis.json": "9b57a0260429b16730c9cc0b0645c4d506a7c152e00fb22aacb80e61642e84ae",
+    "output/cross-payer-teaching/report.html": "02985274705b2e03f34ba1b32e248a599cc3fbad85d28cba53b46efd79e5af7c",
+    "output/range-488638500-488638508/range-analysis.json": "27bddc7cd8dc045a9a4b3a24f50fdb33a7a521de12598fdd501942f570e8f433",
+    "output/range-488638500-488638508/range-report.html": "31f0190626429c70695d35514fa033507314d986f87ceccd9f25e263309bca3a",
+    "output/discovery-devnet/discovery-index.json": "0ac57c17f08f79ef829818f5ca604fb81536dbf75117ac07c3f98dd15765b3e0",
+    "output/research/candidate-ff30780de8479976/candidate-dossier.json": "7690e63de201d0bd43d6420d69105f0564403fe6b53330327c6eee3fbd072398",
+    "output/research/candidate-043c938568ad5e15/candidate-dossier.json": "ca6d32743c639563d749420a0e73e8902399ef6e2d213c2474ea1aa1069658af",
+    "output/research/candidate-043c938568ad5e15/candidate-evidence.ndjson": "0ef770f1c878630d3cfc105a51410ae8f8ae24667fbd82b883d13ec377372792",
+    "output/research/candidate-043c938568ad5e15/account-snapshots.json": "c4f5aa9162017256ef535d3b19f2456cf68bf86bfece32c6aa302c666086da94",
+    "output/research/candidate-043c938568ad5e15/instruction-layout.json": "ca59fc7c00a17fb401eb268c86eeb7fe793b9524ee4f2af94c228f99c74a9e1c",
+    "output/research/candidate-043c938568ad5e15/signer-message-summary.json": "da648ab9c8f3f0adf2754b3a2dbc45230077a6783299b684eb1bec003bc1c9db",
+    "output/research/candidate-043c938568ad5e15/source-manifest.json": "2ecfca53a1e505a1cda4a3b7a6c6fb422486ecd23bf00bd6f6cdfe3917f92b79",
+    "output/research/sourceability/sourceability-index.json": "f060b7cbd4e5abce40dc87c7c764e53b274590f5fb94e2186161f631a2279213",
+    "output/research/sourceability/program-family-map.json": "d0c3b6a16846ef777f66c67b147ef6ba1f8c9febd8b02bc522e44afff49d778b",
+    "output/research/velocity-binary/deployed-programdata-metadata.json": "0ec911ff50381ae5ac6f3eab95c7d417af7a1a1dd08eb4fdd3ca9a9391afa180",
+    "output/research/velocity-binary/deployed-executable-metadata.json": "a2a48f328231ca87cb271f71fb83300002764034a39568da39aea1ace4e93f72",
+    "output/research/velocity-binary/deployed-section-manifest.json": "31310d83ee9750edac35a6c9a6440dec3f013a29953c7c4faabbf091abf768cc",
+    "output/research/velocity-binary/deployed-strings.txt": "ce731b6c46490470a48e62c67cc086d0cf523ea4fb069bbaccfdcf2992c054ea",
+    "output/research/velocity-binary/source-history.json": "58090ad8a963296d49381c4e48cdca05a88c6147c5f10f9ba0cf03b5817c5702",
+    "output/research/velocity-binary/build-attempts.json": "53e7e5f89b63c9821d2be7528a9f8936c434af1aa400dc743f0c7e77a7b786e2",
+    "output/research/velocity-binary/binary-fingerprint-matrix.json": "16b2a179e6b34f464e2a97289c0e0362170f7c0191dc6d78d1a5a13bc0663723",
+    "output/research/velocity-binary/variant-correspondence.json": "68a657af5f0723898bf3a710291472731f9ba8db9dda0ca369c486e044ded16a",
+    "output/research/velocity-binary/deployment-history.json": "9a8997983bf9a5fe11e5a4eeeb062f11c70d9fde16d2f710465bd2a1ea60acd7"
+  },
+  "offlineReplay": {
+    "command": "npm run research-velocity-anchor-bundle -- --plan research-plans/velocity-anchor-bundle-milestone-2.2.json --offline",
+    "cacheFirst": true,
+    "networkRequestsWhenOffline": 0
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "2.5",
+  "expectedMilestone24Outcome": "observed-order-equality-dependency-and-joint-ablation-established",
+  "outputDirectory": "output/research/velocity-full-block-propagation",
+  "targets": [
+    {"slot":489572998,"componentId":1,"transactionIndexes":[1,2,3,24],"blockPath":"cache/discovery-devnet/slot-489572998.json","sha256":"c64b519554b772cd5384916bd6cb058e1eebe3aae502a01df02c4845adf38e18"},
+    {"slot":489593012,"componentId":17,"transactionIndexes":[17,21,22,23],"blockPath":"cache/discovery-devnet/slot-489593012.json","sha256":"37360ec1bf9be854bbfe901bc0045c4a849f21e2af91ba9de0e2c1486430cc18"},
+    {"slot":489602971,"componentId":14,"transactionIndexes":[14,17,18,19],"blockPath":"cache/discovery-devnet/slot-489602971.json","sha256":"d20af433b18b23930fd944341e976dfff5dae58a6cfb561ab25aea0f0a5b4673"},
+    {"slot":489603031,"componentId":16,"transactionIndexes":[16,21,22,23],"blockPath":"cache/discovery-devnet/slot-489603031.json","sha256":"786507c49ad0d1b14a3612c3120731e3ac72506d20034c4dbac145f8ce52b21e"},
+    {"slot":489612991,"componentId":11,"transactionIndexes":[11,17,18,19],"blockPath":"cache/discovery-devnet/slot-489612991.json","sha256":"2562121fb9d1ebe408c3e1623c62bf7e1460027c78cf0587be4ca03095a1353c"},
+    {"slot":489613051,"componentId":17,"transactionIndexes":[17,19,20,21],"blockPath":"cache/discovery-devnet/slot-489613051.json","sha256":"2c6d7fe3e7525a52d915b76cc0e57bb89ebef9b6b402e3fd72815ce43d0496d6"}
+  ],
+  "inputs": [
+    {"path":"output/research/velocity-equality-dependency/velocity-equality-dependency-model.json","sha256":"5b854ece076ab14dd4641c676da1003bc745bd727ff5216e2d29bd086686a59a"},
+    {"path":"output/research/velocity-equality-dependency/velocity-dependency-layer-summary.json","sha256":"a0ea66b0d5153f07b304ed1a519122f5204f03226f5d1205180245fe6bab7a7d"},
+    {"path":"output/research/velocity-anchor-bundle/anchor-conflict-attribution.json","sha256":"650489a3a29f996f37deda1100b7ef2af44a5d80720dfb0dac935daac0ce278c"}
+  ]
+}

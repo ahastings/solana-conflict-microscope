@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "2.4",
+  "expectedOutcome": "equality-branch-byte-identical-established",
+  "expectedExecutableSha256": "89d757b837724ab552d1ebf719245e33f9f93b722cb4331b5eec55202d94ca5c",
+  "inputs": [
+    { "path": "output/research/velocity-anchor-bundle/anchor-conflict-attribution.json", "sha256": "650489a3a29f996f37deda1100b7ef2af44a5d80720dfb0dac935daac0ce278c" },
+    { "path": "output/research/velocity-anchor-bundle/anchor-bundle-dossier.json", "sha256": "d4c54c3cf2c9c5e9a62d906878f30ab0786368cad8736df2a5a33883d59fa9d8" },
+    { "path": "output/research/velocity-equality-replay/branch-replay-results.json", "sha256": "3d30ed3f528ffa7f1c8f603924418322a5aeafb967f6167be5d1712ecdf8f28f" },
+    { "path": "output/research/velocity-equality-replay/oracle-state-diffs.json", "sha256": "4d08488ac70430a28cceed2be42f73548b7d12f9e6c7eb504b89756b6f56904f" },
+    { "path": "output/research/velocity-equality-replay/timestamp-field-validation.json", "sha256": "33e616bcfef58e8fe377274e70f60d7e1300567a785910e9b5001d6429639a68" }
+  ]
+}

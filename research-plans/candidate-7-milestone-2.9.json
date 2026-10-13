@@ -1,0 +1,10 @@
+{
+  "schemaVersion":"2.9","candidateId":"candidate-305e6177058fbf49","discoveryRank":7,
+  "inputs":[
+    {"path":"output/discovery-devnet/discovery-index.json","sha256":"0ac57c17f08f79ef829818f5ca604fb81536dbf75117ac07c3f98dd15765b3e0"},
+    {"path":"output/research/sourceability/sourceability-index.json","sha256":"f060b7cbd4e5abce40dc87c7c764e53b274590f5fb94e2186161f631a2279213"},
+    {"path":"output/research/candidate-b1cc5e297f33e545/candidate-6-dossier.json","sha256":"f59d4b9ff9173855bdbdb40d2e52814814f1c94b4823bab9c92fec17fd5031df"},
+    {"path":"output/research/candidate-b1cc5e297f33e545/candidate-6-conflict-attribution.json","sha256":"31570f7f717ce87e71e326998efbd1ce9794bd304a00790315005c6a002b1b16"}
+  ],
+  "occurrences":[{"slot":489592970,"componentId":3,"transactionIndexes":[3,4,6,8,10,11],"blockPath":"cache/discovery-devnet/slot-489592970.json","sha256":"3454b88a1a3195f2cdd13571356dc5bfc02599ff7a940ae7f9a0711cd2f9bcc3"}]
+}

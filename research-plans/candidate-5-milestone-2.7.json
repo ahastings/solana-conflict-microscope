@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "2.7",
+  "candidateId": "candidate-be8750c7a73d9c2c",
+  "discoveryRank": 5,
+  "expectedMilestone26Outcome": "infrastructure-or-token-serialization-not-semantic-candidate",
+  "inputs": [
+    {"path":"output/discovery-devnet/discovery-index.json","sha256":"0ac57c17f08f79ef829818f5ca604fb81536dbf75117ac07c3f98dd15765b3e0"},
+    {"path":"output/research/sourceability/sourceability-index.json","sha256":"f060b7cbd4e5abce40dc87c7c764e53b274590f5fb94e2186161f631a2279213"},
+    {"path":"output/research/candidate-df7d92f4a2196698/candidate-4-dossier.json","sha256":"56b909e5efc2efdd76067f6ec02f58f3a1d6d72a0fe253c7b7b158b4a67d388a"}
+  ],
+  "occurrences": [
+    {"slot":489582977,"componentId":1,"transactionIndexes":[1,7,11],"blockPath":"cache/discovery-devnet/slot-489582977.json","sha256":"43b8bbc49ce220f1e3abb1d6d7b1e4dcbba744f296b0bf5c88859ba1b209c318"},
+    {"slot":489582991,"componentId":16,"transactionIndexes":[20,32,33],"blockPath":"cache/discovery-devnet/slot-489582991.json","sha256":"4d9842475dbbf6997849bd16ea53ecbe365caf934a2d0a74b2e378ec8d81734a"},
+    {"slot":489583020,"componentId":17,"transactionIndexes":[23,24,25],"blockPath":"cache/discovery-devnet/slot-489583020.json","sha256":"a85e967608b4dd27cf3e710135891ae8a3074dec203bf7fe44b62be39734a766"}
+  ]
+}

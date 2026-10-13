@@ -1,0 +1,325 @@
+{
+  "schemaVersion": "2.3",
+  "generatedAt": "2026-08-30T00:00:00.000Z",
+  "cluster": "devnet",
+  "outputDirectory": "output/research/velocity-equality-replay",
+  "documentationPath": "docs/research/VELOCITY-EQUALITY-BRANCH-REPLAY.md",
+  "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+  "expectedExecutableSha256": "89d757b837724ab552d1ebf719245e33f9f93b722cb4331b5eec55202d94ca5c",
+  "deployedElf": {
+    "path": "cache/research/velocity-equality-replay/velocity-deployed.so",
+    "derivedFrom": "cache/research/candidate-043c938568ad5e15/account-snapshots.raw.json#HkRf36jvUB32dnHjHqpMnPcKJhUP2TUKJTH7RDTifJm7",
+    "sha256": "89d757b837724ab552d1ebf719245e33f9f93b722cb4331b5eec55202d94ca5c"
+  },
+  "representative": {
+    "slot": 489572998,
+    "componentId": 1,
+    "role": "anchor-A",
+    "transactionSignature": "4rK8SP59vrAd4v7KpcYh4S8HD9iuSWKQJyroV9VRWTHvSmEmXvXqscwMur5jxjRFnrf1ZBhK7xJnvRpdDUbxNNs2",
+    "priorDossierPath": "output/research/velocity-anchor-bundle/anchor-bundle-dossier.json"
+  },
+  "accountSnapshotPath": "cache/research/candidate-043c938568ad5e15/account-snapshots.raw.json",
+  "runtimeProbe": {
+    "path": "cache/research/velocity-equality-replay/runtime/runtime-probe.raw.json",
+    "sha256": "17a814a3cabab9b4b25cd328f38cd25e2db9277ee3796b2608847a452043cc89"
+  },
+  "linuxReplayEvidence": {
+    "path": "cache/research/velocity-equality-replay/runtime/linux-exact-replay.raw.json",
+    "sha256": "857cc9381a5f8ad91be6d57455d8c737b07878b509b9a21046a0332fe48369d4"
+  },
+  "fixtureAccountPins": [
+    {
+      "address": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "lamports": "1141440",
+      "executable": true,
+      "dataLength": 36,
+      "dataSha256": "33f402bf0387b7b48283f26260ba7e7af6bfa1d4b3abd3778f200a128ce5a5ab",
+      "source": "authentic-cached-account"
+    },
+    {
+      "address": "HkRf36jvUB32dnHjHqpMnPcKJhUP2TUKJTH7RDTifJm7",
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "lamports": "42111967200",
+      "executable": false,
+      "dataLength": 6050442,
+      "dataSha256": "618011650ffeed486053d25aa439634ab765c15af24741ef3c32bcd026db5222",
+      "source": "authentic-cached-account"
+    },
+    {
+      "address": "GhMUe97fqJEb9QFNfM6N3BbEy4SD2VmeyjUVFBcXuV6V",
+      "owner": "11111111111111111111111111111111",
+      "lamports": "35904569901",
+      "executable": false,
+      "dataLength": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "authentic-cached-account"
+    },
+    {
+      "address": "3rdJbqfnagQ4yx9HXJViD4zc4xpiSqmFsKpPuSCQVyQL",
+      "owner": "pytd2yyk641x7ak7mkaasSJVXh6YYZnC7wTmtgAyxPt",
+      "lamports": "3542640",
+      "executable": false,
+      "dataLength": 381,
+      "dataSha256": "bc95799804292206529561227b9c376c6de09fd3f9d463aed94c275f30b36cbe",
+      "source": "authentic-cached-account"
+    },
+    {
+      "address": "2k3UHX6ehRFzx5fTVvbL6FwXhMjkucjJDL9MuVKLo8TV",
+      "owner": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+      "lamports": "1224960",
+      "executable": false,
+      "dataLength": 48,
+      "dataSha256": "09ff09c71be820e0830d89e5c69e33957759b059344d62c90f01b8c3c4e14fa7",
+      "source": "authentic-cached-account"
+    },
+    {
+      "address": "J7Fp8iTKuKdCM7PnzqHXTdTo5Jr7ykAmiDyvpz58GJGZ",
+      "owner": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+      "lamports": "1224960",
+      "executable": false,
+      "dataLength": 48,
+      "dataSha256": "bb3e5a444502825969108a2480a648287e151b37a74e5a7d95c78f7769b18f5a",
+      "source": "authentic-cached-account"
+    },
+    {
+      "address": "6wQ5RiQ7usJ3TqYZSiuAPZHrVCeSWNrvace84khDKEmH",
+      "owner": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+      "lamports": "1224960",
+      "executable": false,
+      "dataLength": 48,
+      "dataSha256": "e645c17ec85e5dfc742d45da382051be554472d7d3127dce5b2a342f915e76f0",
+      "source": "authentic-cached-account"
+    },
+    {
+      "address": "Sysvar1nstructions1111111111111111111111111",
+      "owner": "Sysvar1111111111111111111111111111111111111",
+      "lamports": "0",
+      "executable": false,
+      "dataLength": 858,
+      "dataSha256": "87c38ee2b9692bb13fae05d0ac5bf8a65492a67a063e0b2879e399ec8225e770",
+      "source": "authoritative-serialization"
+    }
+  ],
+  "instructionsSysvar": {
+    "currentInstructionIndex": 3,
+    "dataSha256": "87c38ee2b9692bb13fae05d0ac5bf8a65492a67a063e0b2879e399ec8225e770",
+    "dataLength": 858,
+    "authoritativeCrate": "solana-instructions-sysvar",
+    "authoritativeVersion": "3.0.0"
+  },
+  "instructionFixture": {
+    "instructions": [
+      {
+        "index": 0,
+        "name": "ComputeBudget::SetComputeUnitLimit",
+        "programId": "ComputeBudget111111111111111111111111111111",
+        "accounts": [],
+        "dataHex": "02400d0300",
+        "dataSha256": "9bd1ac5b1b26ab8ca5f9def111cf4188b3da45e621b83ae858ed018aef8f96f1"
+      },
+      {
+        "index": 1,
+        "name": "ComputeBudget::SetComputeUnitPrice",
+        "programId": "ComputeBudget111111111111111111111111111111",
+        "accounts": [],
+        "dataHex": "031027000000000000",
+        "dataSha256": "845e67555bf8fd0d801600ca8357d38acc930484d9038f6342caf272bea62861"
+      },
+      {
+        "index": 2,
+        "name": "Ed25519",
+        "programId": "Ed25519SigVerify111111111111111111111111111",
+        "accounts": [],
+        "dataHex": "01001000030050000300720095000300",
+        "dataSha256": "623595ae5ea62a552293f24c6c93a0eba6d63ae2309786ad1597511f106846e4"
+      },
+      {
+        "index": 3,
+        "name": "PostPythLazerOracleUpdate",
+        "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+        "accounts": [
+          {
+            "position": 0,
+            "address": "GhMUe97fqJEb9QFNfM6N3BbEy4SD2VmeyjUVFBcXuV6V",
+            "signer": true,
+            "writable": true
+          },
+          {
+            "position": 1,
+            "address": "3rdJbqfnagQ4yx9HXJViD4zc4xpiSqmFsKpPuSCQVyQL",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "position": 2,
+            "address": "Sysvar1nstructions1111111111111111111111111",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "position": 3,
+            "address": "2k3UHX6ehRFzx5fTVvbL6FwXhMjkucjJDL9MuVKLo8TV",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "position": 4,
+            "address": "J7Fp8iTKuKdCM7PnzqHXTdTo5Jr7ykAmiDyvpz58GJGZ",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "position": 5,
+            "address": "6wQ5RiQ7usJ3TqYZSiuAPZHrVCeSWNrvace84khDKEmH",
+            "signer": false,
+            "writable": true
+          }
+        ],
+        "dataHex": "daedaaf5278fa621fb000000b9011a82e1fc591d7a4ba10782b3ea1120477c1212bad68426d52855677b2b21e00fae30a8cab8ae2ad85dac7dcf052fd890ae2cd617d941f5343a48151309d83c8ad50280efc1f480c5615af3fb673d42287e993da9fbc3506b6e41dfa32950820c2e6c950075d3c79340435b62225a06000303060000000500d4c61669020000000254711a690200000001374b12690200000004f8ff0c0140435b62225a0600010000000500081ab84c0b0700000259dd22500b07000001dfba39470b07000004f8ff0c0140435b62225a06000200000005003bf4488038000000025394508038000000012c5241803800000004f8ff0c0140435b62225a0600",
+        "dataSha256": "563a73a52513d1023cc324dbf7b14f828b07d4f0ea354cb00d42ff9827501c7b"
+      },
+      {
+        "index": 4,
+        "name": "UpdatePerpBidAskTwap",
+        "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+        "accounts": [
+          {
+            "position": 0,
+            "address": "2etx5NvPNxeMZ7EfHE6GjJfW2imRYEUANehNS1WB4CVW",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "position": 1,
+            "address": "Bx7JoyYAmBLDPnEdQsPUEhs2dDu4Ga5PoW5BhhhAcChg",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "position": 2,
+            "address": "6wQ5RiQ7usJ3TqYZSiuAPZHrVCeSWNrvace84khDKEmH",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "position": 3,
+            "address": "9b3LcNmWTjNhCuMVNC6i4yzYtsx5UncHCDtqSTdAMcaT",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "position": 4,
+            "address": "GhMUe97fqJEb9QFNfM6N3BbEy4SD2VmeyjUVFBcXuV6V",
+            "signer": true,
+            "writable": true
+          }
+        ],
+        "dataHex": "f717ff41d45addc2",
+        "dataSha256": "c90864a15bf48d5725dc2a37666a5ad6bbf4eef4cfd93a3619ad6c89068aec2a"
+      }
+    ],
+    "ed25519": {
+      "instructionRawHex": "01001000030050000300720095000300",
+      "instructionSha256": "623595ae5ea62a552293f24c6c93a0eba6d63ae2309786ad1597511f106846e4",
+      "signatureHex": "e1fc591d7a4ba10782b3ea1120477c1212bad68426d52855677b2b21e00fae30a8cab8ae2ad85dac7dcf052fd890ae2cd617d941f5343a48151309d83c8ad502",
+      "signatureSha256": "dc51aed922ebbf78b88f6dd1e037ea35b6796f52c4301f6709c2496d38450f01",
+      "publicKeyHex": "80efc1f480c5615af3fb673d42287e993da9fbc3506b6e41dfa32950820c2e6c",
+      "publicKey": "9gKEEcFzSd1PDYBKWAKZi4Sq4ZCUaVX5oTr8kEjdwsfR",
+      "messageHex": "75d3c79340435b62225a06000303060000000500d4c61669020000000254711a690200000001374b12690200000004f8ff0c0140435b62225a0600010000000500081ab84c0b0700000259dd22500b07000001dfba39470b07000004f8ff0c0140435b62225a06000200000005003bf4488038000000025394508038000000012c5241803800000004f8ff0c0140435b62225a0600",
+      "messageSha256": "f700a1c0432eb9c1cede50de39f08a20565da681203fa268407fe97f90df3264",
+      "historicallyLocallyVerified": true
+    },
+    "instructionsSysvarRawHex": "05000c00350062009600870200000306466fe5211732ffecadba72c39be7bc8ce5bbc5f7126b2c439b3a40000000050002400d030000000306466fe5211732ffecadba72c39be7bc8ce5bbc5f7126b2c439b3a4000000009000310270000000000000000037d46d67c93fbbe12f9428f838d40ff0570744927f48a64fcca704480000000100001001000030050000300720095000300060003e935b06dd3b999833e48949dd01e01d8f6549e638c8246373e8f64ed35ec218e002a6de1c77fae74714e9c2b7df51c597a8dda8a463dfb87405aabdc0a3d00ee190006a7d517187bd16635dad40455fdc2c0c124c68f215675a5dbbacb5f080000000219e2747d6103f432c353662432b95d2a5472a627480510b26544d5e7ef26439c02fe30e94b560b2f71169688fff2c75b2b7568f84df924f7c07c048098a3822bf2025839e40ae1c28900403e02e34f891f8391e3f330d8a9f34a65fe95b0690982ac0da2de325d82f1de78cd4db167210f672d93faa781b8a5d954b79f0158f9e3960701daedaaf5278fa621fb000000b9011a82e1fc591d7a4ba10782b3ea1120477c1212bad68426d52855677b2b21e00fae30a8cab8ae2ad85dac7dcf052fd890ae2cd617d941f5343a48151309d83c8ad50280efc1f480c5615af3fb673d42287e993da9fbc3506b6e41dfa32950820c2e6c950075d3c79340435b62225a06000303060000000500d4c61669020000000254711a690200000001374b12690200000004f8ff0c0140435b62225a0600010000000500081ab84c0b0700000259dd22500b07000001dfba39470b07000004f8ff0c0140435b62225a06000200000005003bf4488038000000025394508038000000012c5241803800000004f8ff0c0140435b62225a06000500001890ea9b93a9d1cec94bcb96183d0f866a38f737df4b686d1bbf70db4d1372b902a2b2f1f7be459034ad5e2cdba5cfb508bafbd3246ae529d627d759a17f8377cb025839e40ae1c28900403e02e34f891f8391e3f330d8a9f34a65fe95b0690982ac007f95e2f983b056bb8e13bf9393fa22e435051d104409af4c3f91fbc09e750db003e935b06dd3b999833e48949dd01e01d8f6549e638c8246373e8f64ed35ec218e0da2de325d82f1de78cd4db167210f672d93faa781b8a5d954b79f0158f9e3960800f717ff41d45addc20300",
+    "instructionsSysvarSha256": "87c38ee2b9692bb13fae05d0ac5bf8a65492a67a063e0b2879e399ec8225e770"
+  },
+  "runtimeSysvarContext": {
+    "clock": "not-declared-not-supplied",
+    "rent": "not-declared-not-supplied",
+    "other": "none-inferred"
+  },
+  "inputs": [
+    {
+      "path": "cache/research/candidate-043c938568ad5e15/account-snapshots.raw.json",
+      "purpose": "Authentic current account snapshot and exact ProgramData bytes",
+      "sha256": "49bf9f3880a931c3656e44e5b8c684b09978ec5743fc93eb7ce274978a673391"
+    },
+    {
+      "path": "output/research/velocity-anchor-bundle/anchor-bundle-dossier.json",
+      "purpose": "Pinned representative five-instruction Anchor evidence and independently verified Ed25519 references",
+      "sha256": "d4c54c3cf2c9c5e9a62d906878f30ab0786368cad8736df2a5a33883d59fa9d8"
+    },
+    {
+      "path": "output/research/velocity-anchor-bundle/anchor-semantic-evidence.json",
+      "purpose": "Milestone 2.2 semantic limit and authorization boundary",
+      "sha256": "0be597661b98edd010bf38fdd9659f4a534800f539473c99c11345c240faadfd"
+    },
+    {
+      "path": "output/research/velocity-binary/deployed-executable-metadata.json",
+      "purpose": "Milestone 2.1 deployed executable identity",
+      "sha256": "a2a48f328231ca87cb271f71fb83300002764034a39568da39aea1ace4e93f72"
+    },
+    {
+      "path": "output/research/velocity-binary/variant-correspondence.json",
+      "purpose": "Strong Post/TWAP and unresolved native correspondence status",
+      "sha256": "68a657af5f0723898bf3a710291472731f9ba8db9dda0ca369c486e044ded16a"
+    },
+    {
+      "path": "cache/research/velocity-equality-replay/runtime/runtime-probe.raw.json",
+      "purpose": "Host runtime feasibility attempts and exact blockers",
+      "sha256": "17a814a3cabab9b4b25cd328f38cd25e2db9277ee3796b2608847a452043cc89"
+    },
+    {
+      "path": "cache/research/velocity-equality-replay/runtime/linux-exact-replay.raw.json",
+      "purpose": "Linux exact-ELF baseline and frozen twelve-case execution evidence",
+      "sha256": "857cc9381a5f8ad91be6d57455d8c737b07878b509b9a21046a0332fe48369d4"
+    }
+  ],
+  "protectedArtifactHashes": {
+    "output/analysis.json": "690784c9aa1454e53e4375ff1c600cdcc3389175f205e4db29a9743bab92c1f9",
+    "output/report.html": "299a8e75061b1a81740e5aa3fa05786040a0010ff71d3f90149fe2d6d5ab0761",
+    "output/cross-payer-real/analysis.json": "3d2dedf405f0dfda7f411bb3f240e8a05c58b56d7502ece8d7e1dd61914ab6b5",
+    "output/cross-payer-real/report.html": "7854e16898bd6207681fdbfd2ce1724ae3165b365840b22683dfd105fdcc1041",
+    "output/cross-payer-teaching/analysis.json": "9b57a0260429b16730c9cc0b0645c4d506a7c152e00fb22aacb80e61642e84ae",
+    "output/cross-payer-teaching/report.html": "02985274705b2e03f34ba1b32e248a599cc3fbad85d28cba53b46efd79e5af7c",
+    "output/range-488638500-488638508/range-analysis.json": "27bddc7cd8dc045a9a4b3a24f50fdb33a7a521de12598fdd501942f570e8f433",
+    "output/range-488638500-488638508/range-report.html": "31f0190626429c70695d35514fa033507314d986f87ceccd9f25e263309bca3a",
+    "output/discovery-devnet/discovery-index.json": "0ac57c17f08f79ef829818f5ca604fb81536dbf75117ac07c3f98dd15765b3e0",
+    "output/research/candidate-ff30780de8479976/candidate-dossier.json": "7690e63de201d0bd43d6420d69105f0564403fe6b53330327c6eee3fbd072398",
+    "output/research/candidate-043c938568ad5e15/candidate-dossier.json": "ca6d32743c639563d749420a0e73e8902399ef6e2d213c2474ea1aa1069658af",
+    "output/research/candidate-043c938568ad5e15/candidate-evidence.ndjson": "0ef770f1c878630d3cfc105a51410ae8f8ae24667fbd82b883d13ec377372792",
+    "output/research/candidate-043c938568ad5e15/account-snapshots.json": "c4f5aa9162017256ef535d3b19f2456cf68bf86bfece32c6aa302c666086da94",
+    "output/research/candidate-043c938568ad5e15/instruction-layout.json": "ca59fc7c00a17fb401eb268c86eeb7fe793b9524ee4f2af94c228f99c74a9e1c",
+    "output/research/candidate-043c938568ad5e15/signer-message-summary.json": "da648ab9c8f3f0adf2754b3a2dbc45230077a6783299b684eb1bec003bc1c9db",
+    "output/research/candidate-043c938568ad5e15/source-manifest.json": "2ecfca53a1e505a1cda4a3b7a6c6fb422486ecd23bf00bd6f6cdfe3917f92b79",
+    "output/research/sourceability/sourceability-index.json": "f060b7cbd4e5abce40dc87c7c764e53b274590f5fb94e2186161f631a2279213",
+    "output/research/sourceability/program-family-map.json": "d0c3b6a16846ef777f66c67b147ef6ba1f8c9febd8b02bc522e44afff49d778b",
+    "output/research/velocity-binary/deployed-programdata-metadata.json": "0ec911ff50381ae5ac6f3eab95c7d417af7a1a1dd08eb4fdd3ca9a9391afa180",
+    "output/research/velocity-binary/deployed-executable-metadata.json": "a2a48f328231ca87cb271f71fb83300002764034a39568da39aea1ace4e93f72",
+    "output/research/velocity-binary/deployed-section-manifest.json": "31310d83ee9750edac35a6c9a6440dec3f013a29953c7c4faabbf091abf768cc",
+    "output/research/velocity-binary/deployed-strings.txt": "ce731b6c46490470a48e62c67cc086d0cf523ea4fb069bbaccfdcf2992c054ea",
+    "output/research/velocity-binary/source-history.json": "58090ad8a963296d49381c4e48cdca05a88c6147c5f10f9ba0cf03b5817c5702",
+    "output/research/velocity-binary/build-attempts.json": "53e7e5f89b63c9821d2be7528a9f8936c434af1aa400dc743f0c7e77a7b786e2",
+    "output/research/velocity-binary/binary-fingerprint-matrix.json": "16b2a179e6b34f464e2a97289c0e0362170f7c0191dc6d78d1a5a13bc0663723",
+    "output/research/velocity-binary/variant-correspondence.json": "68a657af5f0723898bf3a710291472731f9ba8db9dda0ca369c486e044ded16a",
+    "output/research/velocity-binary/deployment-history.json": "9a8997983bf9a5fe11e5a4eeeb062f11c70d9fde16d2f710465bd2a1ea60acd7",
+    "output/research/velocity-anchor-bundle/anchor-binary-correspondence.json": "e41a01a1f2869e9de3317b45f9cd30640ef9e6ebabd530a275f01e6f87e2880c",
+    "output/research/velocity-anchor-bundle/anchor-bundle-dossier.json": "d4c54c3cf2c9c5e9a62d906878f30ab0786368cad8736df2a5a33883d59fa9d8",
+    "output/research/velocity-anchor-bundle/anchor-bundle-report.html": "067e4be52b6ef2ea43eb64a383de664a327911a52c27581ffa8a30e8276dc2b0",
+    "output/research/velocity-anchor-bundle/anchor-conflict-attribution.json": "650489a3a29f996f37deda1100b7ef2af44a5d80720dfb0dac935daac0ce278c",
+    "output/research/velocity-anchor-bundle/anchor-semantic-evidence.json": "0be597661b98edd010bf38fdd9659f4a534800f539473c99c11345c240faadfd",
+    "output/research/velocity-anchor-bundle/instruction-equivalence.json": "ae76ee6fc706f1e03ba0185fe3dfca6a69948528d0b0dd14bcfeac2428620d0b",
+    "output/research/velocity-anchor-bundle/log-branch-matrix.json": "a2847e670c360cf407ffa9519b65e9f6e119444f8b6df48ae2500f5b378da611",
+    "output/research/velocity-anchor-bundle/message-reuse-matrix.json": "be7c81215b2b8eae108b41856f30b91b907db0cf96647eafd1b49e3d7a64c43e",
+    "output/research/velocity-anchor-bundle/qa-results.json": "626fbfe82b332483dfc28686692d640c6649e2d31c71d81fc955503319295e1f",
+    "output/research/velocity-anchor-bundle/anchor-bundle-desktop-qa.png": "2254ebdf67736dfff148e054bc5a83b8ee9e6d4fdc74d5b4722b0e56f411dcc8",
+    "output/research/velocity-anchor-bundle/anchor-bundle-390-qa.png": "fe46b36e326fbdf5f357cc31c51386894a61b5a1fe0d9aa9ce11d3ccfc9da094",
+    "research-plans/velocity-anchor-bundle-milestone-2.2.json": "11c1a9b558fcefd75a48c1da46e46fd1644e1c6adfcf461a4cfd61b35ba6ef7f",
+    "docs/research/VELOCITY-ANCHOR-BUNDLE.md": "dd16268502057418028f4656a898e199ce62cbdc429536c126e764b08d5e7076",
+    "docs/handoffs/MILESTONE-2.2.md": "813159d189279f7e1d91761f21148cab4c2954629151d24113b83c30d58b2b5d"
+  },
+  "offlineReplay": {
+    "command": "npm run research-velocity-equality-replay -- --plan research-plans/velocity-equality-replay-milestone-2.3.json --offline",
+    "networkRequestsWhenOffline": 0
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "2.6",
+  "candidateId": "candidate-df7d92f4a2196698",
+  "discoveryRank": 4,
+  "expectedMilestone25Outcome": "velocity-full-block-depth-propagation-established",
+  "inputs": [
+    { "path": "output/discovery-devnet/discovery-index.json", "sha256": "0ac57c17f08f79ef829818f5ca604fb81536dbf75117ac07c3f98dd15765b3e0" },
+    { "path": "output/research/sourceability/sourceability-index.json", "sha256": "f060b7cbd4e5abce40dc87c7c764e53b274590f5fb94e2186161f631a2279213" },
+    { "path": "output/research/velocity-full-block-propagation/velocity-full-block-summary.json", "sha256": "c635ce9662b3a2b815b95d506097ec49ef15bffd231e8d5a26ac3e897641e021" }
+  ],
+  "occurrences": [
+    { "slot": 489613040, "componentId": 17, "transactionIndexes": [27, 28], "blockPath": "cache/discovery-devnet/slot-489613040.json", "sha256": "3f6926fcb3b503ad63821f5aca40cd21f02e1326c8d40818f24ca37a415c229a" },
+    { "slot": 489613045, "componentId": 11, "transactionIndexes": [11, 17], "blockPath": "cache/discovery-devnet/slot-489613045.json", "sha256": "52cd2b1dcf8d096c1b275809482fc0b478acad302946b105d2c251dfea0ad944" },
+    { "slot": 489613046, "componentId": 8, "transactionIndexes": [8, 22], "blockPath": "cache/discovery-devnet/slot-489613046.json", "sha256": "a0e05c83a445c6f3caecdd821b34a1242f35ea2e8ccfaa96f4ef3ba49998f2d8" },
+    { "slot": 489613047, "componentId": 14, "transactionIndexes": [17, 31], "blockPath": "cache/discovery-devnet/slot-489613047.json", "sha256": "e4da64468110dc52d806b0bf878ed107d4621232a1c8c99390f0c66221304d41" }
+  ]
+}

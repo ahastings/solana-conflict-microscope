@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "2.1",
+  "generatedAt": "2026-08-30T00:00:00.000Z",
+  "cluster": "devnet",
+  "endpoint": "https://api.devnet.solana.com",
+  "outputDirectory": "output/research/velocity-binary",
+  "documentationPath": "docs/research/VELOCITY-DEPLOYED-BINARY-CORRESPONDENCE.md",
+  "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+  "programDataAddress": "HkRf36jvUB32dnHjHqpMnPcKJhUP2TUKJTH7RDTifJm7",
+  "expectedLastDeploySlot": 488659528,
+  "expectedSnapshotContextSlot": 490041839,
+  "sampleSlots": [489572998, 489593012, 489602971, 489603031, 489612991, 489613051],
+  "candidateId": "candidate-043c938568ad5e15",
+  "candidateDiscoveryRank": 3,
+  "expectedPriorDecision": "identity-found-semantics-incomplete",
+  "expectedPriorCorrespondence": "source-family-only",
+  "cache": {
+    "accountSnapshotsRaw": "cache/research/candidate-043c938568ad5e15/account-snapshots.raw.json",
+    "deploymentHistoryRaw": "cache/research/velocity-binary/rpc/deployment-history.raw.json",
+    "loaderSourceRaw": "cache/research/velocity-binary/source/loader-source.raw.json",
+    "sourceHistoryRaw": "cache/research/velocity-binary/source/source-history.raw.json",
+    "buildEnvironmentRaw": "cache/research/velocity-binary/build/build-environment.raw.json",
+    "velocityV1Tarball": "cache/research/velocity-binary/npm/velocity-exchange-sdk-0.17.0.tgz"
+  },
+  "repositories": {
+    "protocolV2": "cache/research/velocity-binary/repositories/protocol-v2",
+    "agave": "cache/research/velocity-binary/repositories/agave-v4.3.0-beta.2"
+  },
+  "pinnedCommits": {
+    "agave": "386cf57c45e135d8a3a8b7d16877eb896f695c64",
+    "agaveTag": "v4.3.0-beta.2",
+    "driftForkRelease": "0ae3e3b1db782a6765c3525b3dec38ad4d9d3a62",
+    "driftOracleTimestamp": "de32add525919791b38218ecb59ee506e16a9b3f",
+    "driftNativeOpcode2": "ffd10b2bd6a009e66aaaf42bb065387ccc1c72c8",
+    "velocityRebrand": "6b993baf684df723f6072ffd09e5de48dde877dd",
+    "velocityNativeHardening": "3f148f8b477e4176e11e0660adb0e67dd5163d3b",
+    "velocityCandidate": "f7df335599c194bc759cebf682a11bcad6bd5ed2",
+    "velocityReachableTag": "ff80ed4d2d92c04804c0d8d3be1eca63eb521f43",
+    "protocolCurrentHead": "13e8e9b8d614f3b62e3a65a8c372c819e6529aeb"
+  },
+  "inputs": [
+    {
+      "path": "cache/research/candidate-043c938568ad5e15/account-snapshots.raw.json",
+      "sha256": "49bf9f3880a931c3656e44e5b8c684b09978ec5743fc93eb7ce274978a673391",
+      "purpose": "Public read-only account snapshot containing exact Program and ProgramData bytes"
+    },
+    {
+      "path": "cache/research/velocity-binary/rpc/deployment-history.raw.json",
+      "sha256": "0e465af53c244d7f057aa01d4b10fe54b7a78a9cd6f6433f974f163be3f321b2",
+      "purpose": "Read-only RPC Program/ProgramData signatures, deployment transactions, and node version"
+    },
+    {
+      "path": "cache/research/velocity-binary/source/loader-source.raw.json",
+      "sha256": "04fed1ac8927914c1178a0a922867521256fa17835b483cddd4e7dedc8d4e307",
+      "purpose": "Pinned authoritative Agave upgradeable-loader source"
+    },
+    {
+      "path": "cache/research/velocity-binary/source/source-history.raw.json",
+      "sha256": "198a7aa0ff3e0d3d7ece31e5dbc45e9c92a66f5a9fcb2b4ff7d63484110e84c7",
+      "purpose": "Deterministic full-ref official Git archaeology cache"
+    },
+    {
+      "path": "cache/research/velocity-binary/build/build-environment.raw.json",
+      "sha256": "2c7853bd0b0c58f98130c62a520d2aebda61111082edc41a21d4a1000fe9db89",
+      "purpose": "Bounded local reproducible-build environment probe"
+    },
+    {
+      "path": "cache/research/velocity-binary/npm/velocity-exchange-sdk-0.17.0.tgz",
+      "sha256": "22b3c245670892a088ff100300925fff701d0ea136b840952285d760e2f59a88",
+      "purpose": "Official maintained SDK tarball and velocity-v1 repository metadata fallback"
+    }
+  ],
+  "preservedArtifactHashes": {
+    "output/analysis.json": "690784c9aa1454e53e4375ff1c600cdcc3389175f205e4db29a9743bab92c1f9",
+    "output/report.html": "299a8e75061b1a81740e5aa3fa05786040a0010ff71d3f90149fe2d6d5ab0761",
+    "output/cross-payer-real/analysis.json": "3d2dedf405f0dfda7f411bb3f240e8a05c58b56d7502ece8d7e1dd61914ab6b5",
+    "output/cross-payer-real/report.html": "7854e16898bd6207681fdbfd2ce1724ae3165b365840b22683dfd105fdcc1041",
+    "output/cross-payer-teaching/analysis.json": "9b57a0260429b16730c9cc0b0645c4d506a7c152e00fb22aacb80e61642e84ae",
+    "output/cross-payer-teaching/report.html": "02985274705b2e03f34ba1b32e248a599cc3fbad85d28cba53b46efd79e5af7c",
+    "output/range-488638500-488638508/range-analysis.json": "27bddc7cd8dc045a9a4b3a24f50fdb33a7a521de12598fdd501942f570e8f433",
+    "output/range-488638500-488638508/range-report.html": "31f0190626429c70695d35514fa033507314d986f87ceccd9f25e263309bca3a",
+    "output/discovery-devnet/discovery-index.json": "0ac57c17f08f79ef829818f5ca604fb81536dbf75117ac07c3f98dd15765b3e0",
+    "output/research/candidate-ff30780de8479976/candidate-dossier.json": "7690e63de201d0bd43d6420d69105f0564403fe6b53330327c6eee3fbd072398",
+    "output/research/candidate-043c938568ad5e15/candidate-dossier.json": "ca6d32743c639563d749420a0e73e8902399ef6e2d213c2474ea1aa1069658af",
+    "output/research/candidate-043c938568ad5e15/candidate-evidence.ndjson": "0ef770f1c878630d3cfc105a51410ae8f8ae24667fbd82b883d13ec377372792",
+    "output/research/candidate-043c938568ad5e15/account-snapshots.json": "c4f5aa9162017256ef535d3b19f2456cf68bf86bfece32c6aa302c666086da94",
+    "output/research/candidate-043c938568ad5e15/instruction-layout.json": "ca59fc7c00a17fb401eb268c86eeb7fe793b9524ee4f2af94c228f99c74a9e1c",
+    "output/research/candidate-043c938568ad5e15/signer-message-summary.json": "da648ab9c8f3f0adf2754b3a2dbc45230077a6783299b684eb1bec003bc1c9db",
+    "output/research/candidate-043c938568ad5e15/source-manifest.json": "2ecfca53a1e505a1cda4a3b7a6c6fb422486ecd23bf00bd6f6cdfe3917f92b79",
+    "output/research/sourceability/sourceability-index.json": "f060b7cbd4e5abce40dc87c7c764e53b274590f5fb94e2186161f631a2279213",
+    "output/research/sourceability/program-family-map.json": "d0c3b6a16846ef777f66c67b147ef6ba1f8c9febd8b02bc522e44afff49d778b"
+  },
+  "offlineReplay": {
+    "command": "npm run research-velocity-binary -- --plan research-plans/velocity-binary-milestone-2.1.json --offline",
+    "cacheFirst": true,
+    "networkRequestsWhenOffline": 0
+  }
+}

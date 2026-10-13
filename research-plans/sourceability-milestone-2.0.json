@@ -1,0 +1,194 @@
+{
+  "schemaVersion": "2.0",
+  "researchAt": "2026-08-29T19:12:45.5244041Z",
+  "discoveryIndex": {
+    "path": "output/discovery-devnet/discovery-index.json",
+    "sha256": "0ac57c17f08f79ef829818f5ca604fb81536dbf75117ac07c3f98dd15765b3e0"
+  },
+  "candidateOneDossier": {
+    "path": "output/research/candidate-ff30780de8479976/candidate-dossier.json",
+    "sha256": "7690e63de201d0bd43d6420d69105f0564403fe6b53330327c6eee3fbd072398",
+    "expectedDecision": "black-box-structure-only"
+  },
+  "expectedCandidateCount": 19,
+  "expectedFamilyCount": 6,
+  "outputDirectory": "output/research/sourceability",
+  "candidateDispositions": {
+    "primaryCandidateId": "candidate-043c938568ad5e15",
+    "deferredNotRejectedCandidateId": "candidate-e5d929864077a76b",
+    "preservedPriorDossierCandidateId": "candidate-ff30780de8479976"
+  },
+  "evidenceLadder": [
+    {
+      "state": "authoritative-source-and-interface",
+      "meaning": "An authoritative exact-program-ID identity is available together with a maintained interface and public source tree; deployment correspondence remains a separate field."
+    },
+    {
+      "state": "authoritative-identity-source-incomplete",
+      "meaning": "An authoritative exact-program-ID identity exists, but public source, interface, or deployed-version correspondence is incomplete."
+    },
+    {
+      "state": "maintained-interface-only",
+      "meaning": "A maintained interface is discoverable but no authoritative exact-program-ID identity/source chain is established."
+    },
+    {
+      "state": "third-party-identity-only",
+      "meaning": "Only third-party exact-ID attribution was found; it is a lead, not authoritative semantic evidence."
+    },
+    {
+      "state": "black-box",
+      "meaning": "The bounded triage found no authoritative exact-ID source path sufficient for mutation-level analysis."
+    }
+  ],
+  "families": [
+    {
+      "familyId": "family-velocity-v2",
+      "label": "Velocity v2 plus native verification/budget programs",
+      "identifyingProgramIds": ["vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P"],
+      "primaryProgramId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+      "authoritativeExactProgramIdMatch": true,
+      "maintainedSdkOrIdl": true,
+      "publicSourceRepository": true,
+      "verifiedBuildEvidence": "not-verified-at-access-time",
+      "versionDeploymentCorrespondence": "source-family-only",
+      "sourceabilityOutcome": "authoritative-source-and-interface",
+      "researchPriority": 1,
+      "researchPriorityReasons": [
+        "Official Velocity documentation names the exact devnet/mainnet program ID.",
+        "The official organization publishes a maintained SDK and protocol-v2 source family with matching observed instruction names.",
+        "The exact deployed executable is not verified or reproducibly mapped to the public source, so source-family semantics cannot become deployed mutation claims."
+      ],
+      "evidence": [
+        {
+          "kind": "official-documentation",
+          "url": "https://docs.velocity.exchange/developers/velocity-sdk/setup",
+          "result": "Exact program ID is documented for Velocity mainnet and devnet."
+        },
+        {
+          "kind": "official-source",
+          "url": "https://github.com/velocity-exchange/protocol-v2",
+          "result": "Public official source-family repository is available."
+        },
+        {
+          "kind": "verified-build-status",
+          "url": "https://verify.osec.io/status/vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+          "result": "The exact ID returned is_verified false at access time."
+        }
+      ]
+    },
+    {
+      "familyId": "family-xux-token",
+      "label": "XuX plus SPL Token/Associated Token",
+      "identifyingProgramIds": ["XuXkWAz3xRktfEjAfFDdkFksYBqFzet8JPkQxZMoRfi"],
+      "primaryProgramId": "XuXkWAz3xRktfEjAfFDdkFksYBqFzet8JPkQxZMoRfi",
+      "authoritativeExactProgramIdMatch": false,
+      "maintainedSdkOrIdl": false,
+      "publicSourceRepository": false,
+      "verifiedBuildEvidence": "not-found",
+      "versionDeploymentCorrespondence": "unresolved",
+      "sourceabilityOutcome": "black-box",
+      "researchPriority": 2,
+      "researchPriorityReasons": [
+        "This family contains Candidate #2 and preserves its strong recurring cross-payer destination contention evidence.",
+        "The bounded exact-ID triage found no authoritative source path sufficient for mutation-level analysis.",
+        "Candidate #2 is deferred, not rejected, and remains a valid high-priority research lead."
+      ],
+      "evidence": [
+        {
+          "kind": "bounded-exact-id-search",
+          "url": null,
+          "result": "No authoritative exact-ID documentation, maintained SDK/IDL, public source, or verified build was found."
+        }
+      ]
+    },
+    {
+      "familyId": "family-bqs-ed25519",
+      "label": "BQsAJ plus Ed25519",
+      "identifyingProgramIds": ["BQsAJYV4ZQDf683UrhA1MVLvbot9XYUfRHXxP1h13fPL"],
+      "primaryProgramId": "BQsAJYV4ZQDf683UrhA1MVLvbot9XYUfRHXxP1h13fPL",
+      "authoritativeExactProgramIdMatch": false,
+      "maintainedSdkOrIdl": false,
+      "publicSourceRepository": false,
+      "verifiedBuildEvidence": "not-verified-at-access-time",
+      "versionDeploymentCorrespondence": "unresolved",
+      "sourceabilityOutcome": "black-box",
+      "researchPriority": 3,
+      "researchPriorityReasons": [
+        "Milestone 1.9 already completed the exact structural dossier for this family.",
+        "The preserved Candidate #1 outcome is black-box-structure-only.",
+        "Contention significance remains unchanged despite unavailable source."
+      ],
+      "evidence": [
+        {
+          "kind": "prior-dossier",
+          "url": null,
+          "result": "Candidate #1 has 25 exact occurrences and a preserved black-box-structure-only decision."
+        }
+      ]
+    },
+    {
+      "familyId": "family-4sym-538e-token",
+      "label": "4sYM/538E plus SPL Token families",
+      "identifyingProgramIds": [
+        "4sYM2WwKh1Usdjz1huRB3W1WxgHT6AVKGgZugSFMmT9T",
+        "538EkNnKcnCchAoB78LYZcx2mfatx1iXMWStCx2DnGFs"
+      ],
+      "primaryProgramId": "4sYM2WwKh1Usdjz1huRB3W1WxgHT6AVKGgZugSFMmT9T",
+      "authoritativeExactProgramIdMatch": false,
+      "maintainedSdkOrIdl": false,
+      "publicSourceRepository": false,
+      "verifiedBuildEvidence": "not-found",
+      "versionDeploymentCorrespondence": "unresolved",
+      "sourceabilityOutcome": "black-box",
+      "researchPriority": 4,
+      "researchPriorityReasons": [
+        "Four candidates share the same two unfamiliar programs and token interfaces.",
+        "The bounded exact-ID triage found no authoritative mutation-level source path.",
+        "Discovery significance and ranks remain preserved."
+      ],
+      "evidence": [{"kind": "bounded-exact-id-search", "url": null, "result": "No authoritative exact-ID source path found."}]
+    },
+    {
+      "familyId": "family-arcj-ew9-l2te",
+      "label": "Arcj/EW9/L2TE composite family",
+      "identifyingProgramIds": [
+        "Arcj82pX7HxYKLR92qvgZUAd7vGS1k4hQvAFcPATFdEQ",
+        "EW9NrBnyzTtWrc6CipVff8r1NFqKnGsjiFjwnWQoNkRd",
+        "L2TExMFKdjpN9kozasaurPirfHy9P8sbXoAN1qA3S95"
+      ],
+      "primaryProgramId": "Arcj82pX7HxYKLR92qvgZUAd7vGS1k4hQvAFcPATFdEQ",
+      "authoritativeExactProgramIdMatch": false,
+      "maintainedSdkOrIdl": false,
+      "publicSourceRepository": false,
+      "verifiedBuildEvidence": "not-found",
+      "versionDeploymentCorrespondence": "unresolved",
+      "sourceabilityOutcome": "black-box",
+      "researchPriority": 5,
+      "researchPriorityReasons": [
+        "Four candidates invoke the same composite unfamiliar-program family.",
+        "The bounded exact-ID triage found no authoritative mutation-level source path.",
+        "Discovery significance and ranks remain preserved."
+      ],
+      "evidence": [{"kind": "bounded-exact-id-search", "url": null, "result": "No authoritative exact-ID source path found."}]
+    },
+    {
+      "familyId": "family-4gup-token",
+      "label": "4gUp plus SPL Token",
+      "identifyingProgramIds": ["4gUpTLCkmbbLCncfQi3BXzhbSkNt4Nnk6jKDXNC8XxQC"],
+      "primaryProgramId": "4gUpTLCkmbbLCncfQi3BXzhbSkNt4Nnk6jKDXNC8XxQC",
+      "authoritativeExactProgramIdMatch": false,
+      "maintainedSdkOrIdl": false,
+      "publicSourceRepository": false,
+      "verifiedBuildEvidence": "not-found",
+      "versionDeploymentCorrespondence": "unresolved",
+      "sourceabilityOutcome": "black-box",
+      "researchPriority": 6,
+      "researchPriorityReasons": [
+        "Four tier-2 materialized candidates share the same unfamiliar program and token interface.",
+        "The bounded exact-ID triage found no authoritative mutation-level source path.",
+        "Lower sourceability priority does not demote contention significance."
+      ],
+      "evidence": [{"kind": "bounded-exact-id-search", "url": null, "result": "No authoritative exact-ID source path found."}]
+    }
+  ]
+}

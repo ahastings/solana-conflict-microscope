@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "2.8",
+  "candidateId": "candidate-b1cc5e297f33e545",
+  "discoveryRank": 6,
+  "inputs": [
+    {"path":"output/discovery-devnet/discovery-index.json","sha256":"0ac57c17f08f79ef829818f5ca604fb81536dbf75117ac07c3f98dd15765b3e0"},
+    {"path":"output/research/sourceability/sourceability-index.json","sha256":"f060b7cbd4e5abce40dc87c7c764e53b274590f5fb94e2186161f631a2279213"},
+    {"path":"output/research/candidate-be8750c7a73d9c2c/candidate-5-dossier.json","sha256":"656078bc410ba6cfe7f0c7be06263ac261e875719f6bf665522edc7a37d0a140"},
+    {"path":"output/research/candidate-be8750c7a73d9c2c/candidate-5-conflict-attribution.json","sha256":"5c51bdcb932f526fafa4c9eb7d9b8b4f05dab669a17dcf45c06a77ac57206f27"},
+    {"path":"output/research/candidate-ff30780de8479976/source-manifest.json","sha256":"6cf6f1a571f061bb5e355300d7e9416d053bf85d0ba470ef546dd3dc9db4437e"},
+    {"path":"output/research/candidate-ff30780de8479976/account-snapshots.json","sha256":"6110f1e72cb04c60b6cb4e93bcd6287780885eb095810e55065a00c8eab95994"}
+  ],
+  "occurrences": [
+    {"slot":489583044,"componentId":13,"transactionIndexes":[13,15,18,25],"blockPath":"cache/discovery-devnet/slot-489583044.json","sha256":"c2ec738ba23d36df85c10c5f928e1aadfeacd66e24eb2fa9f4dc036f6ebcd777"},
+    {"slot":489602990,"componentId":2,"transactionIndexes":[2,10,13],"blockPath":"cache/discovery-devnet/slot-489602990.json","sha256":"e8cccee177598a1881a825c7dbd9d6023c1545b9b409815ced0e839410a3d03b"}
+  ]
+}
