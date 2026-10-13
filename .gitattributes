@@ -1,0 +1,25 @@
+.gitattributes text eol=lf
+docs/research/CANDIDATE-*.md text eol=lf
+output/research/**/*.json text eol=lf
+output/research/**/*.ndjson text eol=lf
+output/research/**/*.html text eol=lf
+output/research/**/*.png binary
+
+# Keep source portable and frozen evidence byte-identical on Windows checkouts.
+src/**/*.ts text eol=lf
+scripts/**/*.ts text eol=lf
+test/**/*.ts text eol=lf
+*.md text eol=lf
+package*.json text eol=lf
+tsconfig.json text eol=lf
+.gitignore text eol=lf
+fixtures/** -text
+research-plans/** -text
+discovery-plans/** -text
+
+# Native sources and scripts must retain LF for Linux execution and source hashes.
+tools/**/*.rs text eol=lf
+tools/**/*.toml text eol=lf
+tools/**/Cargo.lock text eol=lf
+tools/**/*.patch text eol=lf
+tools/**/*.sh text eol=lf

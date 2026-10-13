@@ -1,0 +1,14 @@
+node_modules/
+dist/
+output/
+*.log
+.env
+cache/
+
+# Local provenance backups; excluded from public source exports.
+CHECKPOINTS/
+
+# Local recovery notes and discussion are not public project source.
+/CHECKPOINT-START-HERE.md
+/FREE-RANGE-CHECKPOINT.md
+/docs/continuation/

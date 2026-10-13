@@ -1,0 +1,60 @@
+{
+  "name": "solana-conflict-microscope",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Analyze declared Solana account contention and potential parallel execution waves.",
+  "scripts": {
+    "analyze": "tsx src/cli.ts",
+    "analyze-range": "tsx src/range-cli.ts",
+    "cache-fixture": "tsx scripts/cache-fixture.ts",
+    "find-contention": "tsx scripts/find-contention.ts",
+    "discover-contention": "tsx src/discovery-cli.ts",
+    "research-candidate": "tsx src/research-cli.ts",
+    "research-velocity": "tsx src/milestone20-cli.ts",
+    "research-velocity-binary": "tsx src/milestone21-cli.ts",
+    "research-velocity-anchor-bundle": "tsx src/milestone22-cli.ts",
+    "research-velocity-equality-replay": "tsx src/milestone23-cli.ts",
+    "research-velocity-equality-dependency": "tsx src/milestone24-cli.ts",
+    "research-velocity-full-block-propagation": "tsx src/milestone25-cli.ts",
+    "research-candidate-4": "tsx src/milestone26-cli.ts",
+    "research-candidate-5": "tsx src/milestone27-cli.ts",
+    "research-candidate-6": "tsx src/milestone28-cli.ts",
+    "research-candidate-7": "tsx src/milestone29-cli.ts",
+    "triage-candidate-queue": "tsx src/milestone30-cli.ts",
+    "build": "tsc -p tsconfig.json",
+    "test": "tsx --test --test-concurrency=1 test/*.test.ts",
+    "check-handoff": "tsx scripts/check-handoff.ts",
+    "verify": "npm run build && npm test && npm run analyze -- --fixture fixtures/real-devnet-block.json --output-dir output && npm run analyze -- --fixture fixtures/cross-payer-devnet-block.json --output-dir output/cross-payer-real && npm run analyze -- --fixture fixtures/cross-payer-application-state-teaching.json --output-dir output/cross-payer-teaching && npm run analyze-range -- --start-slot 488638500 --end-slot 488638508 --cache-dir cache/contention-devnet --output-dir output/range-488638500-488638508 --offline && npm run discover-contention -- --plan discovery-plans/milestone-1.8-devnet.json --offline && npm run research-candidate -- --plan research-plans/candidate-ff30780de8479976.json --offline && npm run research-velocity -- --sourceability-plan research-plans/sourceability-milestone-2.0.json --candidate-plan research-plans/candidate-043c938568ad5e15.json --offline && npm run research-velocity-binary -- --plan research-plans/velocity-binary-milestone-2.1.json --offline && npm run research-velocity-anchor-bundle -- --plan research-plans/velocity-anchor-bundle-milestone-2.2.json --offline && npm run research-velocity-equality-replay -- --plan research-plans/velocity-equality-replay-milestone-2.3.json --offline && npm run research-velocity-equality-dependency -- --plan research-plans/velocity-equality-dependency-milestone-2.4.json --offline && npm run research-velocity-full-block-propagation -- --plan research-plans/velocity-full-block-propagation-milestone-2.5.json --offline && npm run research-candidate-4 -- --plan research-plans/candidate-4-milestone-2.6.json --offline && npm run research-candidate-5 -- --plan research-plans/candidate-5-milestone-2.7.json --offline && npm run research-candidate-6 -- --plan research-plans/candidate-6-milestone-2.8.json --offline && npm run research-candidate-7 -- --plan research-plans/candidate-7-milestone-2.9.json --offline && npm run triage-candidate-queue -- --offline && npm run check-handoff",
+    "demo": "tsx scripts/demo.ts",
+    "test:core": "tsx --test --test-concurrency=1 test/analyzer.test.ts test/core-regressions.test.ts test/dependency-layers.test.ts test/demo.test.ts test/range.test.ts test/milestone17.test.ts test/milestone171.test.ts test/milestone172.test.ts test/milestone173.test.ts test/milestone18.test.ts test/release.test.ts test/reviewer.test.ts test/native-bundle-fixture.test.ts test/native-bundle-review.test.ts test/rpc.test.ts test/rpc-provenance.test.ts test/rpc-v1-fixture.test.ts test/current-native-review.test.ts test/analyze-options.test.ts test/mainnet-privileges.test.ts test/compare-analyses.test.ts",
+    "verify:portable": "npm run build && npm run verify:fixtures && npm run test:core && npm run demo && npm run verify:demo && npm run review-case",
+    "release:prepare": "tsx scripts/prepare-release.ts",
+    "verify:demo": "tsx scripts/verify-demo.ts",
+    "verify:analysis": "tsx scripts/verify-analysis.ts",
+    "verify:fixtures": "tsx scripts/verify-fixtures.ts",
+    "review-case": "tsx scripts/review-case.ts",
+    "native:prepare": "tsx scripts/prepare-native-bundle.ts",
+    "native:review": "tsx scripts/review-native-bundle.ts",
+    "native:prepare-current": "tsx scripts/prepare-current-native-bundle.ts",
+    "native:review-current": "tsx scripts/review-current-native-bundle.ts",
+    "native:privilege-prepare": "tsx scripts/oracle-privilege-controls.ts prepare",
+    "native:privilege-review": "tsx scripts/oracle-privilege-controls.ts review",
+    "check:browser": "tsx scripts/check-report-browser.ts",
+    "benchmark:conflicts": "tsx scripts/benchmark-conflicts.ts",
+    "verify:range": "tsx scripts/verify-range.ts",
+    "compare:analyses": "tsx scripts/compare-analyses.ts"
+  },
+  "dependencies": {
+    "@solana/kit": "^8.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "license": "MIT"
+}
