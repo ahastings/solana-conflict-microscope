@@ -1,0 +1,50 @@
+[
+  {
+    "startedAt": "2026-09-24T09:38:45.070Z",
+    "completedAt": "2026-09-24T09:38:45.360Z",
+    "endpoint": "https://api.devnet.solana.com",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 7,
+      "method": "getBlock",
+      "params": [
+        503405150,
+        {
+          "commitment": "finalized",
+          "encoding": "jsonParsed",
+          "maxSupportedTransactionVersion": 1,
+          "rewards": false,
+          "transactionDetails": "full"
+        }
+      ]
+    },
+    "httpStatus": 200,
+    "filename": "slot-503405150-jsonParsed-v1.response.json",
+    "bytes": 95803,
+    "sha256": "496015176ad18318462cea98b03d8bdecca7d9f885c2c5a3c3bf5db87e741e33"
+  },
+  {
+    "startedAt": "2026-09-24T09:38:45.085Z",
+    "completedAt": "2026-09-24T09:38:45.377Z",
+    "endpoint": "https://api.devnet.solana.com",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 8,
+      "method": "getBlock",
+      "params": [
+        503405150,
+        {
+          "commitment": "finalized",
+          "encoding": "json",
+          "maxSupportedTransactionVersion": 1,
+          "rewards": false,
+          "transactionDetails": "full"
+        }
+      ]
+    },
+    "httpStatus": 200,
+    "filename": "slot-503405150-json-v1.response.json",
+    "bytes": 56352,
+    "sha256": "b4fb278fcbd93a71ffe9b79c77aaa0f3e3c7eb0520fe6aed7a8e4a97b750bde5"
+  }
+]
