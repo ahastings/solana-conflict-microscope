@@ -1,0 +1,13 @@
+# Frozen candidate queue family triage
+
+Milestone 3.0 reads only the frozen Milestone 1.8 discovery index and Milestone 2.0 sourceability index. It does not scan blocks, rerank candidates, alter sourceability priorities, rematerialize a candidate, open a semantic dossier, execute a counterfactual, or inspect a binary.
+
+The 19 frozen candidates form six source families. Existing dossiers establish the current navigation boundaries: `family-velocity-v2` is `positive-semantic-family`; `family-bqs-ed25519` and `family-4sym-538e-token` are `closed-black-box-family`; and `family-xux-token` is `closed-infrastructure-token-family`. `family-arcj-ew9-l2te` and `family-4gup-token` are `untreated-family` because no member has received a substantive sourceability/semantic dossier. These family statuses do not replace candidate dispositions.
+
+“Closed black-box” means only that no currently available authoritative evidence supports further semantic refinement within the bounded project evidence. Reopen conditions include authoritative exact-ID source, verified deployed correspondence, historical ownership/state evidence, or a future occurrence with independently sourceable core semantics that do not depend on the black-box application cause. It does not mean that semantics can never become available, that every future occurrence is uninteresting, or that a program is intrinsically unoptimizable.
+
+The deterministic next candidate is frozen rank #10, `candidate-0a165acfc7f2b47a`, in `family-arcj-ew9-l2te`, invoking applications `Arcj82pX7HxYKLR92qvgZUAd7vGS1k4hQvAFcPATFdEQ`, `EW9NrBnyzTtWrc6CipVff8r1NFqKnGsjiFjwnWQoNkRd`, and `L2TExMFKdjpN9kozasaurPirfHy9P8sbXoAN1qA3S95`. It is the lowest discovery-rank representative of an untreated family. Rank #8 is skipped because the XuX/token family reached its current Candidate #2/#4 evidence boundary; rank #9 is skipped because the 4sYM/538E/token family reached its Candidate #5/#7 black-box boundary. Frozen metadata shows neither candidate adds an authoritative application program or an obvious independently sourceable escape from its closed family boundary.
+
+Candidate #7 remains `black-box-structure-only` and is recorded on the family-reopen watchlist: “High structural/block relevance if authoritative 4sYM/538E semantics become available.” Its six transactions, 15 edges, 36 atoms, exact depth 6, unique depth determination, six established SPL Token-account atoms, and 30 unresolved application-referenced atoms remain unchanged. This is not an optimization-opportunity claim.
+
+The JSON artifact records SHA-256 provenance for both frozen inputs. Regenerate it offline with `npm run triage-candidate-queue -- --offline`. The selected Candidate #10 dossier has not begun.
