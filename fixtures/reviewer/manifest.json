@@ -1,0 +1,271 @@
+{
+  "schemaVersion": "reviewer-1",
+  "title": "Velocity conditional dependency review",
+  "programId": "vELoC1audYbSYVRXn1vPaV8Axoa9oU6BYmNGZZBDZ1P",
+  "sharedPayer": "GhMUe97fqJEb9QFNfM6N3BbEy4SD2VmeyjUVFBcXuV6V",
+  "oracleAccounts": [
+    "2k3UHX6ehRFzx5fTVvbL6FwXhMjkucjJDL9MuVKLo8TV",
+    "J7Fp8iTKuKdCM7PnzqHXTdTo5Jr7ykAmiDyvpz58GJGZ",
+    "6wQ5RiQ7usJ3TqYZSiuAPZHrVCeSWNrvace84khDKEmH"
+  ],
+  "historicalEvidenceReferences": {
+    "deployedElfSha256": "89d757b837724ab552d1ebf719245e33f9f93b722cb4331b5eec55202d94ca5c",
+    "linuxExecutionRecordSha256": "857cc9381a5f8ad91be6d57455d8c737b07878b509b9a21046a0332fe48369d4",
+    "status": "reference-only-not-bundled-or-reexecuted",
+    "scope": "Recorded constructed-fixture Post invocation; trailing TWAP and whole-transaction semantic refinement remain unproven."
+  },
+  "cases": [
+    {
+      "slot": 489572998,
+      "file": "slot-489572998.json",
+      "sha256": "c64b519554b772cd5384916bd6cb058e1eebe3aae502a01df02c4845adf38e18",
+      "originalPath": "cache/discovery-devnet/slot-489572998.json",
+      "provenance": {
+        "cluster": "devnet",
+        "endpoint": "https://api.devnet.solana.com",
+        "retrievedAt": "2026-08-28T23:46:12.357Z",
+        "sourceMode": "range-cache",
+        "dataKind": "real-network",
+        "request": {
+          "method": "getBlock",
+          "slot": 489572998,
+          "encodings": [
+            "jsonParsed",
+            "json"
+          ]
+        }
+      },
+      "componentId": 1,
+      "producer": {
+        "transactionIndex": 1,
+        "signature": "4rK8SP59vrAd4v7KpcYh4S8HD9iuSWKQJyroV9VRWTHvSmEmXvXqscwMur5jxjRFnrf1ZBhK7xJnvRpdDUbxNNs2"
+      },
+      "consumers": [
+        {
+          "transactionIndex": 2,
+          "signature": "5zayDMLz4wu8pKQXYbiucUsRWY3cSsmvVzKGTTZnBqnLSNXG694GoA6mkzHG4Y4LKmXH3MVb5fTYMEhJ4w8cDzxd"
+        },
+        {
+          "transactionIndex": 3,
+          "signature": "3pktjLUnpv77XJfFB51PSdDjeC1KRc8LLQ3Lo5wafz2Fb3CkdMsFUppjTQwGeC4AwnhSb3nGqUnV9hTWdaCgA6wU"
+        }
+      ],
+      "native": {
+        "transactionIndex": 24,
+        "signature": "3oJTQ4As2hS2YS9kWdfstedFEQxGNwmoECYj8VhXAs6KgqYWy11BT13D19nHux9q9bTYHskqanT7e7Dkxs7nkBwT"
+      },
+      "postDataSha256": "563a73a52513d1023cc324dbf7b14f828b07d4f0ea354cb00d42ff9827501c7b",
+      "signedMessageSha256": "f700a1c0432eb9c1cede50de39f08a20565da681203fa268407fe97f90df3264"
+    },
+    {
+      "slot": 489593012,
+      "file": "slot-489593012.json",
+      "sha256": "37360ec1bf9be854bbfe901bc0045c4a849f21e2af91ba9de0e2c1486430cc18",
+      "originalPath": "cache/discovery-devnet/slot-489593012.json",
+      "provenance": {
+        "cluster": "devnet",
+        "endpoint": "https://api.devnet.solana.com",
+        "retrievedAt": "2026-08-28T23:50:19.404Z",
+        "sourceMode": "range-cache",
+        "dataKind": "real-network",
+        "request": {
+          "method": "getBlock",
+          "slot": 489593012,
+          "encodings": [
+            "jsonParsed",
+            "json"
+          ]
+        }
+      },
+      "componentId": 17,
+      "producer": {
+        "transactionIndex": 21,
+        "signature": "3FrqdmfYUnekA7vrgKwFTppGuJLaL5TXcJVFWnpF8qLRTSjvw3EaWf1LgXpRmaX6SUexPU6eus36WyCkS4Jvrfg9"
+      },
+      "consumers": [
+        {
+          "transactionIndex": 22,
+          "signature": "5NZ8kKZy7QkLs281dpSgrnGE2gdzHFd2TKNAQwHi9h3CK1L9LY2nzhUecxqBt8aqNS2GwyaEMtCUdUDSTCkwJnPM"
+        },
+        {
+          "transactionIndex": 23,
+          "signature": "3MQ9yDu2SRhoUroS7muGVQSzQ7NnWZeszJhsi2uNZFgj3Ytu93kYQGKNNYms5jY1nxdhMKsMzJra3pQa65BY5wmg"
+        }
+      ],
+      "native": {
+        "transactionIndex": 17,
+        "signature": "4LAmnysfjpy9uKtiarPUnGtRJoNSdx6tn1LqjBvPV11FHEg8YFc4DPQP3uZ79qYoJPcCgLekS8ubpxy7hYbyuCkU"
+      },
+      "postDataSha256": "f1da13b34887fec1272e0003b5bfa7c6e740f78dc2decfc33c9d68e937d00290",
+      "signedMessageSha256": "39019ff5e1a851604de9ad3c94a321b574abecf58667eae18da4871bd6fae1fc"
+    },
+    {
+      "slot": 489602971,
+      "file": "slot-489602971.json",
+      "sha256": "d20af433b18b23930fd944341e976dfff5dae58a6cfb561ab25aea0f0a5b4673",
+      "originalPath": "cache/discovery-devnet/slot-489602971.json",
+      "provenance": {
+        "cluster": "devnet",
+        "endpoint": "https://api.devnet.solana.com",
+        "retrievedAt": "2026-08-28T23:51:27.365Z",
+        "sourceMode": "range-cache",
+        "dataKind": "real-network",
+        "request": {
+          "method": "getBlock",
+          "slot": 489602971,
+          "encodings": [
+            "jsonParsed",
+            "json"
+          ]
+        }
+      },
+      "componentId": 14,
+      "producer": {
+        "transactionIndex": 17,
+        "signature": "4FU7evuVLx7C2tsTfYu68YpGmdmH1efZvtYj2S1EGNeGGfSrDyt2dEoDr1aGZQy558KB1AJpFBk7jP765CMdQiAV"
+      },
+      "consumers": [
+        {
+          "transactionIndex": 18,
+          "signature": "28p1bL7Wc8q262ZVLEdQ82qsTyHsD69UFSDyyuKZjDx7cNtzNG9Yy8NeMcDUatazxRBCPUzpmGBzGWYd8VdbiJKG"
+        },
+        {
+          "transactionIndex": 19,
+          "signature": "wEBnbNvsWw6vN8ap7jE2vE3cHyF18UkJYUtmtTY4CUjM2gxCpoVUgPZTVkKFmeuDm5QEEXZq2pkbRZouSRmthim"
+        }
+      ],
+      "native": {
+        "transactionIndex": 14,
+        "signature": "22sertE6q47hCMTHXLADWT1hFfXHXQ3Feu3MNPuYL6AJnt2YfAr9QLtbdTcFKve976iRJDMyy2mNXZF7b8pwziyt"
+      },
+      "postDataSha256": "5e346eb4a139565f142ee0a3cc1a24edefae6528a38bfabcd5e8a686623662ca",
+      "signedMessageSha256": "0d2ab55edcc42a21605c82eef39f23fc9ebd16c629f6f094ef06f394f4d9e5fe"
+    },
+    {
+      "slot": 489603031,
+      "file": "slot-489603031.json",
+      "sha256": "786507c49ad0d1b14a3612c3120731e3ac72506d20034c4dbac145f8ce52b21e",
+      "originalPath": "cache/discovery-devnet/slot-489603031.json",
+      "provenance": {
+        "cluster": "devnet",
+        "endpoint": "https://api.devnet.solana.com",
+        "retrievedAt": "2026-08-28T23:52:36.494Z",
+        "sourceMode": "range-cache",
+        "dataKind": "real-network",
+        "request": {
+          "method": "getBlock",
+          "slot": 489603031,
+          "encodings": [
+            "jsonParsed",
+            "json"
+          ]
+        }
+      },
+      "componentId": 16,
+      "producer": {
+        "transactionIndex": 21,
+        "signature": "2DvXcjZB3b2MkyPS8EtZfkdfSR64aBY4NJyQnEKtxUEM7XbaJ1UkxPfcFfSHe1wNVc4MLgxUYN3EbJRJWN69WqBU"
+      },
+      "consumers": [
+        {
+          "transactionIndex": 22,
+          "signature": "nzzHdHZkC6r3zKEZBN7CakS7m23aieyQMPQF9spqRvd6xHPyrz4fbm43ivS1LS9RrnPWywLxYNffyzDxoK8L9Q3"
+        },
+        {
+          "transactionIndex": 23,
+          "signature": "5RKU74e1jyYnBU6RaYtssPER8g6rYei8FxgZyyRHgqcFkfGhtJWofvaTrxuPoqx5nm7MzP1vbUdnUmjKmqTvhrdo"
+        }
+      ],
+      "native": {
+        "transactionIndex": 16,
+        "signature": "4TU76EPSrUHfGUtNmCgCPbWGvxUJ2Bb8paENphRygDJyV9XjhW2NkaE8cVVUeVNqCESQkhJQNQn4BWm27Dfqt2d4"
+      },
+      "postDataSha256": "72610ef80cd63cf22ae3fbefc2ab1b3e8ee9014ff89b3912ce5f7dce561eb4d0",
+      "signedMessageSha256": "1a89d9aa4c7aa65030a6b15fffaa712173302a49bdd8b291a37aae8288b31732"
+    },
+    {
+      "slot": 489612991,
+      "file": "slot-489612991.json",
+      "sha256": "2562121fb9d1ebe408c3e1623c62bf7e1460027c78cf0587be4ca03095a1353c",
+      "originalPath": "cache/discovery-devnet/slot-489612991.json",
+      "provenance": {
+        "cluster": "devnet",
+        "endpoint": "https://api.devnet.solana.com",
+        "retrievedAt": "2026-08-28T23:53:47.620Z",
+        "sourceMode": "range-cache",
+        "dataKind": "real-network",
+        "request": {
+          "method": "getBlock",
+          "slot": 489612991,
+          "encodings": [
+            "jsonParsed",
+            "json"
+          ]
+        }
+      },
+      "componentId": 11,
+      "producer": {
+        "transactionIndex": 17,
+        "signature": "4XJYXYLpBnSuEjWruNPhgBFLEYij8vBiL5g45x5gD93EY6mQwQEDxVH25Y3KqitLxx9hCY5mAz6q7BReadkidn1c"
+      },
+      "consumers": [
+        {
+          "transactionIndex": 18,
+          "signature": "21xQcLoLpYRZDSWk9xRRssae59qsSc5SUXCFwf77KoE5vshvsnpNCP8n6dZcs1HKQzTeHXEAcMKh1JNVFk45mViD"
+        },
+        {
+          "transactionIndex": 19,
+          "signature": "35rG7ehvyLMfomoKTFHFTgVyzUs4tsk5VwxCRr6fhzFFqCN4ih2cVtYwRFyn7SvBXRBMiU24Hy6yp1ZU67QQMWqW"
+        }
+      ],
+      "native": {
+        "transactionIndex": 11,
+        "signature": "5hig3H81gyjQmPLZJ8kZ6Zwrs35sATqmXkf8qhHA1fHTjgKDosTnLk8e4ym2Bc1uqWXg8J7fwUcneQPHFFKZc5Kn"
+      },
+      "postDataSha256": "7828508b2a3069255d1f8e914897b9fde452b2da65462edf0ea4c148709cb351",
+      "signedMessageSha256": "f12687b670fddca2744fe63cfe92eccab1fc3245cdc7d1b29c6b2d848e8dc154"
+    },
+    {
+      "slot": 489613051,
+      "file": "slot-489613051.json",
+      "sha256": "2c6d7fe3e7525a52d915b76cc0e57bb89ebef9b6b402e3fd72815ce43d0496d6",
+      "originalPath": "cache/discovery-devnet/slot-489613051.json",
+      "provenance": {
+        "cluster": "devnet",
+        "endpoint": "https://api.devnet.solana.com",
+        "retrievedAt": "2026-08-28T23:54:56.477Z",
+        "sourceMode": "range-cache",
+        "dataKind": "real-network",
+        "request": {
+          "method": "getBlock",
+          "slot": 489613051,
+          "encodings": [
+            "jsonParsed",
+            "json"
+          ]
+        }
+      },
+      "componentId": 17,
+      "producer": {
+        "transactionIndex": 19,
+        "signature": "2FqT23iYrC88ZimERzi7dCuZaW5EJeEsMrP6UGoKgpV13ucaPLSNvWVkc1H7B7MUhgMQaGgA8WGGWLtLSPScCyjc"
+      },
+      "consumers": [
+        {
+          "transactionIndex": 20,
+          "signature": "5WxWhRE9xUNVqzEqt9HxQC5WW7qZPbQWbR2Hfgt1FYdFsKhVWgWhqFV1oebNBRxrvD51mKJXMC1kpD9z6bwjavcP"
+        },
+        {
+          "transactionIndex": 21,
+          "signature": "4poB1rh3LFc3ibp6Rjg9MLPQn93pD6AYDQEScBCbXHbTWnyaqN5dpbJWj6ucBnohPn1u8MTVvkCMPkbcFg1NwmwX"
+        }
+      ],
+      "native": {
+        "transactionIndex": 17,
+        "signature": "3hQAHAnDfKM4kKqhU2h1zxL2NTyn9w3e2qHZsXjPsx8p5FM7ZkR4HUXudv1YD1oBGSkkzbwM4SQKdZpBdL9J5NWB"
+      },
+      "postDataSha256": "3511cfd17b251a3dccf9adc4a0dc19dd4897d9722973000a66c8a4d09a29a212",
+      "signedMessageSha256": "a49e36d632d1d1e837546781b406a711572d35b26a9a1be80c83f577b8652a32"
+    }
+  ]
+}
