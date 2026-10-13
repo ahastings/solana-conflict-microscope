@@ -1,0 +1,42 @@
+{
+  "description": "Frozen public devnet getBlock responses for the nine-block loader example. No historical account prestate or validator schedule is inferred.",
+  "source": "Imported Milestone 3.0 cache/contention-devnet; original response provenance retained in every file",
+  "files": [
+    {
+      "path": "slot-488638500.json",
+      "sha256": "49f846b753e3bee0943bd4d7add8178d6e1b0385500141954fee2c5cad8ab218"
+    },
+    {
+      "path": "slot-488638501.json",
+      "sha256": "f7e81815c4e7b93aff703f5b405a13d5b84661da0be1fca1d41e3a1420f9746c"
+    },
+    {
+      "path": "slot-488638502.json",
+      "sha256": "f0274eac7f3fdade063e74bd3c3afd0b1a52201a6fc3802201e222a9d17f8b31"
+    },
+    {
+      "path": "slot-488638503.json",
+      "sha256": "201594c164bac3afb0b82370e1cd425876d08e893dbafb7ff4d84e75f9fcf40e"
+    },
+    {
+      "path": "slot-488638504.json",
+      "sha256": "4991fce0202d683555af2aaa7318684d1565a25bb035d1e9bee153dfb02cc3ca"
+    },
+    {
+      "path": "slot-488638505.json",
+      "sha256": "c76c888ef1cb588c3f8c430434f19ab17b9cd42f04aa6ac73b8b189378ed07fc"
+    },
+    {
+      "path": "slot-488638506.json",
+      "sha256": "5b53bb0381b81a6e45f39c6e632fdbe9147624fa3cbae5e897539f3a5b9ac1f5"
+    },
+    {
+      "path": "slot-488638507.json",
+      "sha256": "838d55258f490721566de04f3d40c82af78922dd339607eec4164e452a39f78e"
+    },
+    {
+      "path": "slot-488638508.json",
+      "sha256": "e0393acaf2f1dacf3e366de1c4b3c242face49965f42bc774a026d06d5caf7f3"
+    }
+  ]
+}
