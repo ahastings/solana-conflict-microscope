@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.8",
+  "cluster": "devnet",
+  "rpcUrl": "https://api.devnet.solana.com",
+  "resolutionMode": "latest",
+  "resolvedAt": "2026-08-28T23:36:59.408Z",
+  "resolvedLatestSlot": 489613067,
+  "windows": [
+    {
+      "startSlot": 489572968,
+      "endSlot": 489573067
+    },
+    {
+      "startSlot": 489582968,
+      "endSlot": 489583067
+    },
+    {
+      "startSlot": 489592968,
+      "endSlot": 489593067
+    },
+    {
+      "startSlot": 489602968,
+      "endSlot": 489603067
+    },
+    {
+      "startSlot": 489612968,
+      "endSlot": 489613067
+    }
+  ],
+  "requestedSlotCount": 500,
+  "cacheDir": "cache/discovery-devnet",
+  "outputDir": "output/discovery-devnet",
+  "options": {
+    "delayMs": 750,
+    "concurrency": 1,
+    "maxRetries": 3,
+    "backoffMs": 2000,
+    "top": 20,
+    "jsonBudgetBytes": 26214400,
+    "htmlBudgetBytes": 5242880,
+    "skippedSlots": []
+  }
+}
