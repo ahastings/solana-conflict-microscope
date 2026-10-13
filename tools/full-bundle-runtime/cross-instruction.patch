@@ -1,0 +1,14 @@
+diff --git a/harness/src/lib.rs b/harness/src/lib.rs
+--- a/harness/src/lib.rs
++++ b/harness/src/lib.rs
+@@ -1065,6 +1065,9 @@
+                 invoke_context.process_precompile(
+                     program_id,
+                     &compiled_ix.data,
+-                    std::iter::once(compiled_ix.data.as_ref()),
++                    sanitized_message
++                        .instructions()
++                        .iter()
++                        .map(|instruction| instruction.data.as_ref()),
+                 )
+             } else {
