@@ -1,0 +1,49 @@
+{
+  "provenance": {
+    "kind": "curated deterministic RPC-shaped fixture",
+    "note": "Account metadata follows the official getBlock jsonParsed response. A separately fetched public block fixture may replace this compact teaching case."
+  },
+  "slot": 250000000,
+  "block": {
+    "blockhash": "ExampleBlockhash1111111111111111111111111111111",
+    "previousBlockhash": "ExamplePrevious11111111111111111111111111111",
+    "parentSlot": 249999999,
+    "blockTime": 1700000000,
+    "blockHeight": 228000000,
+    "transactions": [
+      {
+        "transaction": { "signatures": ["tx-alpha"], "message": { "accountKeys": [
+          { "pubkey": "payer-alpha", "signer": true, "writable": true, "source": "transaction" },
+          { "pubkey": "shared-market", "signer": false, "writable": false, "source": "transaction" },
+          { "pubkey": "system-program", "signer": false, "writable": false, "source": "transaction" }
+        ] } },
+        "meta": { "err": null, "fee": 5000, "computeUnitsConsumed": 1200 }
+      },
+      {
+        "transaction": { "signatures": ["tx-beta"], "message": { "accountKeys": [
+          { "pubkey": "payer-beta", "signer": true, "writable": true, "source": "transaction" },
+          { "pubkey": "shared-market", "signer": false, "writable": true, "source": "lookupTable" },
+          { "pubkey": "system-program", "signer": false, "writable": false, "source": "lookupTable" }
+        ] } },
+        "meta": { "err": { "InstructionError": [0, "Custom"] }, "fee": 7000, "computeUnitsConsumed": 900 }
+      },
+      {
+        "transaction": { "signatures": ["tx-gamma"], "message": { "accountKeys": [
+          { "pubkey": "payer-gamma", "signer": true, "writable": true, "source": "transaction" },
+          { "pubkey": "shared-market", "signer": false, "writable": false, "source": "transaction" },
+          { "pubkey": "shared-market", "signer": false, "writable": false, "source": "lookupTable" },
+          { "pubkey": "system-program", "signer": false, "writable": false, "source": "transaction" }
+        ] } },
+        "meta": { "err": null, "fee": 5000 }
+      },
+      {
+        "transaction": { "signatures": ["tx-delta"], "message": { "accountKeys": [
+          { "pubkey": "payer-delta", "signer": true, "writable": true, "source": "transaction" },
+          { "pubkey": "independent-data", "signer": false, "writable": false, "source": "transaction" }
+        ] } },
+        "meta": { "err": null, "fee": 5000, "computeUnitsConsumed": 300 }
+      }
+    ]
+  }
+}
+

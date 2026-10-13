@@ -1,0 +1,56 @@
+{
+  "provenance": {
+    "cluster": "synthetic",
+    "endpoint": null,
+    "retrievedAt": "2026-08-27T00:00:00.000Z",
+    "sourceMode": "fixture",
+    "dataKind": "curated-teaching",
+    "request": { "note": "Deterministic teaching fixture; not observed network behavior." }
+  },
+  "slot": 1500000,
+  "block": {
+    "blockhash": "TeachingMeaningLayerBlockhash",
+    "previousBlockhash": "TeachingMeaningLayerPrevious",
+    "parentSlot": 1499999,
+    "blockTime": null,
+    "blockHeight": null,
+    "transactions": [
+      {
+        "transaction": { "signatures": ["teaching-independent"], "message": { "accountKeys": [
+          { "pubkey": "IndependentPayer", "signer": true, "writable": true, "source": "transaction" },
+          { "pubkey": "IndependentState", "signer": false, "writable": true, "source": "transaction" },
+          { "pubkey": "TeachingAppProgram", "signer": false, "writable": false, "source": "transaction" }
+        ], "instructions": [{ "programId": "TeachingAppProgram", "program": "teaching-app", "stackHeight": 1, "parsed": { "type": "update", "info": { "stateAccount": "IndependentState", "authority": "IndependentPayer" } } }] } },
+        "rawTransaction": { "message": { "accountKeys": ["IndependentPayer", "IndependentState", "TeachingAppProgram"], "instructions": [{ "programIdIndex": 2, "accounts": [0, 1], "data": "2", "stackHeight": 1 }] } },
+        "rawInnerInstructions": [], "meta": { "err": null, "fee": 5000, "computeUnitsConsumed": 800, "innerInstructions": [], "logMessages": ["Program TeachingAppProgram invoke [1]", "Program log: Instruction: Update", "Program TeachingAppProgram success"] }
+      },
+      {
+        "transaction": { "signatures": ["teaching-a"], "message": { "accountKeys": [
+          { "pubkey": "PayerAlpha", "signer": true, "writable": true, "source": "transaction" },
+          { "pubkey": "SharedApplicationState", "signer": false, "writable": true, "source": "transaction" },
+          { "pubkey": "TeachingAppProgram", "signer": false, "writable": false, "source": "transaction" }
+        ], "instructions": [{ "programId": "TeachingAppProgram", "program": "teaching-app", "stackHeight": 1, "parsed": { "type": "update", "info": { "stateAccount": "SharedApplicationState", "authority": "PayerAlpha" } } }] } },
+        "rawTransaction": { "message": { "accountKeys": ["PayerAlpha", "SharedApplicationState", "TeachingAppProgram"], "instructions": [{ "programIdIndex": 2, "accounts": [0, 1], "data": "3", "stackHeight": 1 }] } },
+        "rawInnerInstructions": [], "meta": { "err": null, "fee": 5000, "computeUnitsConsumed": 1200, "innerInstructions": [], "logMessages": ["Program TeachingAppProgram invoke [1]", "Program log: Instruction: Update", "Program TeachingAppProgram success"] }
+      },
+      {
+        "transaction": { "signatures": ["teaching-b"], "message": { "accountKeys": [
+          { "pubkey": "PayerBeta", "signer": true, "writable": true, "source": "transaction" },
+          { "pubkey": "SharedApplicationState", "signer": false, "writable": true, "source": "transaction" },
+          { "pubkey": "TeachingAppProgram", "signer": false, "writable": false, "source": "transaction" }
+        ], "instructions": [{ "programId": "TeachingAppProgram", "program": "teaching-app", "stackHeight": 1, "parsed": { "type": "update", "info": { "stateAccount": "SharedApplicationState", "authority": "PayerBeta" } } }] } },
+        "rawTransaction": { "message": { "accountKeys": ["PayerBeta", "SharedApplicationState", "TeachingAppProgram"], "instructions": [{ "programIdIndex": 2, "accounts": [0, 1], "data": "4", "stackHeight": 1 }] } },
+        "rawInnerInstructions": [], "meta": { "err": null, "fee": 5000, "computeUnitsConsumed": 1400, "innerInstructions": [], "logMessages": ["Program TeachingAppProgram invoke [1]", "Program log: Instruction: Update", "Program TeachingAppProgram success"] }
+      },
+      {
+        "transaction": { "signatures": ["teaching-c"], "message": { "accountKeys": [
+          { "pubkey": "PayerGamma", "signer": true, "writable": true, "source": "transaction" },
+          { "pubkey": "SharedApplicationState", "signer": false, "writable": true, "source": "transaction" },
+          { "pubkey": "TeachingAppProgram", "signer": false, "writable": false, "source": "transaction" }
+        ], "instructions": [{ "programId": "TeachingAppProgram", "program": "teaching-app", "stackHeight": 1, "parsed": { "type": "update", "info": { "stateAccount": "SharedApplicationState", "authority": "PayerGamma" } } }] } },
+        "rawTransaction": { "message": { "accountKeys": ["PayerGamma", "SharedApplicationState", "TeachingAppProgram"], "instructions": [{ "programIdIndex": 2, "accounts": [0, 1], "data": "5", "stackHeight": 1 }] } },
+        "rawInnerInstructions": [], "meta": { "err": null, "fee": 5000, "computeUnitsConsumed": 1600, "innerInstructions": [], "logMessages": ["Program TeachingAppProgram invoke [1]", "Program log: Instruction: Update", "Program TeachingAppProgram success"] }
+      }
+    ]
+  }
+}

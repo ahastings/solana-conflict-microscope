@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "public-fixtures-v1",
+  "source": "Recovered Milestone 3.0 baseline plus separately identified public RPC captures. Original response bytes and provenance are preserved. Hashes identify supplied bytes, not an independent authenticity attestation.",
+  "files": [
+    {
+      "path": "example-block.json",
+      "sha256": "7273ce69e87ae2bf88ef25f42f699e81fc41b23a8b5c466e26559689c63854e9"
+    },
+    {
+      "path": "real-devnet-block.json",
+      "sha256": "4e53c39a0818f88b0395306a32ac8e9f9d87cf4f256118ae597acc3552013b43"
+    },
+    {
+      "path": "cross-payer-devnet-block.json",
+      "sha256": "e0393acaf2f1dacf3e366de1c4b3c242face49965f42bc774a026d06d5caf7f3"
+    },
+    {
+      "path": "cross-payer-application-state-teaching.json",
+      "sha256": "b956be175c064fa158296914c5bd471e05557459c3391e721b5a764dd766b6aa"
+    },
+    {
+      "path": "loader-range/slot-488638500.json",
+      "sha256": "49f846b753e3bee0943bd4d7add8178d6e1b0385500141954fee2c5cad8ab218"
+    },
+    {
+      "path": "loader-range/slot-488638501.json",
+      "sha256": "f7e81815c4e7b93aff703f5b405a13d5b84661da0be1fca1d41e3a1420f9746c"
+    },
+    {
+      "path": "loader-range/slot-488638502.json",
+      "sha256": "f0274eac7f3fdade063e74bd3c3afd0b1a52201a6fc3802201e222a9d17f8b31"
+    },
+    {
+      "path": "loader-range/slot-488638503.json",
+      "sha256": "201594c164bac3afb0b82370e1cd425876d08e893dbafb7ff4d84e75f9fcf40e"
+    },
+    {
+      "path": "loader-range/slot-488638504.json",
+      "sha256": "4991fce0202d683555af2aaa7318684d1565a25bb035d1e9bee153dfb02cc3ca"
+    },
+    {
+      "path": "loader-range/slot-488638505.json",
+      "sha256": "c76c888ef1cb588c3f8c430434f19ab17b9cd42f04aa6ac73b8b189378ed07fc"
+    },
+    {
+      "path": "loader-range/slot-488638506.json",
+      "sha256": "5b53bb0381b81a6e45f39c6e632fdbe9147624fa3cbae5e897539f3a5b9ac1f5"
+    },
+    {
+      "path": "loader-range/slot-488638507.json",
+      "sha256": "838d55258f490721566de04f3d40c82af78922dd339607eec4164e452a39f78e"
+    },
+    {
+      "path": "loader-range/slot-488638508.json",
+      "sha256": "e0393acaf2f1dacf3e366de1c4b3c242face49965f42bc774a026d06d5caf7f3"
+    },
+    {
+      "path": "rpc-v1/slot-503405150-jsonParsed-v1.response.json",
+      "sha256": "496015176ad18318462cea98b03d8bdecca7d9f885c2c5a3c3bf5db87e741e33",
+      "source": "Public devnet getBlock, finalized, captured 2026-09-24; request metadata in rpc-v1/v1-capture.json"
+    },
+    {
+      "path": "rpc-v1/slot-503405150-json-v1.response.json",
+      "sha256": "b4fb278fcbd93a71ffe9b79c77aaa0f3e3c7eb0520fe6aed7a8e4a97b750bde5",
+      "source": "Public devnet getBlock, finalized, captured 2026-09-24; request metadata in rpc-v1/v1-capture.json"
+    },
+    {
+      "path": "rpc-v1/v1-capture.json",
+      "sha256": "ffd9010c95b7dad4e767f4ab189111f4899df66b46e6973026710cb07883aecb",
+      "source": "Public devnet getBlock, finalized, captured 2026-09-24; request metadata in rpc-v1/v1-capture.json"
+    },
+    {
+      "path": "rpc-v1/slot-503405150.json",
+      "sha256": "7cb29f59993175645b56f601cf4eaed13774d9fa38cac09b84486ab46af7b1dd",
+      "source": "Public devnet paired getBlock capture through the v1-capable client, 2026-09-24; merged fixture ready for offline analyze"
+    },
+    {
+      "path": "mainnet-privilege-demotion.json",
+      "sha256": "deabe34e533d8fe2deb824a8b170304752c64e4eada73cae46670eb82cdc94cb"
+    }
+  ]
+}
