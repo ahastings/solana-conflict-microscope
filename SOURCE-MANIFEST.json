@@ -47,8 +47,8 @@
     },
     {
       "path": "CONTRIBUTING.md",
-      "bytes": 2533,
-      "sha256": "88be6768685419109d9aa4803a5625d4f5e72ef1fcac704605e86fa07ed890d2"
+      "bytes": 3069,
+      "sha256": "c92b1ece6ea083cffd1f0ce7ff67deac83eb0bfa8a0b92764751cf08338c2697"
     },
     {
       "path": "HANDOFF.md",
@@ -62,8 +62,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 21069,
-      "sha256": "a51595e931db57ea5259e1eef4b657b594168d6ce7850c74e98c23e3d6aceb0a"
+      "bytes": 21821,
+      "sha256": "b958b7f5e393985e3f39a914abf65e709b45d3f9eef63d87abe83fa8cd70f286"
     },
     {
       "path": "discovery-plans/milestone-1.8-devnet.json",

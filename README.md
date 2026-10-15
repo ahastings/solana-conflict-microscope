@@ -2,13 +2,17 @@
 
 Understand which declared accounts connect Solana transactions, why they conflict, and how they can be grouped into estimated conflict-free waves. The microscope is a local, read-only developer and teaching tool. It produces JSON evidence and standalone interactive HTML reports.
 
-**Start with the offline demo.** It needs no RPC account, API key, wallet, database, server, or ignored research cache.
+**[Try the live demo](https://ahastings.github.io/solana-conflict-microscope/) · [Download the offline demo](https://github.com/ahastings/solana-conflict-microscope/releases/download/v1.1.0/solana-conflict-microscope-v1.1.0-offline-demo.zip) · [Source and release checksums](https://github.com/ahastings/solana-conflict-microscope/releases/tag/v1.1.0)**
+
+For the prebuilt offline demo, extract the ZIP and open its index.html in your browser. No installation, RPC account, API key, wallet, database, server, or research cache is needed. To generate reports from source, follow the local quickstart below.
 
 ## Version 1.1
 
 Version 1.1.0 adds shareable evidence links and browser interaction checks to the portable analytical tool, licensed under [MIT](LICENSE), copyright 2026 ahastings. Third-party material retains its own terms; see the [inventory](docs/guides/THIRD-PARTY-INVENTORY.md). The demo uses captured fixtures, not live network streaming. Separate native experiments remain research references with their own prerequisites and limitations.
 
 The included GitHub Pages workflow verifies the portable tool before deploying only output/demo from the main branch. It does not publish research caches, native binaries, or workspace history.
+
+Hosted example pages load Cloudflare Web Analytics, added by the deployment workflow. Generated local demos and offline release archives omit it. The **Compare your files** page excludes analytics and processes selected files locally, without uploading them.
 
 See [what changed](CHANGELOG.md) and [how to share exact evidence](docs/guides/SHARING-EVIDENCE.md).
 
@@ -105,7 +109,9 @@ npm run verify:portable
 
 This runs strict TypeScript compilation, the core analysis/discovery/range/reviewer regression suites, and the demo plus independent reviewer using source-controlled fixtures. After generating the demo, it independently verifies all 12 saved block analyses: three standalone examples and nine observed range blocks. You can repeat that read-only check with npm run verify:demo, or select an existing demo folder with --demo-dir DIR. This certifies declared block conflicts and bounds, not cross-block upload reconstruction or counterfactual semantics. The nine-block range corpus is bundled with checksums in fixtures/loader-range/manifest.json. Missing evidence must fail verification, never silently skip a test. See the [Windows/Linux verification record](docs/guides/PORTABILITY-VERIFICATION.md) for the tested revision, environments, and report parity checks.
 
-Optional browser checks are available with `npm run check:browser`. They require a separately installed Playwright runtime and Chromium or Chrome; neither is a tool runtime dependency, and the command does not install anything. If Playwright is outside the project, set `MICROSCOPE_PLAYWRIGHT_PATH` to its package directory. Set `MICROSCOPE_CHROME_PATH` to an existing Chrome executable when needed. The command generates fresh offline demo and synthetic reports under `output/report-browser-*`, then checks desktop/mobile search, paging, keyboard focus, layout, browser errors, and absence of external requests. It also checks the bundled nine-block range report, its observation-coverage summary, and slot selection. A successful run writes `results.json` alongside the reports. These optional browser checks are separate from `verify:portable`.
+For interface changes, also run `npm run check:ui-cases` after `verify:portable`. `npm ci` installs the pinned `playwright-core` development driver without downloading a browser. Set `MICROSCOPE_CHROME_PATH` to an existing Chrome or Chromium executable; `MICROSCOPE_PLAYWRIGHT_PATH` is only needed to override the driver module. Generated reports remain self-contained and work offline.
+
+The four browser suites check report controls, transaction links, range evidence links, and local file comparison at desktop and phone widths, including paging, keyboard focus, downloads, layout, browser errors, and blocked external requests. They write evidence under output/. See the [browser-check guide](docs/guides/BROWSER-CHECKS.md) for setup and commands. Browser checks are separate from `verify:portable`; the Pages deployment runs both before publishing.
 
 `npm run benchmark:conflicts` measures conflict-graph and account-summary construction on three deterministic 240-transaction synthetic workloads. It prints each run's timing and a hash of the complete result, so implementations can be compared without accepting changed evidence. The default mode excludes normalization, counterfactual analysis, HTML generation, and network acquisition. Use `npm run benchmark:conflicts -- --full` to include normalization and all counterfactual analysis; this still excludes HTML and network acquisition. Timings vary by machine and are not validator-performance measurements or pass/fail thresholds.
 

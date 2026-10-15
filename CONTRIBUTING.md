@@ -4,7 +4,16 @@ The most useful review starts with one question: can you reproduce a finding and
 
 ## First run
 
-Use Node.js 22.12+ and npm. Run npm ci, then npm run verify:portable. Open output/demo/index.html and select a finding in a report. No RPC or wallet is needed for this workflow.
+Use Node.js 22.12+ and npm, then run from the project folder:
+
+~~~sh
+npm ci
+npm run verify:portable
+~~~
+
+Open output/demo/index.html and select a finding in a report. No RPC or wallet is needed for this workflow. The [first-report walkthrough](docs/guides/READING-REPORTS.md) explains the bundled examples.
+
+For interface changes, also run `npm run check:ui-cases` after portable verification. `npm ci` includes the pinned `playwright-core` development driver; point `MICROSCOPE_CHROME_PATH` to an existing Chrome or Chromium executable. The [browser-check guide](docs/guides/BROWSER-CHECKS.md) gives platform setup and describes all four suites. The Pages deployment runs both portable verification and browser checks.
 
 If a check fails, include the command, Node/npm versions, operating system, and the error. Do not share endpoint credentials, private keys, or unrelated personal files.
 
@@ -20,7 +29,7 @@ Keep TypeScript strict and dependencies modest. Test behavior that could change 
 
 Do not infer application semantics from account co-occurrence or log wording alone. Attribute identities, decoded roles, ownership, actor patterns, and actionability separately. Keep unknowns explicit and cite primary technical evidence for a new decoder.
 
-The full historical research suite requires pinned evidence outside the portable source preview. Do not weaken it, rewrite historical hashes, or claim it passed after only running the portable suite. Review any change in a frozen artifact as a result change.
+The full historical research suite requires pinned evidence outside the portable checkout. Do not weaken it, rewrite historical hashes, or claim it passed after only running the portable suite. Review any change in a frozen artifact as a result change.
 
 ## Scope
 
