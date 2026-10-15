@@ -19,6 +19,40 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run verify:portable
+      - name: Add analytics to hosted demo only
+        env:
+          CLOUDFLARE_WEB_ANALYTICS_TOKEN: 2662871792c54b68ad1b04953e2fce45
+        run: |
+          node --input-type=module <<'NODE'
+          import { readdir, readFile, writeFile } from 'node:fs/promises';
+          import { join } from 'node:path';
+          const token = process.env.CLOUDFLARE_WEB_ANALYTICS_TOKEN;
+          if (!/^[a-f0-9]{32}$/i.test(token ?? '')) throw new Error('A valid public Cloudflare Web Analytics token is required.');
+          const source = "src='https://static.cloudflareinsights.com/beacon.min.js'";
+          const beacon = `<!-- Cloudflare Web Analytics --><script type='module' ${source} data-cf-beacon='{"token": "${token}"}'></script><!-- End Cloudflare Web Analytics -->`;
+          async function htmlFiles(directory) {
+            const entries = await readdir(directory, { withFileTypes: true });
+            const nested = await Promise.all(entries.map(entry => {
+              const path = join(directory, entry.name);
+              return entry.isDirectory() ? htmlFiles(path) : entry.isFile() && path.endsWith('.html') ? [path] : [];
+            }));
+            return nested.flat().sort();
+          }
+          // Only the generated Pages artifact is changed; local demos and release archives stay offline.
+          const files = await htmlFiles('output/demo');
+          if (files.length === 0) throw new Error('No generated demo HTML was found.');
+          const pages = await Promise.all(files.map(async path => ({ path, html: await readFile(path, 'utf8') })));
+          for (const { path, html } of pages) {
+            if (!/<\/body>/i.test(html)) throw new Error(`Missing closing body tag: ${path}`);
+            if (html.includes(source) && (!html.includes(beacon) || html.split(source).length !== 2)) {
+              throw new Error(`Unexpected existing analytics beacon: ${path}`);
+            }
+          }
+          for (const { path, html } of pages) {
+            if (!html.includes(beacon)) await writeFile(path, html.replace(/<\/body>/i, `${beacon}\n</body>`));
+          }
+          console.log(`Cloudflare Web Analytics enabled on ${files.length} hosted demo HTML pages.`);
+          NODE
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
