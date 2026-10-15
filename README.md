@@ -59,6 +59,8 @@ Verification establishes internal consistency of the supplied declared-lock evid
 
 ## Compare two saved blocks
 
+Choose **Compare your files** on the demo opening page to compare two saved block analysis JSON files in your browser. Both inputs are independently checked before any result appears; files stay local. Download the verified comparison as JSON or a standalone HTML report. This also works offline. Browser size and verification-time limits are displayed on the page; use the terminal command below for larger inputs.
+
 ~~~sh
 npm run compare:analyses -- --left output/demo/real-loader/analysis.json --right output/demo/real-funding/analysis.json --output-dir output/comparison
 ~~~

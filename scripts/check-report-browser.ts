@@ -128,7 +128,7 @@ async function main(): Promise<void> {
       await indexPage.route(/^https?:/, route => { indexNetwork.push("unexpected external request"); return route.abort(); });
       await indexPage.goto(pathToFileURL(demo.indexPath).href);
       assert.equal(await indexPage.locator("main article").count(), 5);
-      assert.equal(await indexPage.locator(".quick-links a").count(), 5);
+      assert.equal(await indexPage.locator(".quick-links a").count(), 6);
       assert.match((await indexPage.locator("#multi-block-upload").textContent())!, /Decoded chunks148/);
       assert.equal(await indexPage.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
       await indexPage.getByRole("link", { name: "Open multi-block upload", exact: true }).press("Enter");

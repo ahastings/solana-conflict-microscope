@@ -1,6 +1,6 @@
 {
   "format": "microscope-source-preview-v1",
-  "status": "local-preview-not-published",
+  "status": "public-source-update-candidate",
   "licenseStatus": "license-file-included",
   "selectionPolicy": "Required root and native harness files are copied explicitly. Source trees include only .ts, fixture/plan trees only .json, and documentation trees only .md. Hidden entries and dependency, build, cache, output, backup, credentials, and secrets directories are skipped. Other extensions are intentionally skipped. Missing required paths, links in selected paths or their ancestors, and nonregular selected files fail closed. This selection policy is not a content-level secrets audit.",
   "verification": "Run npm ci then npm run verify:portable in this folder. Full research replay additionally requires separately pinned historical caches and generated artifacts. Native reexecution has separate Rust/Mollusk prerequisites documented with the included harness source.",
@@ -12,8 +12,8 @@
     },
     {
       "path": ".github/workflows/pages.yml",
-      "bytes": 3146,
-      "sha256": "b742675fd3eaf8a6650f22094239127e9986b3ff151c8d5685bffff898d78c83"
+      "bytes": 3235,
+      "sha256": "9f03148dced4c6501132ca0d66d2b726a82e89f3deb824c697b7f1815d57e9df"
     },
     {
       "path": ".gitignore",
@@ -42,8 +42,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 20515,
-      "sha256": "43aac5b288350fe1ec17cd1e7313c488584878b4b1a8ae341bfe248f00e30fe6"
+      "bytes": 20927,
+      "sha256": "52d644baf3dd40620b9868d1214c2c7636d653efc42e0c3c7691fe6aa2c83fa1"
     },
     {
       "path": "discovery-plans/milestone-1.8-devnet.json",
@@ -521,9 +521,14 @@
       "sha256": "58ee2b27e34b54386b645854ac9acd0f229a83caa70ad845a8df828015af2615"
     },
     {
+      "path": "scripts/check-local-comparison.ts",
+      "bytes": 13515,
+      "sha256": "94c0d5cdba9d47d3988581630ad22b6faad3ddcc4df655121f556307099c2b5f"
+    },
+    {
       "path": "scripts/check-report-browser.ts",
       "bytes": 38488,
-      "sha256": "7d7c00cc1f2cad2bf281bd10def8de8e5ef9b07c39459cd4bffdba0c97384a97"
+      "sha256": "e276bb3cd5bde5c719ee72b04fb2e9783591dc2e7f20feabda8668d3b9253d5b"
     },
     {
       "path": "scripts/compare-analyses.ts",
@@ -621,14 +626,19 @@
       "sha256": "3aef4c274fa9cc42fe3f9b7b0a6e85e16de785606860f374c1b8444112821fb3"
     },
     {
+      "path": "src/compare-browser.ts",
+      "bytes": 10113,
+      "sha256": "008128e2d791d08c62c182ab09c4cc8ef8180e216fdd39b580e53ab3528ea9e9"
+    },
+    {
       "path": "src/compute.ts",
       "bytes": 512,
       "sha256": "9d049498dbcbb731b9d185fa228f398a05754df7219ef5e1aad73411df095a49"
     },
     {
       "path": "src/demo.ts",
-      "bytes": 18321,
-      "sha256": "81728495ecdc597c1dc4a2bf365c536281292eaa91727e06a63347557bddc329"
+      "bytes": 18660,
+      "sha256": "51bdaf46c751dbebe9172d814041d09b65de38558fd1b6380046277e03ada1f2"
     },
     {
       "path": "src/dependency-layers.ts",
@@ -1017,8 +1027,8 @@
     },
     {
       "path": "test/demo.test.ts",
-      "bytes": 13293,
-      "sha256": "4824d34059fa5e57b2218ed3ace262de6b50b2c85f1b2e098fa13ba7432c88af"
+      "bytes": 13291,
+      "sha256": "1ff55834e8bf84b091ec639e3e1e9d16fb24d2293a368bbec30a49bc9d570f7b"
     },
     {
       "path": "test/dependency-layers.test.ts",
@@ -1255,5 +1265,6 @@
       "bytes": 495,
       "sha256": "79e97e7b731d653832f72bf0571d9d063193735955c555c40edb15bbfdf93269"
     }
-  ]
+  ],
+  "hashScope": "Git index file bytes; text line endings in a local checkout may differ according to Git settings."
 }

@@ -39,7 +39,8 @@ jobs:
             return nested.flat().sort();
           }
           // Only the generated Pages artifact is changed; local demos and release archives stay offline.
-          const files = await htmlFiles('output/demo');
+          // File comparison runs locally with networking disabled. Keep analytics off that page.
+          const files = (await htmlFiles('output/demo')).filter(path => path !== 'output/demo/comparison/local.html');
           if (files.length === 0) throw new Error('No generated demo HTML was found.');
           const pages = await Promise.all(files.map(async path => ({ path, html: await readFile(path, 'utf8') })));
           for (const { path, html } of pages) {
