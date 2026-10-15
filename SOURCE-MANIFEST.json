@@ -7,8 +7,8 @@
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 758,
-      "sha256": "c60229d71cf92a7b627c3ee9396e480d507cd01a30b4ac40e26fdba4c9b2e2ef"
+      "bytes": 931,
+      "sha256": "d06bb95dec4ffea8f713c51c3e00a4c905fd2d045a702f308993caddc3255862"
     },
     {
       "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
@@ -52,8 +52,8 @@
     },
     {
       "path": "LICENSE",
-      "bytes": 1067,
-      "sha256": "981019c45dc23e17885e8e51b52e9044f1cbc3942fe85556969d5502328c0c40"
+      "bytes": 1066,
+      "sha256": "d6ba8b174cf08d40ee1afba9551681c7e631d2a0a842a4791feab56c0aab06fb"
     },
     {
       "path": "README.md",
@@ -92,8 +92,8 @@
     },
     {
       "path": "docs/guides/FIRST-PREVIEW-PLAN.md",
-      "bytes": 6715,
-      "sha256": "7d97f94a821d5020a820b36e325fbca3bbe1b52faf48106ec170233b18a49dba"
+      "bytes": 6712,
+      "sha256": "0db2ae7d955a3e81005689eff6da0feb004737081106078393d4bd50b248d641"
     },
     {
       "path": "docs/guides/FRESH-DATA-COMPATIBILITY.md",
@@ -102,8 +102,8 @@
     },
     {
       "path": "docs/guides/MAINNET-COMPATIBILITY.md",
-      "bytes": 8403,
-      "sha256": "510a46bbc0f33f6483774ba5b0312adb5474c136f68e817556789a00157c94cb"
+      "bytes": 8399,
+      "sha256": "75436f581672c0530b52546b3953ffd74cb7061bd1c750b037894baec0fe7055"
     },
     {
       "path": "docs/guides/MOLLUSK-LICENSE.md",
@@ -122,8 +122,8 @@
     },
     {
       "path": "docs/guides/PORTABILITY-VERIFICATION.md",
-      "bytes": 6047,
-      "sha256": "3fb96d57dec8c52babe0c5619eee6be359c151b9a56f0e955e1ab04ec69964d4"
+      "bytes": 6046,
+      "sha256": "ffc8dc9b57328c998ba868a48276286dc266f2393077ba00023a7b3f26574a62"
     },
     {
       "path": "docs/guides/READING-REPORTS.md",
@@ -152,8 +152,8 @@
     },
     {
       "path": "docs/guides/RUNTIME-COMPATIBILITY.md",
-      "bytes": 3246,
-      "sha256": "7a4089356ec5d50823685ff7f54d064f36a3e23333211339d0c1f3abb1690b9a"
+      "bytes": 3245,
+      "sha256": "247d05f526f3eb986b7f97806c54e40a778d6321a7bda8e6dadb04f8f0c6ed8f"
     },
     {
       "path": "docs/guides/THIRD-PARTY-INVENTORY.md",
@@ -547,8 +547,8 @@
     },
     {
       "path": "scripts/compare-analyses.ts",
-      "bytes": 2762,
-      "sha256": "0cdcd0a54ab8e73c28d8b8ce8755f901297baa9a9df60b7db91a1ee573839794"
+      "bytes": 2761,
+      "sha256": "1c55ad934c02db60408e9a19eab350d8cacb97b38f9415ddc85a25b63a0cfd53"
     },
     {
       "path": "scripts/demo.ts",
@@ -637,8 +637,8 @@
     },
     {
       "path": "src/compare-analyses.ts",
-      "bytes": 8734,
-      "sha256": "3aef4c274fa9cc42fe3f9b7b0a6e85e16de785606860f374c1b8444112821fb3"
+      "bytes": 8733,
+      "sha256": "51efb1ab0cc2c9f45167061a4d7c3adbbb85382970a5be9b3c9a7a03406a517c"
     },
     {
       "path": "src/compare-browser.ts",
@@ -702,8 +702,8 @@
     },
     {
       "path": "src/json-text.ts",
-      "bytes": 233,
-      "sha256": "c5a5a899c891e42e42ac7a48c1ff4d96c91c47c0a13aa09c30822a7a4fcc8e42"
+      "bytes": 232,
+      "sha256": "33cb4f3483750fd08b9cefdcdf7c45f7ea25e4bb4aae087c358d024095305b52"
     },
     {
       "path": "src/known.ts",
@@ -882,8 +882,8 @@
     },
     {
       "path": "src/range-explorer.ts",
-      "bytes": 4686,
-      "sha256": "6ce34ffcad18372d1957f0eb1f28edbfa34347df42c5be44fe46e003b8f1ff77"
+      "bytes": 4685,
+      "sha256": "61e80bff262f0ca77b893231faf3d12a9becf01c429c859bd957a8bd8d435f52"
     },
     {
       "path": "src/range-input.ts",
@@ -902,8 +902,8 @@
     },
     {
       "path": "src/range-report-data.ts",
-      "bytes": 2189,
-      "sha256": "f93212d5af0352a5bac9e2efd98694381f25a861ccdc9a13983ebf5c67f99068"
+      "bytes": 2188,
+      "sha256": "0dc706b4e39bad5899beb4897bb49365dbbbdf16bd29b622a470e971eeb35af5"
     },
     {
       "path": "src/range-report.ts",
@@ -917,8 +917,8 @@
     },
     {
       "path": "src/report-data.ts",
-      "bytes": 2831,
-      "sha256": "9f8937a533085bd9faeda8d384f390547d12591605be2e05f5487f3e1b59d9cc"
+      "bytes": 2830,
+      "sha256": "5d50bb8c48b2bc8db54e350a94af710ce86d039632e39ba29609e5a320282c66"
     },
     {
       "path": "src/report-explorer.ts",
@@ -982,18 +982,18 @@
     },
     {
       "path": "src/upload-evidence.ts",
-      "bytes": 507,
-      "sha256": "75738406121a0e7941c0a03fa689d57ef41476fbf15a84210624e49d2ae829b0"
+      "bytes": 506,
+      "sha256": "0447b08f0605a7e32add4c4099366cc23a3533bbf80a5ed31ce8b7f094904425"
     },
     {
       "path": "src/upload-identity.ts",
-      "bytes": 265,
-      "sha256": "7b151d838d45d26e9e5a22317e9e389fc47dce54ed5bef921e12bd1f9d618ffe"
+      "bytes": 264,
+      "sha256": "e31d9940736b9a6d0fc4bdef35f25b366446d7cc61931aee2545fde13d0e2461"
     },
     {
       "path": "src/upload-payload.ts",
-      "bytes": 2173,
-      "sha256": "da3b89aa8ea4db240d59fdb444853759b1005205f00447daf5df78a8c6cb9b34"
+      "bytes": 2171,
+      "sha256": "29a4b751a803f014642cbacc5485396a149e55254ec460cec343ad5d67401621"
     },
     {
       "path": "src/verify-analysis.ts",
@@ -1017,8 +1017,8 @@
     },
     {
       "path": "test/analyze-options.test.ts",
-      "bytes": 7442,
-      "sha256": "16be7fb52881e3ed6d192fa757907fc7843247c089893230b1c285162341f78c"
+      "bytes": 7438,
+      "sha256": "309d89eb621a88f30f46f8ca3edbbeb5f4300980fdf33e069ef57e2f945db52e"
     },
     {
       "path": "test/analyzer.test.ts",
@@ -1027,13 +1027,13 @@
     },
     {
       "path": "test/compare-analyses.test.ts",
-      "bytes": 5593,
-      "sha256": "7b7882fd1bf1718508728a00ed58b4160310c6dbb1078cc849513ebc559b51fb"
+      "bytes": 5592,
+      "sha256": "8efd7cca6e0ad9ec30827a4531ed698e462e562f5e77fb267dce1cffe68e45a4"
     },
     {
       "path": "test/core-regressions.test.ts",
-      "bytes": 52108,
-      "sha256": "e8f0d0ca866ecdec4ff35e581f778007b3a13727fcc3642203ee0d5e6fe1555a"
+      "bytes": 52088,
+      "sha256": "392886a4461c4070d9a05ab2566355bd99f6c2cf42c699a9c03bb54d41a1df21"
     },
     {
       "path": "test/current-native-review.test.ts",
@@ -1052,8 +1052,8 @@
     },
     {
       "path": "test/mainnet-privileges.test.ts",
-      "bytes": 2417,
-      "sha256": "f5b638a876ecaf42945e5840ba1db51502bc364dbd13d9b7531e3a19dfe55f7a"
+      "bytes": 2416,
+      "sha256": "cd0cfef65f8dd23300b1dce38874dbd2efceefba0864751cc6b465ec6768a2d0"
     },
     {
       "path": "test/milestone17.test.ts",
@@ -1152,18 +1152,18 @@
     },
     {
       "path": "test/range.test.ts",
-      "bytes": 43687,
-      "sha256": "51a0373303ed16f92980969eb46a530cb3ea6e9fc0bd54e9b166c53e8ee969f1"
+      "bytes": 43678,
+      "sha256": "ea8285e863feddd3182528929c386457916f0988f59a1a5146b9319831ccac2a"
     },
     {
       "path": "test/release.test.ts",
-      "bytes": 8304,
-      "sha256": "4f25cc61e9924107ba1e3749099dfa0335b1577a5c142c27059361df2f8ed2a2"
+      "bytes": 8303,
+      "sha256": "e6b25dc0834902a4b2af66d220b0f47d9fa3d65dfe6398a7602bd0740c61687c"
     },
     {
       "path": "test/reviewer.test.ts",
-      "bytes": 11475,
-      "sha256": "1c1f27228642bd331685582cc66cf2cd38ee48ef5530a5df55cc70aad80a100c"
+      "bytes": 11474,
+      "sha256": "1f75a27e221f7c536028667bff40b36c39b8a3447a587f808e32a8b92fe72694"
     },
     {
       "path": "test/rpc-provenance.test.ts",
@@ -1281,5 +1281,5 @@
       "sha256": "79e97e7b731d653832f72bf0571d9d063193735955c555c40edb15bbfdf93269"
     }
   ],
-  "hashScope": "Git index file bytes; text line endings in a local checkout may differ according to Git settings."
+  "hashScope": "Committed Git file bytes; declared text files use LF on checkout, and frozen fixture bytes are preserved."
 }
