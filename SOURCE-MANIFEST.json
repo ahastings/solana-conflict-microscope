@@ -27,8 +27,8 @@
     },
     {
       "path": ".github/workflows/pages.yml",
-      "bytes": 3235,
-      "sha256": "9f03148dced4c6501132ca0d66d2b726a82e89f3deb824c697b7f1815d57e9df"
+      "bytes": 3795,
+      "sha256": "b757be29ecfe553abad185509d4b7072efdc0c1ccf8aedc8f088591088e6eaa9"
     },
     {
       "path": ".gitignore",
@@ -39,6 +39,11 @@
       "path": "AGENTS.md",
       "bytes": 870,
       "sha256": "eb475b0e89398eef382ec8f642f2a2f9e3b928a814e9ca09e26d9a73f65d4f8e"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 1350,
+      "sha256": "8052f3b0dae3d29247467ac8207862935ab35c0ee262473879ef909a31ddb99e"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -57,13 +62,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 20927,
-      "sha256": "52d644baf3dd40620b9868d1214c2c7636d653efc42e0c3c7691fe6aa2c83fa1"
+      "bytes": 21069,
+      "sha256": "a51595e931db57ea5259e1eef4b657b594168d6ce7850c74e98c23e3d6aceb0a"
     },
     {
       "path": "discovery-plans/milestone-1.8-devnet.json",
       "bytes": 895,
       "sha256": "307708755bf54e6ff81a95808a83cfd8f95a4167ec71dac22e1b8338d86dd250"
+    },
+    {
+      "path": "docs/guides/BROWSER-CHECKS.md",
+      "bytes": 1398,
+      "sha256": "87a34f7e4ed53e8d4229a66d7bf84858d9fddea39f63def6df82e511ecc44e85"
     },
     {
       "path": "docs/guides/BUILD-STATUS.md",
@@ -127,8 +137,8 @@
     },
     {
       "path": "docs/guides/READING-REPORTS.md",
-      "bytes": 9221,
-      "sha256": "2b4bd2259d8c71a6dadca866d82b94c79c86c87c832945583ae719a06094201f"
+      "bytes": 9571,
+      "sha256": "bb67c006a0af3b45312ab8c21d2263a598db39f875ef87c7fd54276e06ec420b"
     },
     {
       "path": "docs/guides/RELATED-WORK.md",
@@ -156,9 +166,14 @@
       "sha256": "247d05f526f3eb986b7f97806c54e40a778d6321a7bda8e6dadb04f8f0c6ed8f"
     },
     {
+      "path": "docs/guides/SHARING-EVIDENCE.md",
+      "bytes": 2462,
+      "sha256": "8ffe0e2453c04f53eb32722cd57d8488a23d263b0011f082f14c03f91140ee39"
+    },
+    {
       "path": "docs/guides/THIRD-PARTY-INVENTORY.md",
-      "bytes": 4165,
-      "sha256": "c2ec2b96dc47d1217336286c1e7b184927ccdc3d07b1d738877133c06fa8c19f"
+      "bytes": 4425,
+      "sha256": "1d084b1a401e72430fabe3aa2c4276c04f7b2316ad1def1c12ca29d0dc3fd25f"
     },
     {
       "path": "docs/guides/V1-LAUNCH.md",
@@ -452,13 +467,13 @@
     },
     {
       "path": "package-lock.json",
-      "bytes": 52409,
-      "sha256": "3e682e27ac378837e510f1aceeb3f063a08efc3c41492e07f03ed735b2e29414"
+      "bytes": 52889,
+      "sha256": "e7296ceebfb670d73593c1ddb77625c2dc6ac6e57f631e4274c272972f037616"
     },
     {
       "path": "package.json",
-      "bytes": 5316,
-      "sha256": "07acc2e218b373f1c74ab679e222686871e20f2cb2ae9f85fa7710a096149aa7"
+      "bytes": 5699,
+      "sha256": "1cd493853c0e649d23b53f9bf2a67e3c36a8f10f9e31d4be4f2fb28f72b0f22f"
     },
     {
       "path": "research-plans/candidate-043c938568ad5e15.json",
@@ -537,13 +552,23 @@
     },
     {
       "path": "scripts/check-local-comparison.ts",
-      "bytes": 13515,
-      "sha256": "94c0d5cdba9d47d3988581630ad22b6faad3ddcc4df655121f556307099c2b5f"
+      "bytes": 14369,
+      "sha256": "15c4b171f2869793f49df8f097733474284dc2fd3e47cc5b0b3d3f9b375f8ec9"
+    },
+    {
+      "path": "scripts/check-range-links.ts",
+      "bytes": 9158,
+      "sha256": "7b94a716b7cc89cc022d99dc36bc6938e8da36a853d2d905771a2158016dcb32"
     },
     {
       "path": "scripts/check-report-browser.ts",
-      "bytes": 38488,
-      "sha256": "e276bb3cd5bde5c719ee72b04fb2e9783591dc2e7f20feabda8668d3b9253d5b"
+      "bytes": 38480,
+      "sha256": "59d7ecdd1bf9c302fb6307cdf3081abd2af9f23a6ebbd83e2b0f48edbc283d0b"
+    },
+    {
+      "path": "scripts/check-transaction-links.ts",
+      "bytes": 13179,
+      "sha256": "ff35ebe5097d1703824572b56fd220f344d6904acc7ef24cf2db2bcee94772e7"
     },
     {
       "path": "scripts/compare-analyses.ts",
@@ -577,8 +602,8 @@
     },
     {
       "path": "scripts/prepare-release.ts",
-      "bytes": 8447,
-      "sha256": "16ea7bd05fd2fe83473986d8e5cea60fc86dd40ea0fe0d42e629b96bdaf7adb8"
+      "bytes": 8463,
+      "sha256": "7b1b9190518a5382cbf50c709f3ef2e1c67bf0334baf8b1233defdbb35fc4fe6"
     },
     {
       "path": "scripts/review-case.ts",
@@ -642,8 +667,8 @@
     },
     {
       "path": "src/compare-browser.ts",
-      "bytes": 10113,
-      "sha256": "008128e2d791d08c62c182ab09c4cc8ef8180e216fdd39b580e53ab3528ea9e9"
+      "bytes": 11665,
+      "sha256": "b79643afe3c303db73cff4ab105193a98877f5f8c0ec8130667041bab487923a"
     },
     {
       "path": "src/compute.ts",
@@ -652,8 +677,8 @@
     },
     {
       "path": "src/demo.ts",
-      "bytes": 18660,
-      "sha256": "51bdaf46c751dbebe9172d814041d09b65de38558fd1b6380046277e03ada1f2"
+      "bytes": 19395,
+      "sha256": "73b9be346c7ddf3bc67919f879c94329033969caef08cf89366c10c63949f330"
     },
     {
       "path": "src/dependency-layers.ts",
@@ -882,8 +907,8 @@
     },
     {
       "path": "src/range-explorer.ts",
-      "bytes": 4685,
-      "sha256": "61e80bff262f0ca77b893231faf3d12a9becf01c429c859bd957a8bd8d435f52"
+      "bytes": 8009,
+      "sha256": "f83d814500725a36f4040636f993e7540336b48324096baa6a323e00c21ef4c8"
     },
     {
       "path": "src/range-input.ts",
@@ -907,8 +932,8 @@
     },
     {
       "path": "src/range-report.ts",
-      "bytes": 40074,
-      "sha256": "09eb5a8fc8eb3c0614a065ee1f101249da0040c9e253be5a6863ed8043b340f4"
+      "bytes": 40766,
+      "sha256": "12bb0d0a9a429d6830d66d8aea0bb3c100c26c5599082fce2a2bb15fd71f8e0a"
     },
     {
       "path": "src/range-types.ts",
@@ -922,13 +947,13 @@
     },
     {
       "path": "src/report-explorer.ts",
-      "bytes": 14497,
-      "sha256": "3eb00112a8555ff004bcde90597ee952c9fb460c8deee41d32d073bccc2c5532"
+      "bytes": 16725,
+      "sha256": "93aa598b90351ad74c60fd0a0084fefc3f49a20fe8fc7a057abcd20d1bbd985e"
     },
     {
       "path": "src/report.ts",
-      "bytes": 32977,
-      "sha256": "d23b4e0571760d5552546e0138dac8a84110c173cc0498b57485cc8b458300c9"
+      "bytes": 33224,
+      "sha256": "05ca7495448a7fc005cc10511c1a4dc8397a3aa0ebf13cf2d64442261aa6d667"
     },
     {
       "path": "src/research-cli.ts",
@@ -1042,8 +1067,8 @@
     },
     {
       "path": "test/demo.test.ts",
-      "bytes": 13291,
-      "sha256": "1ff55834e8bf84b091ec639e3e1e9d16fb24d2293a368bbec30a49bc9d570f7b"
+      "bytes": 13522,
+      "sha256": "c1bc497d5211c2e25e21664e3efd8aff7bda6fe9895cb1f620a685fe751d5281"
     },
     {
       "path": "test/dependency-layers.test.ts",

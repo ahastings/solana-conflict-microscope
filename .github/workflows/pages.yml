@@ -19,6 +19,18 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run verify:portable
+      - name: Locate preinstalled Chrome for browser checks
+        run: |
+          if chrome_path="$(command -v google-chrome || command -v chromium || command -v chromium-browser)"; then
+            printf 'MICROSCOPE_CHROME_PATH=%s\n' "$chrome_path" >> "$GITHUB_ENV"
+          else
+            echo 'A preinstalled Chrome or Chromium binary is required for browser checks.' >&2
+            exit 1
+          fi
+      - name: Verify offline browser cases
+        env:
+          MICROSCOPE_PLAYWRIGHT_PATH: playwright-core
+        run: npm run check:ui-cases
       - name: Add analytics to hosted demo only
         env:
           CLOUDFLARE_WEB_ANALYTICS_TOKEN: 2662871792c54b68ad1b04953e2fce45

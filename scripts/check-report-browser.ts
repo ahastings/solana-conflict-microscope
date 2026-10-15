@@ -11,7 +11,7 @@ import { runDemo } from "../src/demo.js";
 import { analyzeBlock } from "../src/analyze.js";
 import { writeReports } from "../src/report.js";
 
-// Narrow adapter for an optional, separately installed Playwright runtime.
+// Narrow adapter for the pinned development browser driver.
 interface Locator {
   selectOption(value: string): Promise<string[]>;
   fill(value: string): Promise<void>; press(key: string): Promise<void>; click(): Promise<void>; count(): Promise<number>;
@@ -38,8 +38,8 @@ async function main(): Promise<void> {
   if (process.argv.length > 2) throw new Error("Usage: npm run check:browser (no arguments). Optional environment: MICROSCOPE_PLAYWRIGHT_PATH and MICROSCOPE_CHROME_PATH.");
   const require = createRequire(import.meta.url);
   let runtime: BrowserRuntime;
-  try { runtime = require(process.env.MICROSCOPE_PLAYWRIGHT_PATH || "playwright") as BrowserRuntime; }
-  catch { throw new Error("Optional browser checks require Playwright. Set MICROSCOPE_PLAYWRIGHT_PATH to a separately installed playwright package directory; set MICROSCOPE_CHROME_PATH if using an existing Chrome binary."); }
+  try { runtime = require(process.env.MICROSCOPE_PLAYWRIGHT_PATH || "playwright-core") as BrowserRuntime; }
+  catch { throw new Error("Browser checks require the playwright-core dev dependency. Run npm ci, and set MICROSCOPE_CHROME_PATH to an installed Chrome executable. MICROSCOPE_PLAYWRIGHT_PATH can override the driver module."); }
   await mkdir("output", { recursive: true });
   const output = await mkdtemp(resolve("output/report-browser-"));
   const demo = await runDemo({ outputDir: join(output, "demo") });

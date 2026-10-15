@@ -10,7 +10,7 @@ const nativeRoot = "tools/milestone23-linux-runtime";
 const nativeFiles = ["Cargo.toml", "Cargo.lock", "README.md", "mollusk-0.13.1-cross-instruction.patch", ".gitignore", "src/main.rs"].map((path) => `${nativeRoot}/${path}`);
 nativeFiles.push(...["Cargo.toml", "Cargo.lock", "README.md", ".gitignore", "cross-instruction.patch", "run.sh", "src/main.rs"].map((path) => "tools/full-bundle-runtime/" + path));
 nativeFiles.push(...["Cargo.toml", "Cargo.lock", "README.md", ".gitignore", "run.sh", "src/main.rs"].map((path) => "tools/current-bundle-runtime/" + path));
-const optionalFiles = ["LICENSE", "NOTICE", ".github/workflows/pages.yml", ".github/ISSUE_TEMPLATE/bug_report.yml", ".github/ISSUE_TEMPLATE/evidence_question.yml", ".github/ISSUE_TEMPLATE/config.yml"];
+const optionalFiles = ["LICENSE", "NOTICE", "CHANGELOG.md", ".github/workflows/pages.yml", ".github/ISSUE_TEMPLATE/bug_report.yml", ".github/ISSUE_TEMPLATE/evidence_question.yml", ".github/ISSUE_TEMPLATE/config.yml"];
 const trees = [
   { path: "src", extension: ".ts" }, { path: "scripts", extension: ".ts" }, { path: "test", extension: ".ts" },
   { path: "fixtures", extension: ".json" }, { path: "research-plans", extension: ".json" }, { path: "discovery-plans", extension: ".json" },

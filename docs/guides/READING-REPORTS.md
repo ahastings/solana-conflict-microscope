@@ -69,6 +69,10 @@ The worked comparison places the upload block (slot 488638500) on the left and t
 
 Both blocks have complete recorded compute coverage. These are different workloads: more compute or more waves does not establish a regression, and fewer would not establish a speedup. For other inputs, missing compute suppresses the compute delta, and unmatched wave bounds leave the proven minimum unavailable. On a narrow screen, focus the comparison table and use arrow keys to scroll across it. Expand the verification certificates to inspect each block's declared-evidence checks.
 
+## Share the exact selection
+
+Selected transactions, range slots and upload chunks now provide native links that reopen the same evidence. Transaction links use #tx=N; range links use #slot=N or #chunk=sequenceIndex:chunkIndex. These indexes belong to the saved report. See the [sharing guide](SHARING-EVIDENCE.md) for worked links and offline use.
+
 ## Save and check the evidence
 
 Range reports have section links for **Coverage**, **Block evidence**, **Upload timeline**, and **Recurring accounts**. They move keyboard focus to the selected heading.

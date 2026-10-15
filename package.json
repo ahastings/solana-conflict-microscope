@@ -1,6 +1,6 @@
 {
   "name": "solana-conflict-microscope",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
   "description": "Analyze declared Solana account contention and potential parallel execution waves.",
@@ -43,13 +43,18 @@
     "check:browser": "tsx scripts/check-report-browser.ts",
     "benchmark:conflicts": "tsx scripts/benchmark-conflicts.ts",
     "verify:range": "tsx scripts/verify-range.ts",
-    "compare:analyses": "tsx scripts/compare-analyses.ts"
+    "compare:analyses": "tsx scripts/compare-analyses.ts",
+    "check:transaction-links": "tsx scripts/check-transaction-links.ts",
+    "check:range-links": "tsx scripts/check-range-links.ts",
+    "check:local-comparison": "tsx scripts/check-local-comparison.ts",
+    "check:ui-cases": "npm run check:browser && npm run check:transaction-links && npm run check:range-links && npm run check:local-comparison"
   },
   "dependencies": {
     "@solana/kit": "^8.0.0"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
+    "playwright-core": "1.62.1",
     "tsx": "^4.20.0",
     "typescript": "^5.9.0"
   },

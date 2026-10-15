@@ -51,8 +51,14 @@ test("offline demo runs with only shipped fixtures, produces linked reports, and
     assert.equal(reportHtml.includes("CURATED TEACHING FIXTURE"), report.fixture.dataKind === "curated-teaching");
   }
   const hrefs = [...html.matchAll(/href="([^"]+)"/g)].map((match) => match[1]!);
-  assert.equal(hrefs.length, 18);
+  assert.equal(hrefs.length, 21);
   for (const href of hrefs) {
+    if (href.startsWith("https://")) {
+      const url = new URL(href);
+      assert.equal(url.origin, "https://github.com");
+      assert.ok(url.pathname.startsWith("/ahastings/solana-conflict-microscope"));
+      continue;
+    }
     if (href.startsWith("#")) { assert.ok(html.includes(`id="${href.slice(1)}"`)); continue; }
     assert.ok(!href.includes("\\"), "HTML links use portable forward slashes");
     assert.ok((await readFile(resolve(dirname(result.indexPath), href))).length > 0);

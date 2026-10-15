@@ -34,7 +34,6 @@ interface Browser {
 }
 interface Runtime { chromium: { launch(options: { headless: boolean; executablePath?: string; downloadsPath: string }): Promise<Browser> } }
 const root = fileURLToPath(new URL("../", import.meta.url));
-const bundled = "C:/Users/Owner/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright";
 const parse = (bytes: Buffer): unknown => JSON.parse(bytes.toString("utf8").replace(/^\uFEFF/, ""));
 const hash = (bytes: Buffer): string => createHash("sha256").update(bytes).digest("hex");
 const upload = (name: string, value: unknown): Upload => ({ name, mimeType: "application/json", buffer: Buffer.from(JSON.stringify(value)) });
@@ -43,8 +42,8 @@ async function main(): Promise<void> {
   if (process.argv.length > 2) throw new Error("Usage: tsx scripts/check-local-comparison.ts (run npm run demo first)");
   const require = createRequire(import.meta.url);
   let runtime: Runtime;
-  try { runtime = require(process.env.MICROSCOPE_PLAYWRIGHT_PATH || "playwright") as Runtime; }
-  catch { runtime = require(process.env.MICROSCOPE_PLAYWRIGHT_PATH || bundled) as Runtime; }
+  try { runtime = require(process.env.MICROSCOPE_PLAYWRIGHT_PATH || "playwright-core") as Runtime; }
+  catch { throw new Error("Browser checks require the playwright-core dev dependency. Run npm ci or set MICROSCOPE_PLAYWRIGHT_PATH to another installed Playwright module."); }
   const pagePath = join(root, "output/demo/comparison/local.html");
   await access(pagePath);
   await mkdir(join(root, "output"), { recursive: true });
@@ -126,6 +125,11 @@ async function main(): Promise<void> {
       await reject({ name: "too-large.json", mimeType: "application/json", buffer: Buffer.alloc(16 * 1024 * 1024 + 1) }, /16 MiB/);
       assert.equal(await page.evaluate(() => (window as typeof window & { comparisonWorkers: number }).comparisonWorkers), workersBeforeSizeCheck, "Oversize input is denied before creating a worker");
       await reject(upload("too-many-transactions.json", { transactions: Array.from({ length: 5001 }, () => ({})) }), /5,000 transactions/);
+      const normalized = (index: number, addresses: string[]) => ({ index, status: "unknown", computeUnitsConsumed: null,
+        accounts: addresses.map((pubkey, account) => ({ pubkey, writable: account === 0 })), readSet: addresses.slice(1), writeSet: addresses.slice(0, 1) });
+      // These inputs meet normalized transaction shape, but omit graph evidence. Reject before reconstructing it.
+      await reject(upload("shared-writers.json", { transactions: Array.from({ length: 1100 }, (_, index) => normalized(index, ["SharedWriter"])), conflictEdges: [] }), /500,000 potential shared-account causes/);
+      await reject(upload("verification-work.json", { transactions: Array.from({ length: 2000 }, (_, index) => normalized(index, Array.from({ length: 11 }, (_, account) => "Distinct-" + index + "-" + account))), conflictEdges: [] }), /20,000,000 account lookups/);
       await reject({ name: "malformed.json", mimeType: "application/json", buffer: Buffer.from('{"privateLabel":"secret",}') }, /right/i);
       assert.doesNotMatch(await page.locator("#comparisonStatus").textContent() ?? "", /privateLabel|secret/);
       const one = (compute: number | null) => analyzeBlock({ blockhash: "one", previousBlockhash: "parent", parentSlot: 0, transactions: [{ transaction: { signatures: ["one"], message: { accountKeys: [{ pubkey: "payer", signer: true, writable: true }], instructions: [] } }, meta: compute === null ? null : { err: null, fee: 0, computeUnitsConsumed: compute } }] }, 1, "fixture");
@@ -159,7 +163,7 @@ async function main(): Promise<void> {
       await cleared(); await page.waitForTimeout(300); await cleared();
       assert.match(await page.locator("#comparisonStatus").textContent() ?? "", /cancel/i);
       assert.deepEqual(network, [], "Comparison makes no external requests"); assert.deepEqual(errors, [], "No browser script errors");
-      checks.push(width + "px: labelled inputs, BOM/hash parity, JSON/HTML downloads, invalid evidence, file/transaction limits, unavailable CU, escaped labels, stale-result clearing, selection/read race, cancellation, viewport, offline");
+      checks.push(width + "px: labelled inputs, BOM/hash parity, JSON/HTML downloads, invalid evidence, file/transaction/conflict/work limits, unavailable CU, escaped labels, stale-result clearing, selection/read race, cancellation, viewport, offline");
       await page.close();
     }
   } finally { await browser.close(); }

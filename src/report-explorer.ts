@@ -7,12 +7,22 @@ export const transactionExplorerMarkup = `<section aria-labelledby="transactionE
 <select id="transactionOutcome" style="padding:10px;margin:8px;background:#07101d;color:inherit;border:1px solid #67a8e8;border-radius:6px"><option value="any">Any status</option><option value="success">Successful</option><option value="failed">Failed</option><option value="unknown">Unknown</option></select>
 <p class="muted">Unknown means the supplied transaction data does not establish an outcome.</p>
 <p id="transactionSearchStatus" role="status">Enter a search or choose a status to inspect transactions and their declared conflicts.</p>
+<p id="transactionLinkStatus" role="status" tabindex="-1">Transaction links use this report's indexes. Select a transaction to get its link.</p>
 <div id="waveInspection"></div><div id="accountInspection"></div><div id="transactionMatches"></div><div id="transactionInspection"></div>
 </section>`;
 
 export const transactionExplorerScript = String.raw`
+let transactionLinksInitialized=false;
+function clearTransactionInspection(){
+ $('transactionInspection').replaceChildren();
+ $('transactionLinkStatus').textContent="Transaction links use this report's indexes. Select a transaction to get its link.";
+ // Rendering may clear an inspector before the incoming fragment is consumed.
+ if(transactionLinksInitialized&&location.hash.startsWith('#tx')){
+  try{const url=new URL(location.href);url.hash='';history.replaceState(null,'',url.href)}catch{}
+ }
+}
 function selectWave(wave,scope,page=0){
- const target=$('waveInspection');target.replaceChildren();target.dataset.scope=scope;$('transactionInspection').replaceChildren();
+ const target=$('waveInspection');target.replaceChildren();target.dataset.scope=scope;clearTransactionInspection();
  const title=document.createElement('h3');title.textContent=scope+' wave '+(wave.wave+1);title.tabIndex=-1;target.appendChild(title);
  const note=document.createElement('p');note.textContent=wave.transactionCount+' transactions · '+waveComputeLabel(wave)+'. This generated grouping describes declared account compatibility, not observed execution order. Wave membership is independent of the search filters.';target.appendChild(note);
  for(const index of wave.transactionIndexes.slice(page*50,(page+1)*50)){
@@ -40,7 +50,7 @@ function selectUploadSequence(sequence,group,page=0){
 }
 function selectAccount(account){
  const query=$('transactionQuery');query.value=account.account;
- $('transactionInspection').replaceChildren();
+ clearTransactionInspection();
  const target=$('accountInspection');target.replaceChildren();
  const title=document.createElement('h3');title.textContent=account.label??'Account';target.appendChild(title);
  const address=document.createElement('p');address.textContent=account.account;target.appendChild(address);
@@ -64,6 +74,11 @@ function renderDeclaredAccounts(target,tx,page=0){
 function selectTransaction(tx,conflictPage=0,instructionPosition=null){
  const target=$('transactionInspection');target.replaceChildren();
  const title=document.createElement('h3');title.textContent='Transaction #'+tx.index;title.tabIndex=-1;target.appendChild(title);
+ const linkRow=document.createElement('p'),link=document.createElement('a');link.className='transaction-permalink';link.href='#tx='+tx.index;link.textContent='Link to transaction #'+tx.index;linkRow.appendChild(link);target.appendChild(linkRow);
+ $('transactionLinkStatus').textContent='Transaction #'+tx.index+' selected. Its link reopens this selection in this report.';
+ // Replacing the fragment keeps ordinary inspection out of the Back history.
+ // Native links remain usable when an embedding policy disallows history changes.
+ if(location.hash!==link.hash){try{history.replaceState(null,'',link.hash)}catch{}}
  const identity=document.createElement('p');identity.textContent=tx.signature??'Signature unavailable';target.appendChild(identity);
  const wave=a.waves.findIndex(indexes=>indexes.includes(tx.index));
  const facts=document.createElement('p');facts.textContent='Status: '+tx.status+' · Compute: '+(tx.computeUnitsConsumed===null?'unknown':tx.computeUnitsConsumed+' CU')+' · Generated wave: '+(wave<0?'unknown':wave+1)+' · '+tx.readSet.length+' read-only accounts · '+tx.writeSet.length+' writable accounts';target.appendChild(facts);
@@ -110,7 +125,19 @@ function searchTransactions(page=0){
  for(const tx of matches.slice(page*50,(page+1)*50)){const button=document.createElement('button');button.type='button';button.className='transaction-match';button.textContent='#'+tx.index+' · '+tx.status+' · '+(tx.signature??'Signature unavailable');button.onclick=()=>selectTransaction(tx);target.appendChild(button)}
  if(matches.length>50)appendExplorerPager(target,page,50,matches.length,'matches',searchTransactions);
 }
-function updateTransactionSearch(){$('accountInspection').replaceChildren();$('transactionInspection').replaceChildren();searchTransactions()}
+function updateTransactionSearch(){$('accountInspection').replaceChildren();clearTransactionInspection();searchTransactions()}
 $('transactionQuery').addEventListener('input',updateTransactionSearch);
 $('transactionOutcome').addEventListener('change',updateTransactionSearch);
+function applyTransactionHash(){
+ const hash=location.hash,status=$('transactionLinkStatus');
+ // Leave the report's native section anchors and their focus behavior alone.
+ if(!hash.startsWith('#tx')){status.textContent="Transaction links use this report's indexes. Select a transaction to get its link.";return}
+ const match=/^#tx=(0|[1-9]\d*)$/.exec(hash),index=match?Number(match[1]):NaN;
+ const invalid=!Number.isSafeInteger(index)||index<0,tx=invalid?null:a.transactions.find(item=>item.index===index);
+ if(tx){selectTransaction(tx);return}
+ $('transactionInspection').replaceChildren();
+ status.textContent=invalid?'Invalid transaction link. Use #tx= followed by a non-negative safe integer, without leading zeros.':'Transaction #'+index+' is not present in this block.';
+ status.focus({preventScroll:true});status.scrollIntoView({block:'nearest'});
+}
+function initializeTransactionLinks(){transactionLinksInitialized=true;window.addEventListener('hashchange',applyTransactionHash);applyTransactionHash()}
 `;

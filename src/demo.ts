@@ -90,7 +90,7 @@ function findingHtml(finding: ComponentMeaning): string {
     <details><summary>Evidence behind this finding</summary><ul>${[...finding.cause.evidence, ...finding.actionability.evidence].map((line) => `<li>${escapeHtml(line)}</li>`).join("")}</ul></details></li>`;
 }
 
-function indexHtml(reports: DemoReport[], range: RangeAnalysis): string {
+function indexHtml(reports: DemoReport[], range: RangeAnalysis, version: string): string {
   const cards = reports.map(({ fixture, analysis, findings }) => {
     const summary = analysis.summary;
     const teaching = fixture.dataKind === "curated-teaching";
@@ -111,18 +111,19 @@ function indexHtml(reports: DemoReport[], range: RangeAnalysis): string {
 <title>Solana Conflict Microscope — offline demo</title>
 <style>
 :root{color-scheme:dark;font-family:system-ui,sans-serif;background:#07101d;color:#e7edf7;line-height:1.55}*{box-sizing:border-box}body{max-width:1100px;margin:auto;padding:28px 20px;overflow-wrap:anywhere}h1{line-height:1.15;font-size:clamp(2rem,5vw,3.25rem);margin:12px 0}h2{margin-top:8px;line-height:1.25}h3{font-size:1rem}.eyebrow{color:#67e8c3;letter-spacing:.1em;font-size:.8rem;font-weight:700}.lead{font-size:1.15rem;max-width:850px}article,.guide{background:#101c2e;border:1px solid #293d58;border-radius:14px;padding:24px;margin:24px 0}.guide{border-color:#42658e}.muted{color:#aabbce;font-size:.9rem}.badge{font-weight:750;font-size:.75rem;letter-spacing:.025em}.real{color:#67e8c3}.teaching{background:#ffcc4d;color:#211600;border-radius:6px;padding:10px}dl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:24px 0}dl div{padding:12px;background:#07101d;border-radius:8px}dt{font-size:.85rem;color:#aabbce}dd{font-size:1.75rem;font-weight:750;margin:6px 0 0;color:#67e8c3}.findings{padding-left:22px}.findings>li{margin:16px 0}li p{margin:8px 0}details{background:#091525;padding:10px;border-radius:8px}summary{cursor:pointer}a{color:#8ed8ff;text-underline-offset:.2em}a:focus-visible,summary:focus-visible{outline:3px solid #ffcc4d;outline-offset:4px}.links{display:flex;flex-wrap:wrap;gap:12px 24px}.links a{padding:8px 0;font-weight:650}code{font-size:.9rem}.source{margin-bottom:0}@media(max-width:680px){dl{grid-template-columns:repeat(2,minmax(0,1fr))}article,.guide{padding:18px}body{padding:18px 12px}}
-.quick-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:18px 0}.quick-links a{display:flex;align-items:center;min-height:44px;padding:10px 14px;border:1px solid #42658e;border-radius:8px;background:#122b40;font-size:.9rem;font-weight:700;text-decoration:none}.quick-links a:hover{background:#193c54}.quick-links .synthetic{border-color:#b79443;color:#ffda7b}.skip-link{position:absolute;top:8px;left:12px;z-index:100;transform:translateY(-200%);padding:10px 14px;background:#ffcc4d;color:#211600;border-radius:6px;font-weight:700}.skip-link:focus{transform:translateY(0)}@media(max-width:680px){.quick-links{grid-template-columns:1fr;gap:8px}.quick-links a{padding:8px 12px}}
+.project-links{display:flex;flex-wrap:wrap;gap:12px 24px;margin:12px 0}.project-links a{display:inline-flex;align-items:center;min-height:44px}.quick-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:18px 0}.quick-links a{display:flex;align-items:center;min-height:44px;padding:10px 14px;border:1px solid #42658e;border-radius:8px;background:#122b40;font-size:.9rem;font-weight:700;text-decoration:none}.quick-links a:hover{background:#193c54}.quick-links .synthetic{border-color:#b79443;color:#ffda7b}.skip-link{position:absolute;top:8px;left:12px;z-index:100;transform:translateY(-200%);padding:10px 14px;background:#ffcc4d;color:#211600;border-radius:6px;font-weight:700}.skip-link:focus{transform:translateY(0)}@media(max-width:680px){.quick-links{grid-template-columns:1fr;gap:8px}.quick-links a{padding:8px 12px}}
 </style></head><body>
 <a class="skip-link" href="#report-examples">Skip to example findings</a>
 <header><p class="eyebrow">SOLANA CONFLICT MICROSCOPE · OFFLINE DEMO</p><h1>See which declared accounts connect transactions.</h1>
 <p class="lead">Explore declared account contention, potential parallelism, and estimated execution waves using the fixtures shipped with this project.</p>
 <nav class="quick-links" aria-label="Open a demo report"><a href="real-loader/report.html"><span aria-hidden="true" style="display:inline-block;margin-right:.4em">📤</span>Open real upload</a><a href="real-funding/report.html"><span aria-hidden="true" style="display:inline-block;margin-right:.4em">🤝</span>Open cross-payer funding</a><a class="synthetic" href="synthetic-teaching/report.html"><span aria-hidden="true" style="display:inline-block;margin-right:.4em">🧪</span>Open synthetic teaching</a><a href="multi-block-upload/range-report.html"><span aria-hidden="true" style="display:inline-block;margin-right:.4em">🧵</span>Open multi-block upload</a><a href="comparison/comparison.html"><span aria-hidden="true" style="display:inline-block;margin-right:.4em">⚖️</span>Compare captured blocks</a><a href="comparison/local.html"><span aria-hidden="true">⚖️</span>Compare your files</a></nav>
+<nav class="project-links" aria-label="Project links"><a href="https://github.com/ahastings/solana-conflict-microscope">Source on GitHub</a><a href="https://github.com/ahastings/solana-conflict-microscope/issues/new/choose">Report a problem</a></nav>
 <p>These reports are generated locally from saved inputs. No RPC connection, wallet, research cache, or local web server is needed.</p></header>
 <section class="guide"><h2>Start with the evidence</h2><ol><li>Open a report and select a notable finding.</li><li>Follow its shared accounts to the participating transactions and decoded evidence.</li><li>Compare the component with the full-block wave context before interpreting a counterfactual.</li></ol>
 <p>Waves are conflict-free analytical groupings, not a reconstruction of a validator's exact private schedule. Matching wave bounds establish a minimum only within this declared-lock model; they do not measure runtime, speedup, or profitability.</p>
 <p>Semantic counterfactuals are hypothetical finer-grained execution rules. A safe redesign requires additional program and state evidence. The real captures are devnet examples, not a representative mainnet sample.</p></section>
 <main id="report-examples" tabindex="-1">${cards}${rangeCard}<article id="comparison"><h2><span aria-hidden="true" style="display:inline-block;margin-right:.4em">⚖️</span>Compare two captured blocks</h2><p>Compare the upload and funding examples side by side: transaction outcomes, declared conflict pairs, connected components, wave bounds, and recorded compute. These are different workloads, so their differences do not establish a performance improvement.</p><p class="links"><a href="comparison/comparison.html"><span aria-hidden="true" style="display:inline-block;margin-right:.4em">⚖️</span>Open block comparison</a><a href="comparison/comparison.json">View comparison JSON</a><a href="comparison/local.html"><span aria-hidden="true">⚖️</span>Compare your own files</a></p></article></main>
-<footer class="muted"><p>All displayed counts and findings come from this run of the analyzer. Open the JSON beside each report to inspect its provenance, methodology, and full evidence.</p></footer>
+<footer class="muted"><p><a href="https://github.com/ahastings/solana-conflict-microscope/blob/main/LICENSE">MIT license</a> · Version ${escapeHtml(version)} · Copyright 2026 ahastings.</p><p>All displayed counts and findings come from this run of the analyzer. Open the JSON beside each report to inspect its provenance, methodology, and full evidence.</p></footer>
 </body></html>\n`;
 }
 
@@ -140,6 +141,7 @@ async function addDemoNavigation(reportPath: string, exampleId: string): Promise
 
 /** Replays only versioned fixtures; this entry point never reads the research cache or uses RPC. */
 export async function runDemo(options: { repositoryRoot?: string; outputDir?: string } = {}): Promise<DemoResult> {
+  const packageVersion = (JSON.parse(await readFile(new URL("../package.json", import.meta.url), "utf8")) as { version: string }).version;
   const root = resolve(options.repositoryRoot ?? fileURLToPath(new URL("../", import.meta.url)));
   const outputDir = resolve(root, options.outputDir ?? "output/demo");
   // Validate and analyze every example before writing, so a mislabeled input cannot produce a fresh demo index.
@@ -173,6 +175,6 @@ export async function runDemo(options: { repositoryRoot?: string; outputDir?: st
   await writeFile(join(comparisonDir, "local.html"), await localComparisonHtml(), "utf8");
   const indexPath = join(outputDir, "index.html");
   await mkdir(outputDir, { recursive: true });
-  await writeFile(indexPath, indexHtml(reports, rangeAnalysis), "utf8");
+  await writeFile(indexPath, indexHtml(reports, rangeAnalysis, packageVersion), "utf8");
   return { indexPath, reports, rangeReport };
 }

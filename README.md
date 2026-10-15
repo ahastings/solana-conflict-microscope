@@ -4,11 +4,13 @@ Understand which declared accounts connect Solana transactions, why they conflic
 
 **Start with the offline demo.** It needs no RPC account, API key, wallet, database, server, or ignored research cache.
 
-## Version 1.0
+## Version 1.1
 
-Version 1.0.0 is the first release of the portable analytical tool, licensed under [MIT](LICENSE), copyright 2026 ahastings. Third-party material retains its own terms; see the [inventory](docs/guides/THIRD-PARTY-INVENTORY.md). The demo uses captured fixtures, not live network streaming. Separate native experiments remain research references with their own prerequisites and limitations.
+Version 1.1.0 adds shareable evidence links and browser interaction checks to the portable analytical tool, licensed under [MIT](LICENSE), copyright 2026 ahastings. Third-party material retains its own terms; see the [inventory](docs/guides/THIRD-PARTY-INVENTORY.md). The demo uses captured fixtures, not live network streaming. Separate native experiments remain research references with their own prerequisites and limitations.
 
 The included GitHub Pages workflow verifies the portable tool before deploying only output/demo from the main branch. It does not publish research caches, native binaries, or workspace history.
+
+See [what changed](CHANGELOG.md) and [how to share exact evidence](docs/guides/SHARING-EVIDENCE.md).
 
 ## Try it locally
 

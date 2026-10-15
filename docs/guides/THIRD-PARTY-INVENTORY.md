@@ -14,6 +14,9 @@ The current package-lock.json records these direct dependencies:
 | @types/node | 24.13.3 | MIT |
 | tsx | 4.23.12 | MIT |
 | typescript | 5.9.3 | Apache-2.0 |
+| playwright-core (development checks only) | 1.62.1 | Apache-2.0 |
+
+The pinned playwright-core driver runs browser verification against an existing Chrome installation; it does not download a browser during npm ci and is not loaded by generated HTML reports.
 
 These are lockfile metadata, not a substitute for each dependency's license text. The source preview excludes node_modules. npm installs the locked packages separately. Transitive packages and any future binary distribution require their own inventory; this table is not an exhaustive dependency list.
 
