@@ -1,0 +1,35 @@
+name: "Evidence or explanation question"
+description: "Question a result, missing evidence, or confusing report wording."
+title: "[Evidence] "
+body:
+  - type: "markdown"
+    attributes:
+      value: "Declared-lock waves describe an analytical model, not measured runtime or a validator schedule. A small counterexample or clearer wording is useful feedback. Issues are public."
+  - type: "textarea"
+    id: "location"
+    attributes:
+      label: "Which report or finding?"
+      description: "Include its public URL, slot, transaction or finding identifier when available, and whether the input is captured or synthetic."
+    validations:
+      required: true
+  - type: "textarea"
+    id: "claim"
+    attributes:
+      label: "What is unclear or appears incorrect?"
+      description: "Quote the relevant result or wording and explain the concern."
+    validations:
+      required: true
+  - type: "textarea"
+    id: "support"
+    attributes:
+      label: "Supporting public evidence"
+      description: "Optional minimal fixture, conflicting account relationships, bound witness, counterexample, or primary technical source."
+    validations:
+      required: false
+  - type: "textarea"
+    id: "suggestion"
+    attributes:
+      label: "What would make it clearer?"
+      description: "Optional expected result or suggested wording."
+    validations:
+      required: false

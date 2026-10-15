@@ -1,6 +1,6 @@
 {
   "format": "microscope-source-preview-v1",
-  "status": "public-source-update-candidate",
+  "status": "source-snapshot",
   "licenseStatus": "license-file-included",
   "selectionPolicy": "Required root and native harness files are copied explicitly. Source trees include only .ts, fixture/plan trees only .json, and documentation trees only .md. Hidden entries and dependency, build, cache, output, backup, credentials, and secrets directories are skipped. Other extensions are intentionally skipped. Missing required paths, links in selected paths or their ancestors, and nonregular selected files fail closed. This selection policy is not a content-level secrets audit.",
   "verification": "Run npm ci then npm run verify:portable in this folder. Full research replay additionally requires separately pinned historical caches and generated artifacts. Native reexecution has separate Rust/Mollusk prerequisites documented with the included harness source.",
@@ -9,6 +9,21 @@
       "path": ".gitattributes",
       "bytes": 758,
       "sha256": "c60229d71cf92a7b627c3ee9396e480d507cd01a30b4ac40e26fdba4c9b2e2ef"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "bytes": 1738,
+      "sha256": "2802d846d06840933ba73c9918ad4dc8992fc3ebe20f40f740fc8457800ceda1"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "bytes": 297,
+      "sha256": "9f080845ed920f1066e5db46127258a7474da031cf72b7607a35f3f35551dcb9"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/evidence_question.yml",
+      "bytes": 1374,
+      "sha256": "de992a01a4dc61896717663b1a59b1bb87f21121aa5a991789339c0a47696c6b"
     },
     {
       "path": ".github/workflows/pages.yml",
@@ -27,8 +42,8 @@
     },
     {
       "path": "CONTRIBUTING.md",
-      "bytes": 2278,
-      "sha256": "108e0e01cbc38c98133aef2eccbef891751a8f2b4b7dd20c802db6fc310bce3b"
+      "bytes": 2533,
+      "sha256": "88be6768685419109d9aa4803a5625d4f5e72ef1fcac704605e86fa07ed890d2"
     },
     {
       "path": "HANDOFF.md",
@@ -562,8 +577,8 @@
     },
     {
       "path": "scripts/prepare-release.ts",
-      "bytes": 8322,
-      "sha256": "f00156d772ae2020b7702c5803216fdc81a7cd4059715b31d3ccce1df8671f6c"
+      "bytes": 8447,
+      "sha256": "16ea7bd05fd2fe83473986d8e5cea60fc86dd40ea0fe0d42e629b96bdaf7adb8"
     },
     {
       "path": "scripts/review-case.ts",

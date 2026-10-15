@@ -10,6 +10,8 @@ If a check fails, include the command, Node/npm versions, operating system, and 
 
 ## Report a useful problem
 
+Use the [issue chooser](https://github.com/ahastings/solana-conflict-microscope/issues/new/choose) to select **Bug report** for a broken workflow or **Evidence or explanation question** for a result you cannot reconcile. A blank issue is also available.
+
 Describe what you expected, what happened, and the smallest public fixture that reproduces it. Include fixture provenance and distinguish a captured block from constructed teaching data. For a mathematical claim, include the relevant transaction/account relationships and a witness or counterexample.
 
 ## Change the code

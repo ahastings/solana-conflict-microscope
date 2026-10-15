@@ -1,0 +1,55 @@
+name: "Bug report"
+description: "Report an installation, browser, command, or download problem."
+title: "[Bug] "
+body:
+  - type: "markdown"
+    attributes:
+      value: "Issues are public. Share only public or synthetic examples, and remove endpoint credentials and unrelated personal data."
+  - type: "dropdown"
+    id: "surface"
+    attributes:
+      label: "Where did it happen?"
+      description: "Choose the part of the tool you were using."
+      options:
+        - "Hosted demo"
+        - "Offline HTML report"
+        - "Terminal command"
+        - "Installation or verification"
+        - "Other"
+    validations:
+      required: true
+  - type: "textarea"
+    id: "steps"
+    attributes:
+      label: "Steps to reproduce"
+      description: "Include the report URL or exact command and the smallest public fixture that shows the problem."
+    validations:
+      required: true
+  - type: "textarea"
+    id: "actual"
+    attributes:
+      label: "What happened?"
+      description: "Include the error message or describe the broken control."
+    validations:
+      required: true
+  - type: "textarea"
+    id: "expected"
+    attributes:
+      label: "What did you expect?"
+      description: "Describe the behavior you expected."
+    validations:
+      required: true
+  - type: "input"
+    id: "environment"
+    attributes:
+      label: "Environment"
+      description: "Browser and version, or Node/npm versions and operating system."
+    validations:
+      required: false
+  - type: "textarea"
+    id: "evidence"
+    attributes:
+      label: "Additional public evidence"
+      description: "Optional screenshot, minimal fixture, or relevant log excerpt. Remove credentials before posting."
+    validations:
+      required: false
