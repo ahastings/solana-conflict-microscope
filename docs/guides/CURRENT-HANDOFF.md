@@ -1,4 +1,18 @@
-# Current release handoff — 2026-10-13
+# Current public release — v1.1.0, 2026-10-14
+
+[The GitHub Pages demo](https://ahastings.github.io/solana-conflict-microscope/) and [v1.1.0 downloads](https://github.com/ahastings/solana-conflict-microscope/releases/tag/v1.1.0) are live. The released source commit is bde17a5d0fbdb5d9a2c3f0ea3a6c968b8a4e7b98. Project code is MIT, copyright 2026 ahastings. Private development history and research caches were not published.
+
+The release adds native transaction, slot and upload-chunk links, browser comparison resource budgets, source/feedback navigation, and a pinned development browser driver. See [the changelog](../../CHANGELOG.md), [sharing evidence](SHARING-EVIDENCE.md), and [browser checks](BROWSER-CHECKS.md). The feedback chooser is available in the repository; submitting a GitHub issue requires an account.
+
+Windows portable verification passed 276 tests and 18 fixture pins. [GitHub's Ubuntu build and Pages deployment](https://github.com/ahastings/solana-conflict-microscope/actions/runs/38691711711) passed the portable workflow and all four browser suites. Deployed Chrome checks passed at 1440px and 390px, including evidence links, pagination, comparison downloads, input hashes, and no comparison requests after the document loaded. All five saved example-analysis JSON files remain byte-identical. A fresh Windows clone and extracted source archive verified all 260 source hashes; the offline archive retained all 13 demo files exactly.
+
+These checks establish supplied-evidence consistency and tested interface behavior. They do not establish RPC authenticity, native runtime performance, whole-transaction counterfactual semantics, or a validator's private schedule. No new native execution or historical research replay was performed for 1.1.0. Future publishing still requires explicit owner permission; authorization for this release does not authorize contacting reviewers or posting promotion.
+
+The material below is historical. Its pending-publication and license statements were superseded by the live release above.
+
+---
+
+## Historical release preparation — 2026-10-13
 
 The owner requests v1.0 publication on GitHub, a website/demo, and initial promotion. The 2026-10-02 launch decision selected MIT and ahastings on GitHub with a GitHub Pages demo; use ahastings in the copyright notice. Cloudflare domains were deferred. Prepare a clean source export instead of publishing private development history. Final candidate checks, GitHub authentication, and successful remote deployment must be verified before claiming that v1.0 or its site is live. Promotion destinations still need to be identified. Keep this work bounded to release preparation, publication, and initial promotion rather than new feature or native-research work. The earlier automatic goal remains paused.
 

@@ -77,13 +77,13 @@
     },
     {
       "path": "docs/guides/BUILD-STATUS.md",
-      "bytes": 9066,
-      "sha256": "2c5a71376858c286c65b5c945d78550322f9cc053df5b7cc0826357dffe700a4"
+      "bytes": 9225,
+      "sha256": "a62c5899dae128cba8af270978781afe00dcd590f109b54cf8e9ebaa33336835"
     },
     {
       "path": "docs/guides/CURRENT-HANDOFF.md",
-      "bytes": 4636,
-      "sha256": "22d45bfdd1b323e7d5319b3d6e61f295adfaf490662a5709690e1c613ab905eb"
+      "bytes": 6700,
+      "sha256": "af3ce7f8040ff5bbe716d5770def17ee12f70194647ccbf20287acb694dc54b0"
     },
     {
       "path": "docs/guides/CURRENT-NATIVE-BUNDLE-RESULTS.md",

@@ -4,7 +4,7 @@
 
 Build a useful, trustworthy Solana developer tool that others can inspect and extend. External usefulness and adoption remain untested. Project code is licensed under MIT, copyright 2026 ahastings; third-party material retains its own terms. No donation service is configured.
 
-Release preparation as of 2026-10-13: the owner requests v1.0 publication on GitHub, a website/demo, and initial promotion. The recorded launch destination is ahastings on GitHub with GitHub Pages. Clean source-export verification and successful remote publication are pending. Working-candidate validation is recorded below; it does not establish that v1.0 is live.
+Public release v1.1.0 is live on [GitHub Pages](https://ahastings.github.io/solana-conflict-microscope/) with [source and offline downloads](https://github.com/ahastings/solana-conflict-microscope/releases/tag/v1.1.0). Windows checks and GitHub Ubuntu deployment passed 276 portable tests, 18 fixture pins and four browser suites. Deployed desktop/phone checks passed. See the [current release handoff](CURRENT-HANDOFF.md) for the exact source commit, evidence and limits. Earlier preparation records below remain historical.
 
 The portable microscope is usable from bundled public fixtures. A separate current-deployment experiment now establishes a complete producer followed by two equality consumers for one constructed fixture: all bundles succeed, producer oracle writes commit, consumers preserve the oracles, and swapping consumers gives identical final ordinary account state. Two fresh native executions are byte-identical. [Current measured results and limitations](CURRENT-NATIVE-BUNDLE-RESULTS.md).
 
